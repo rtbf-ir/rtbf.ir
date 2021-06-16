@@ -58,7 +58,7 @@
 	{
 		"name" : "آپارات",
 		"website": "https://www.aparat.com/",
-		"deleteurl": "#",
+		"deleteurl": "https://www.aparat.com/user/profile/remove_account",
 		"info": "در صورتی که کانال فعال ندارید با پشتیبانی تماس بگیرید.",
 		"difficulty": "سخت",
 		"keytype": "danger"

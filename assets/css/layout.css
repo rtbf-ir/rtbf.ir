@@ -60,9 +60,54 @@ margin:50px 0
 }
 
 .myitems .card {
-border-radius:10px
+border-radius:10px;
+min-height: 250px;
+height: auto;
+width: 100%;
 }
 .myitems .float-right {
 	float: right;
-	padding: 10px;
+	padding: 5px;
+	width: 25%;
+}
+.myitems .card .btn, .myitems .card p {
+	font-size: 13px;
+}
+.myitems .card .card-opt {
+	position: absolute;
+	bottom: 0;
+}
+.myitems .card .card-opt a {
+	margin-bottom: 10px;
+	max-width: 90%;
+}
+.gap-card {
+	height: 50px;
+	margin-bottom: 40px;
+	width: 100%;
+}
+.plus-service {
+display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  font-size: 130px;
+}
+.email-box {
+	letter-spacing: 3px;
+	font-size: 13px;
+	font-family: tahoma;
+}
+
+@media screen and (max-width: 900px) {
+.myitems .float-right {
+	width: 50%;
+}
+.myitems .card .card-opt {
+	font-size: 9px!important;
+}
+}
+@media screen and (max-width: 450px) {
+.myitems .float-right {
+	width: 100%;
+}
 }

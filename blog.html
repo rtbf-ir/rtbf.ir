@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>دایرکتوری حذف حساب های کاربری | حق فراموش شدن </title>
+	<title>وبلاگ | حق فراموش شدن </title>
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -50,8 +50,24 @@
 		<div class="homepage-content">
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-						<h4>فهرست سایت ها/سرویس ها</h4>
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+						<h4 class="text-center">وبلاگ</h4>
+						<p class="text-center">در زیر تعدادی از نوشته های مفید در زمینه ی حریم شخصی را می توانید مطالعه کنید.</p>
+
+						<p>&nbsp;</p>
+						<h5>فهرست:</h5>
+						<ul>
+							<li><a href="" title=""></a></li>
+							<li><a href="" title=""></a></li>
+							<li><a href="" title=""></a></li>
+							<li><a href="" title=""></a></li>
+							<li><a href="" title=""></a></li>
+							<li><a href="" title=""></a></li>
+							<li><a href="" title=""></a></li>
+							<li><a href="" title=""></a></li>
+							<li><a href="" title=""></a></li>
+						</ul>
+
 					</div>
 				</div>
 			</div>
@@ -104,32 +120,5 @@
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
-	<script>
-		document.getElementById("copyrightyear").innerHTML = new Date().getFullYear();
-
-		function readTextFile(file, callback) {
-			"use strict";
-			var rawFile = new XMLHttpRequest();
-			rawFile.overrideMimeType("application/json");
-			rawFile.open("GET", file, true);
-			rawFile.onreadystatechange = function() {
-				if (rawFile.readyState === 4 && rawFile.status == "200") {
-					callback(rawFile.responseText);
-				}
-			}
-			rawFile.send(null);
-		}
-
-		
-		readTextFile("https://rtbf.ir/assets/data/data.json", function(text){
-			var data = JSON.parse(text);
-			for (var i = data.length - 1; i >= 0; i--) {
-				$(".myitems").append('<div class="float-right"><div class="card"><div class="card-body"><h5 class="card-title"><a target="_blank" class="text-dark" rel="nofollow" title="سایت ' + data[i]['name'] + '" href="' + data[i]['website'] + '">' + data[i]['name'] + '</h5><p class="card-text">' + data[i]['info'] + '</p><div class="gap-card"></div><div><p class="card-opt"><a class="btn btn-' + data[i]['keytype'] + '">' + data[i]['difficulty'] + '</a>&nbsp;<a target="_blank" rel="nofollow" href="' + data[i]['deleteurl'] + '" class="btn btn-dark"><span class="fa fa-1x fa-trash"></span> &nbsp;حذف حساب کاربری</a></p></div></div></div></div>');
-			}
-
-			$(".myitems").append('<div class="float-right"><a target="_blank" class="text-light" href="https://github.com/amirshnll/rtbf.ir/issues/new/choose" rel="nofollow" title="افزودن سایت/سرویس به لیست"><div class="card bg-success text-light text-center"><div class="card-body"><span class="display-1 plus-service">+</span></div></a></div>');
-		});
-	</script>
 </body>
 </html>
