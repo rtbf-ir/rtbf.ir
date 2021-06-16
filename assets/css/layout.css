@@ -79,6 +79,8 @@ width: 100%;
 }
 .myitems .card .card-opt a {
 	margin-bottom: 10px;
+}
+.myitems .card .card-opt90 a {
 	max-width: 90%;
 }
 .gap-card {

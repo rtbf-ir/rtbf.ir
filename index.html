@@ -125,7 +125,11 @@
 		readTextFile("https://rtbf.ir/assets/data/data.json", function(text){
 			var data = JSON.parse(text);
 			for (var i = data.length - 1; i >= 0; i--) {
-				$(".myitems").append('<div class="float-right"><div class="card"><div class="card-body"><h5 class="card-title"><a target="_blank" class="text-dark" rel="nofollow" title="سایت ' + data[i]['name'] + '" href="' + data[i]['website'] + '">' + data[i]['name'] + '</h5><p class="card-text">' + data[i]['info'] + '</p><div class="gap-card"></div><div><p class="card-opt"><a class="btn btn-' + data[i]['keytype'] + '">' + data[i]['difficulty'] + '</a>&nbsp;<a target="_blank" rel="nofollow" href="' + data[i]['deleteurl'] + '" class="btn btn-dark"><span class="fa fa-1x fa-trash"></span> &nbsp;حذف حساب کاربری</a></p></div></div></div></div>');
+				if(data[i]['keytype']=='primary') {
+					$(".myitems").append('<div class="float-right"><div class="card"><div class="card-body"><h5 class="card-title"><a target="_blank" class="text-dark" rel="nofollow" title="سایت ' + data[i]['name'] + '" href="' + data[i]['website'] + '">' + data[i]['name'] + '</h5><p class="card-text">' + data[i]['info'] + '</p><div class="gap-card"></div><div><p class="card-opt"><a class="btn btn-' + data[i]['keytype'] + '">' + data[i]['difficulty'] + '</a></p></div></div></div></div>');
+				} else {
+					$(".myitems").append('<div class="float-right"><div class="card"><div class="card-body"><h5 class="card-title"><a target="_blank" class="text-dark" rel="nofollow" title="سایت ' + data[i]['name'] + '" href="' + data[i]['website'] + '">' + data[i]['name'] + '</h5><p class="card-text">' + data[i]['info'] + '</p><div class="gap-card"></div><div><p class="card-opt card-opt90"><a class="btn btn-' + data[i]['keytype'] + '">' + data[i]['difficulty'] + '</a>&nbsp;<a target="_blank" rel="nofollow" href="' + data[i]['deleteurl'] + '" class="btn btn-dark"><span class="fa fa-1x fa-trash"></span> &nbsp;حذف حساب کاربری</a></p></div></div></div></div>');
+				}
 			}
 
 			$(".myitems").append('<div class="float-right"><a target="_blank" class="text-light" href="https://github.com/amirshnll/rtbf.ir/issues/new/choose" rel="nofollow" title="افزودن سایت/سرویس به لیست"><div class="card bg-success text-light text-center"><div class="card-body"><span class="display-1 plus-service">+</span></div></a></div>');
