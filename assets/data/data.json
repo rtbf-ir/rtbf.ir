@@ -1,16 +1,146 @@
 [
 	{
-		"name" : "زرین پال",
-		"website": "https://www.zarinpal.com/",
+		"name" : "دیجی کالا",
+		"website": "https://www.digikala.com/",
 		"deleteurl": "#",
-		"info": "",
-		"difficulty": "ساده"
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "اسنپ",
+		"website": "https://snapp.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "پونیشا",
+		"website": "https://ponisha.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "تپسی",
+		"website": "https://tapsi.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "طرفداری",
+		"website": "https://www.tarafdari.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "زوپ",
+		"website": "https://getzoop.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "سازیتو",
+		"website": "https://sazito.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "آپارات",
+		"website": "https://www.aparat.com/",
+		"deleteurl": "#",
+		"info": "در صورتی که کانال فعال ندارید با پشتیبانی تماس بگیرید.",
+		"difficulty": "سخت",
+		"keytype": "danger"
+	},
+	{
+		"name" : "جشنواره وب و موبایل ایران",
+		"website": "https://iwmf.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
 	},
 	{
 		"name" : "زرین پال",
 		"website": "https://www.zarinpal.com/",
 		"deleteurl": "#",
-		"info": "",
-		"difficulty": "ساده"
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "پی پینگ",
+		"website": "https://www.payping.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "جابینجا",
+		"website": "https://jobinja.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "ابرآروان",
+		"website": "https://www.arvancloud.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "فیلیمو",
+		"website": "https://www.filimo.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "نماوا",
+		"website": "https://www.namava.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "اُکالا",
+		"website": "https://okala.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "نوبیتکس",
+		"website": "https://nobitex.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "روبیکا",
+		"website": "https://rubika.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
 	}
 ]

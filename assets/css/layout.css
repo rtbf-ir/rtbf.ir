@@ -1,57 +1,68 @@
 @charset "UTF-8";
 
-html,body
-{
-	margin:0;
-	padding:0;
-	height:100%;
-	background-color:#f8f8f8!important;
-	font-family: Vazir;
+html,body {
+margin:0;
+padding:0;
+height:100%;
+background-color:#f8f8f8!important;
+font-family:Vazir
 }
 
-a
-{
-	text-decoration:none!important
+a {
+text-decoration:none!important
 }
 
-div
-{
-	box-sizing:border-box
+div {
+box-sizing:border-box
 }
 
 .heading {
-	padding: 50px;
+padding:50px
 }
 
 .heading h1 {
-	font-size: 55px;
+font-size:55px
 }
 
 .heading h2 {
-	font-size: 15px;
+font-size:15px
 }
 
 .heading h3 {
-	font-size: 12px;
-	letter-spacing: 3px;
+font-size:12px;
+letter-spacing:3px
 }
+
 .copyright p {
-	padding: :25px;
-	font-size: 13px;
-	margin-top: 20px;
+padding::25px;
+font-size:13px;
+margin-top:20px
 }
+
 .footer-sidebar {
-	font-size: 15px;
+font-size:15px
 }
+
 .footer-sidebar-section {
-	padding: 25px;
+padding:25px
 }
+
 .footer-sidebar h4 {
-	font-size: 20px;
+font-size:20px
 }
+
 .text-brown {
-	color: #964B00;
+color:#964B00
 }
+
 .homepage-content {
-	margin: 50px 0;
+margin:50px 0
+}
+
+.myitems .card {
+border-radius:10px
+}
+.myitems .float-right {
+	float: right;
+	padding: 10px;
 }
