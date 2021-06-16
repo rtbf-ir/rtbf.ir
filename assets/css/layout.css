@@ -97,6 +97,12 @@ display: inline-block;
 	font-size: 13px;
 	font-family: tahoma;
 }
+.menu ul {
+	padding: 0;
+}
+.heading a {
+	margin-bottom: 10px;
+}
 
 @media screen and (max-width: 900px) {
 .myitems .float-right {
@@ -106,8 +112,12 @@ display: inline-block;
 	font-size: 9px!important;
 }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
 .myitems .float-right {
+	width: 100%!important;
+}
+.menu li {
+	display: block;
 	width: 100%;
 }
 }
