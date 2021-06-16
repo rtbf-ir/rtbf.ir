@@ -105,6 +105,16 @@ display: inline-block;
 .heading a {
 	margin-bottom: 10px;
 }
+.blog-list {
+	line-height: 40px;	
+}
+.blog-list li:hover {
+	font-weight: bolder;
+}
+.blog-list li:hover:after {
+	content: " برای خواندن کلیک کنید.";
+	color: #f00;
+}
 
 @media screen and (max-width: 900px) {
 .myitems .float-right {
