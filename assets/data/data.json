@@ -198,5 +198,13 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "primary"
+	},
+	{
+		"name" : "نوبتی",
+		"website": "https://nobati.app/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
 	}
 ]
