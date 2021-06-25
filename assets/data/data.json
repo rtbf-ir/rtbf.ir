@@ -174,5 +174,29 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "primary"
+	},
+	{
+		"name" : "دیجی پی",
+		"website": "https://www.mydigipay.com",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "همراه کارت",
+		"website": "https://hamrahcard.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "میهن وبهاست",
+		"website": "https://mihanwebhost.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
 	}
 ]
