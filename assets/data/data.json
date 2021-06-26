@@ -83,7 +83,7 @@
 		"name" : "پی پینگ",
 		"website": "https://www.payping.ir/",
 		"deleteurl": "#",
-		"info": "امکان حذف وجود ندارد.",
+		"info": "طبق قوانین شاپرک و پلیس فتا امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "primary"
 	},
@@ -146,6 +146,86 @@
 	{
 		"name" : "PersianGig - پرشین‌گیگ",
 		"website": "https://www.persiangig.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "دکورشاپ",
+		"website": "https://www.decorshop.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "کافیته",
+		"website": "https://www.cafiteh.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "افرانت",
+		"website": "https://www.afranet.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "دیجی پی",
+		"website": "https://www.mydigipay.com",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "همراه کارت",
+		"website": "https://hamrahcard.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "میهن وبهاست",
+		"website": "https://mihanwebhost.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "نوبتی",
+		"website": "https://nobati.app/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "والکس",
+		"website": "https://wallex.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "کوئرا",
+		"website": "https://quera.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "مفید آنلاین",
+		"website": "https://emofid.com/",
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
