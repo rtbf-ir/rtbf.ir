@@ -206,5 +206,29 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "primary"
+	},
+	{
+		"name" : "والکس",
+		"website": "https://wallex.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "کوئرا",
+		"website": "https://quera.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "مفید آنلاین",
+		"website": "https://emofid.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
 	}
 ]
