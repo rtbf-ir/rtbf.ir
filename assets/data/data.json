@@ -251,10 +251,10 @@
 		"name" : "شعر نو",
 		"website": "http://shereno.com/",
 		"deleteurl": "#",
-		"info": "برای حذف باید پول پرداخت شود.",
+		"info": "برای حذف باید پرداخت انجام شود.",
 		"difficulty": "سخت",
 		"keytype": "danger"
-	},,
+	},
 	{
 		"name" : "میل چی",
 		"website": "https://panel.mailchi.in/",
