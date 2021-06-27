@@ -230,5 +230,21 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "primary"
+	},
+	{
+		"name" : "کارزار",
+		"website": "https://www.karzar.net/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "ویرگول",
+		"website": "https://virgool.io/",
+		"deleteurl": "https://virgool.io/me/settings",
+		"info": "با انتخاب گزینه حذف حساب کاربری در پنل تنظیمات کاربری فرآیند حذف حساب کاربری را شروع کنید.",
+		"difficulty": "ساده",
+		"keytype": "success"
 	}
 ]
