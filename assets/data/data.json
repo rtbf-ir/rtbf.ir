@@ -246,5 +246,21 @@
 		"info": "با انتخاب گزینه حذف حساب کاربری در پنل تنظیمات کاربری فرآیند حذف حساب کاربری را شروع کنید.",
 		"difficulty": "ساده",
 		"keytype": "success"
+	},
+	{
+		"name" : "شعر نو",
+		"website": "http://shereno.com/",
+		"deleteurl": "#",
+		"info": "برای حذف باید پول پرداخت شود.",
+		"difficulty": "سخت",
+		"keytype": "danger"
+	},,
+	{
+		"name" : "میل چی",
+		"website": "https://panel.mailchi.in/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
 	}
 ]
