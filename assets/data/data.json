@@ -270,5 +270,37 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "primary"
+	},
+	{
+		"name" : "اپلیکیشن آپ",
+		"website": "https://asanpardakht.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "راست چین",
+		"website": "https://www.rtl-theme.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "ژاکت",
+		"website": "https://www.zhaket.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "زیگ",
+		"website": "https://zeeg.me/fa/",
+		"deleteurl": "https://app.zeeg.me/fa/account/settings/delete",
+		"info": "با انتخاب گزینه حذف در تنظیمات حساب، فرآیند حذف حساب کاربری را به‌سادگی انجام دهید.",
+		"difficulty": "ساده",
+		"keytype": "success"
 	}
 ]
