@@ -302,5 +302,21 @@
 		"info": "با انتخاب گزینه حذف در تنظیمات حساب، فرآیند حذف حساب کاربری را به‌سادگی انجام دهید.",
 		"difficulty": "ساده",
 		"keytype": "success"
+	},
+	{
+		"name" : "رسمیو",
+		"website": "https://rasm.io/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "سازمان بین المللی دانشجویان",
+		"website": "https://isic.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
 	}
 ]
