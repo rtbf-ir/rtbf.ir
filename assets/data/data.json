@@ -318,5 +318,21 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "primary"
+	},
+	{
+		"name" : "مکتب‌خونه",
+		"website": "https://maktabkhooneh.org/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
+	{
+		"name" : "GoToClass",
+		"website": "https://dars.gotoclass.ir",
+		"deleteurl": "https://dars.gotoclass.ir/account/settings",
+		"info": "در صفحه تنظیمات حساب کاربری اقدام به حذف حساب کاربری خود کنید.",
+		"difficulty": "ساده",
+		"keytype": "success"
 	}
 ]
