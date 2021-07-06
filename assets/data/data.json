@@ -344,11 +344,19 @@
 		"keytype": "danger"
 	},
 	{
-		"name" : "رای چت",
+		"name" : "رایچت",
 		"website": "https://raychat.io/",
 		"deleteurl": "#",
 		"info": "برای حذف وب سایت لطفا با ایمیل اصلی سایتتون (info) یک ایمیل به support@raychat.io ارسال کنید و درخواستتون رو مطرح کنید تا براتون حذف بشه.",
 		"difficulty": "سخت",
 		"keytype": "danger"
+	},
+	{
+		"name" : "پارس پک",
+		"website": "https://parspack.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
 	}
 ]
