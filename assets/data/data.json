@@ -390,5 +390,13 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "primary"
+	},
+	{
+		"name" : "دیجیاتو",
+		"website": "https://digiato.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
 	}
 ]
