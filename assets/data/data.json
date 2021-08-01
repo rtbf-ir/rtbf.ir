@@ -419,9 +419,9 @@
 		"name" : "کاربوم",
 		"website": "https://karboom.io/",
 		"deleteurl": "#",
-		"info": "امکان حذف وجود ندارد.",
-		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"info": "برای حذف حساب کاربری به آدرس ایمیل support@karboom.io پیام ارسال کنید.",
+		"difficulty": "سخت",
+		"keytype": "danger"
 	},
 	{
 		"name" : "فرادرس",
@@ -443,9 +443,9 @@
 		"name" : "تسکولو",
 		"website": "https://taskulu.com/",
 		"deleteurl": "#",
-		"info": "امکان حذف وجود ندارد.",
-		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"info": "برای حذف حساب کاربری به آدرس ایمیل support@taskulu.com پیام ارسال کنید.",
+		"difficulty": "سخت",
+		"keytype": "danger"
 	},
 	{
 		"name" : "آلاء",
@@ -459,9 +459,9 @@
 		"name" : "اُتیچر",
 		"website": "https://oteacher.org/",
 		"deleteurl": "#",
-		"info": "امکان حذف وجود ندارد.",
-		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"info": "برای حذف حساب کاربری با شماره ی 021-91035423 تماس بگیرید.",
+		"difficulty": "سخت",
+		"keytype": "danger"
 	},
 	{
 		"name" : "ایوند",
