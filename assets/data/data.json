@@ -211,9 +211,9 @@
 		"name" : "والکس",
 		"website": "https://wallex.ir/",
 		"deleteurl": "#",
-		"info": "امکان حذف وجود ندارد.",
-		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"info": "تنها در شرایطی که هیچ معامله ای انجام نداده باشید امکان حذف حسابتان وجود دارد.",
+		"difficulty": "سخت",
+		"keytype": "danger"
 	},
 	{
 		"name" : "کوئرا",
