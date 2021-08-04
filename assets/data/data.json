@@ -115,9 +115,9 @@
 		"name" : "نماوا",
 		"website": "https://www.namava.ir/",
 		"deleteurl": "#",
-		"info": "امکان حذف وجود ندارد.",
-		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"info": "نیاز است دلیل تمایل خود به حذف حساب به همراه تصویری از کارت ملی به ایمیل support@namava.ir ارسال بفرمایید.",
+		"difficulty": "سخت",
+		"keytype": "danger"
 	},
 	{
 		"name" : "اُکالا",
