@@ -323,9 +323,9 @@
 		"name" : "مکتب‌خونه",
 		"website": "https://maktabkhooneh.org/",
 		"deleteurl": "#",
-		"info": "امکان حذف وجود ندارد.",
-		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"info": "برای حذف باید درخواست خود را به ایمیل info@maktabkhooneh.org ارسال کرده و در صورت دریافت تایده از کاربر حساب کاربری حذف خواهد شد.",
+		"difficulty": "سخت",
+		"keytype": "danger"
 	},
 	{
 		"name" : "GoToClass",
