@@ -502,5 +502,13 @@
 		"info": "به آدرس زیر ایمیل بزنید و درخواست خودتون رو مطرح کنید:<br>info@utype.ir",
 		"difficulty": "سخت",
 		"keytype": "danger"
-	}
+	},
+	{
+		"name" : "علی‌بابا",
+		"website": "https://www.alibaba.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "primary"
+	},
 ]
