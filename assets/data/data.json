@@ -494,5 +494,13 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "primary"
+	},
+	{
+		"name" : "یوتایپ",
+		"website": "https://utype.ir/",
+		"deleteurl": "#",
+		"info": "به آدرس زیر ایمیل بزنید و درخواست خودتون رو مطرح کنید:<br>info@utype.ir",
+		"difficulty": "سخت",
+		"keytype": "danger"
 	}
 ]
