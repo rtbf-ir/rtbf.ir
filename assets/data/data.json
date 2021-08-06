@@ -526,5 +526,13 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "primary"
+	},
+	{
+		"name" : "متمم",
+		"website": "httpshttps://motamem.org/",
+		"deleteurl": "#",
+		"info": "درخواست خود را با ایمیل زیر درمیان بگذارید<br>info2@motamem.org",
+		"difficulty": "سخت",
+		"keytype": "danger"
 	}
 ]
