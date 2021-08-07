@@ -1,4 +1,4 @@
 User-agent: * 
 Disallow:
 
-Sitemap: https://rtbf.ir/sitemap_index.xml
+Sitemap: https://rtbf.ir/sitemap.xml
