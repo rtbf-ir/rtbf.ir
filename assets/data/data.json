@@ -3,7 +3,7 @@
 		"name" : "دیجی کالا",
 		"website": "https://www.digikala.com/",
 		"deleteurl": "#",
-		"info": "در صورت درخواست حذف حساب کاربری خود اطلاعات زیر را از طریق فرم موجود در صفحه تماس با ما ارسال کنید:</br>1- تصویر کارت ملی مالک پروفایل (احراز هویت)</br>2- متن: اینجانب .............. به دلیل ................. درخواست حذف اکانت کاربری با شماره همراه............. و نمونه کد سفارش ............. را دارم.",
+		"info": "از طریق فرم صفحه تماس با ما  تصویر کارت ملی مالک پروفایل (احراز هویت) به همراه متن: اینجانب ..... به دلیل ..... درخواست حذف اکانت کاربری با شماره همراه..... و نمونه کد سفارش ..... را دارم. ارسال کنید.",
 		"difficulty": "سخت",
 		"keytype": "danger"
 	},
@@ -13,7 +13,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "پونیشا",
@@ -21,7 +21,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "تپسی",
@@ -29,7 +29,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "طرفداری",
@@ -37,7 +37,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "زوپ",
@@ -45,7 +45,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "سازیتو",
@@ -53,7 +53,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "آپارات",
@@ -69,7 +69,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "زرین پال",
@@ -77,7 +77,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "پی پینگ",
@@ -93,7 +93,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "ابرآروان",
@@ -101,7 +101,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "فیلیمو",
@@ -109,7 +109,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "نماوا",
@@ -125,7 +125,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "نوبیتکس",
@@ -133,7 +133,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "روبیکا",
@@ -141,7 +141,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "PersianGig - پرشین‌گیگ",
@@ -149,7 +149,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "دکورشاپ",
@@ -157,7 +157,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "کافیته",
@@ -165,7 +165,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "افرانت",
@@ -173,7 +173,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "دیجی پی",
@@ -181,7 +181,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "همراه کارت",
@@ -189,7 +189,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "میهن وبهاست",
@@ -197,7 +197,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "نوبتی",
@@ -205,7 +205,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "والکس",
@@ -221,7 +221,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "مفید آنلاین",
@@ -229,7 +229,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "کارزار",
@@ -237,7 +237,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "ویرگول",
@@ -261,7 +261,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "یکتا نت",
@@ -269,7 +269,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "اپلیکیشن آپ",
@@ -277,7 +277,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "راست چین",
@@ -285,7 +285,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "ژاکت",
@@ -293,7 +293,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "زیگ",
@@ -309,7 +309,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "سازمان بین المللی دانشجویان",
@@ -317,7 +317,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "مکتب‌خونه",
@@ -357,7 +357,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "او‌ام‌پی فینکس",
@@ -365,7 +365,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "سکوی ابری فندق",
@@ -373,7 +373,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "سی‌نما",
@@ -381,7 +381,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "رند دات‌‌آی‌آر",
@@ -389,7 +389,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "دیجیاتو",
@@ -397,7 +397,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "تلوبیون",
@@ -405,7 +405,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "سی‌وی‌بیلدر",
@@ -413,7 +413,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "کاربوم",
@@ -429,7 +429,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "فرانش",
@@ -437,7 +437,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "تسکولو",
@@ -453,7 +453,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "اُتیچر",
@@ -469,7 +469,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "آیدی پی",
@@ -477,7 +477,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "ایران سرور",
@@ -485,7 +485,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "طاقچه",
@@ -493,7 +493,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "یوتایپ",
@@ -509,7 +509,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "ایسام",
@@ -517,7 +517,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "ایرانیکارت",
@@ -525,7 +525,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "primary"
+		"keytype": "dark"
 	},
 	{
 		"name" : "متمم",
