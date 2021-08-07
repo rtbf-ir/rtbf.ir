@@ -5,7 +5,7 @@
 		"deleteurl": "#",
 		"info": "از طریق فرم صفحه تماس با ما  تصویر کارت ملی مالک پروفایل (احراز هویت) به همراه متن: اینجانب ..... به دلیل ..... درخواست حذف اکانت کاربری با شماره همراه..... و نمونه کد سفارش ..... را دارم. ارسال کنید.",
 		"difficulty": "سخت",
-		"keytype": "danger"
+		"keytype": "hard-label"
 	},
 	{
 		"name" : "اسنپ",
@@ -13,7 +13,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "پونیشا",
@@ -21,7 +21,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "تپسی",
@@ -29,7 +29,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "طرفداری",
@@ -37,7 +37,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "زوپ",
@@ -45,7 +45,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "سازیتو",
@@ -53,7 +53,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "آپارات",
@@ -61,7 +61,7 @@
 		"deleteurl": "https://www.aparat.com/user/profile/remove_account",
 		"info": "در صورتی که کانال فعال ندارید با پشتیبانی تماس بگیرید.",
 		"difficulty": "سخت",
-		"keytype": "danger"
+		"keytype": "medium-label"
 	},
 	{
 		"name" : "جشنواره وب و موبایل ایران",
@@ -69,7 +69,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "زرین پال",
@@ -77,7 +77,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "پی پینگ",
@@ -85,7 +85,7 @@
 		"deleteurl": "#",
 		"info": "درصورتیکه هیچ تراکنشی بر روی حساب انجام نشده باشد امکان حذف حساب وجود دارد که از طریق چت آنلاین و یا تماس با شماره 02191001520 داخلی پشتیبانی می‌توانید درخواست خودتون رو اعلام بفرمایید.",
 		"difficulty": "سخت",
-		"keytype": "danger"
+		"keytype": "hard-label"
 	},
 	{
 		"name" : "جابینجا",
@@ -93,7 +93,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "ابرآروان",
@@ -101,7 +101,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "فیلیمو",
@@ -109,7 +109,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "نماوا",
@@ -117,7 +117,7 @@
 		"deleteurl": "#",
 		"info": "نیاز است دلیل تمایل خود به حذف حساب به همراه تصویری از کارت ملی به ایمیل support@namava.ir ارسال بفرمایید.",
 		"difficulty": "سخت",
-		"keytype": "danger"
+		"keytype": "hard-label"
 	},
 	{
 		"name" : "اُکالا",
@@ -125,7 +125,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "نوبیتکس",
@@ -133,7 +133,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "روبیکا",
@@ -141,7 +141,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "PersianGig - پرشین‌گیگ",
@@ -149,7 +149,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "دکورشاپ",
@@ -157,7 +157,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "کافیته",
@@ -165,7 +165,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "افرانت",
@@ -173,7 +173,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "دیجی پی",
@@ -181,7 +181,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "همراه کارت",
@@ -189,7 +189,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "میهن وبهاست",
@@ -197,7 +197,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "نوبتی",
@@ -205,7 +205,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "والکس",
@@ -213,7 +213,7 @@
 		"deleteurl": "#",
 		"info": "تنها در شرایطی که هیچ معامله ای انجام نداده باشید امکان حذف حسابتان وجود دارد.",
 		"difficulty": "سخت",
-		"keytype": "danger"
+		"keytype": "hard-label"
 	},
 	{
 		"name" : "کوئرا",
@@ -221,7 +221,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "مفید آنلاین",
@@ -229,7 +229,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "کارزار",
@@ -237,7 +237,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "ویرگول",
@@ -245,7 +245,7 @@
 		"deleteurl": "https://virgool.io/me/settings",
 		"info": "با انتخاب گزینه حذف حساب کاربری در پنل تنظیمات کاربری فرآیند حذف حساب کاربری را شروع کنید.",
 		"difficulty": "ساده",
-		"keytype": "success"
+		"keytype": "easy-label"
 	},
 	{
 		"name" : "شعر نو",
@@ -253,7 +253,7 @@
 		"deleteurl": "#",
 		"info": "برای حذف باید پرداخت انجام شود.",
 		"difficulty": "سخت",
-		"keytype": "danger"
+		"keytype": "hard-label"
 	},
 	{
 		"name" : "میل چی",
@@ -261,7 +261,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "یکتا نت",
@@ -269,7 +269,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "اپلیکیشن آپ",
@@ -277,7 +277,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "راست چین",
@@ -285,7 +285,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "ژاکت",
@@ -293,7 +293,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "زیگ",
@@ -301,7 +301,7 @@
 		"deleteurl": "https://app.zeeg.me/fa/account/settings/delete",
 		"info": "با انتخاب گزینه حذف در تنظیمات حساب، فرآیند حذف حساب کاربری را به‌سادگی انجام دهید.",
 		"difficulty": "ساده",
-		"keytype": "success"
+		"keytype": "easy-label"
 	},
 	{
 		"name" : "رسمیو",
@@ -309,7 +309,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "سازمان بین المللی دانشجویان",
@@ -317,7 +317,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "مکتب‌خونه",
@@ -325,7 +325,7 @@
 		"deleteurl": "#",
 		"info": "برای حذف باید درخواست خود را به ایمیل info@maktabkhooneh.org ارسال کرده و در صورت دریافت تایده از کاربر حساب کاربری حذف خواهد شد.",
 		"difficulty": "سخت",
-		"keytype": "danger"
+		"keytype": "hard-label"
 	},
 	{
 		"name" : "GoToClass",
@@ -333,7 +333,7 @@
 		"deleteurl": "https://dars.gotoclass.ir/account/settings",
 		"info": "در صفحه تنظیمات حساب کاربری اقدام به حذف حساب کاربری خود کنید.",
 		"difficulty": "ساده",
-		"keytype": "success"
+		"keytype": "easy-label"
 	},
 	{
 		"name" : "جاب ویژن",
@@ -341,7 +341,7 @@
 		"deleteurl": "#",
 		"info": "در بخش تنظیمات گزینه غیرفعال‌سازی موقت حساب کاربری را انتخاب نمایید. برای حذف دائم از طریق ایمیل ثبت نام شده بر روی سایت، درخواست خود را به ایمیل info@jobvision.ir ارسال نمایید تا بررسی و بعد حذف شود.",
 		"difficulty": "سخت",
-		"keytype": "danger"
+		"keytype": "hard-label"
 	},
 	{
 		"name" : "رایچت",
@@ -349,7 +349,7 @@
 		"deleteurl": "#",
 		"info": "برای حذف وب سایت لطفا با ایمیل اصلی سایتتون (info) یک ایمیل به support@raychat.io ارسال کنید و درخواستتون رو مطرح کنید تا براتون حذف بشه.",
 		"difficulty": "سخت",
-		"keytype": "danger"
+		"keytype": "hard-label"
 	},
 	{
 		"name" : "پارس پک",
@@ -357,7 +357,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "او‌ام‌پی فینکس",
@@ -365,7 +365,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "سکوی ابری فندق",
@@ -373,7 +373,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "سی‌نما",
@@ -381,7 +381,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "رند دات‌‌آی‌آر",
@@ -389,7 +389,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "دیجیاتو",
@@ -397,7 +397,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "تلوبیون",
@@ -405,7 +405,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "سی‌وی‌بیلدر",
@@ -413,7 +413,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "کاربوم",
@@ -421,7 +421,7 @@
 		"deleteurl": "#",
 		"info": "برای حذف حساب کاربری به آدرس ایمیل support@karboom.io پیام ارسال کنید.",
 		"difficulty": "سخت",
-		"keytype": "danger"
+		"keytype": "hard-label"
 	},
 	{
 		"name" : "فرادرس",
@@ -429,7 +429,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "فرانش",
@@ -437,7 +437,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "تسکولو",
@@ -445,7 +445,7 @@
 		"deleteurl": "#",
 		"info": "برای حذف حساب کاربری به آدرس ایمیل support@taskulu.com پیام ارسال کنید.",
 		"difficulty": "سخت",
-		"keytype": "danger"
+		"keytype": "hard-label"
 	},
 	{
 		"name" : "آلاء",
@@ -453,7 +453,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "اُتیچر",
@@ -461,7 +461,7 @@
 		"deleteurl": "#",
 		"info": "برای حذف حساب کاربری با شماره ی 021-91035423 تماس بگیرید.",
 		"difficulty": "سخت",
-		"keytype": "danger"
+		"keytype": "hard-label"
 	},
 	{
 		"name" : "ایوند",
@@ -469,7 +469,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "آیدی پی",
@@ -477,7 +477,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "ایران سرور",
@@ -485,7 +485,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "طاقچه",
@@ -493,7 +493,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "یوتایپ",
@@ -501,7 +501,7 @@
 		"deleteurl": "#",
 		"info": "به آدرس زیر ایمیل بزنید و درخواست خودتون رو مطرح کنید:<br>info@utype.ir",
 		"difficulty": "سخت",
-		"keytype": "danger"
+		"keytype": "hard-label"
 	},
 	{
 		"name" : "علی‌بابا",
@@ -509,7 +509,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "ایسام",
@@ -517,7 +517,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "ایرانیکارت",
@@ -525,7 +525,7 @@
 		"deleteurl": "#",
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
-		"keytype": "dark"
+		"keytype": "impossible-label"
 	},
 	{
 		"name" : "متمم",
@@ -533,6 +533,6 @@
 		"deleteurl": "#",
 		"info": "درخواست خود را با ایمیل زیر درمیان بگذارید<br>info2@motamem.org",
 		"difficulty": "سخت",
-		"keytype": "danger"
+		"keytype": "hard-label"
 	}
 ]

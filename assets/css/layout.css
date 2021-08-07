@@ -10,7 +10,6 @@
          url('../font/dana-fanum-regular.woff2') format('woff2'),
          url('../font/dana-fanum-regular.woff') format('woff');
 }
-
 html, body {
     margin: 0;
     padding: 0;
@@ -22,6 +21,9 @@ a {
 }
 div {
     box-sizing: border-box;
+}
+p {
+    text-align: justify;
 }
 .heading {
     padding: 50px;
@@ -187,8 +189,15 @@ div {
 .easy-label {
     background: #129141;
 }
+.label-remove {
+    background: #FF1F4F;
+    color: #fff;
+}
 .blog-list-icon {
     transform: rotate(180deg);
+}
+.footer *{
+    font-size: 14px;
 }
 .footer a {
     color: #ffde00;
@@ -211,7 +220,7 @@ div {
     float: left;
 }
 .footer .service-detail img {
-    max-width: 200px!important;
+    max-width: 150px!important;
 }
 .footer .service-detail ul, .footer .service-detail li {
     padding: 0;
@@ -220,7 +229,7 @@ div {
 .footer .service-detail a {
     border-radius: 5px;
     margin: 10px;
-    padding: 5px 8px 3px 8px;
+    padding: 6px 8px 3px 8px;
     color: #3c3c3c;
 }
 .footer p {
@@ -247,6 +256,7 @@ div {
 }
 .homepage-content .accordion {
     color: #2f2f2f;
+    box-shadow:none;
 }
 .homepage-content .accordion .accordion-item {
     border-right: none;
@@ -256,5 +266,15 @@ div {
     text-align: right!important
 }
 .collabrator-text p a {
-    color: #ffde00;
+    color: #058c15;
+}
+:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+.searchtext {
+    border-color: #383737;
+}
+.searchtext:focus {
+    border-color: #383737;
 }
