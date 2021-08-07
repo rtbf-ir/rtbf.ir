@@ -179,15 +179,19 @@ p {
 
 .impossible-label {
     background: #000000;
+    color: #fff;
 }
 .hard-label {
     background: #a32100;
+    color: #fff;
 }
 .medium-label {
     background: #ffa800;
+    color: #fff;
 }
 .easy-label {
     background: #129141;
+    color: #fff;
 }
 .label-remove {
     background: #FF1F4F;
