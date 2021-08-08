@@ -534,5 +534,13 @@
 		"info": "درخواست خود را با ایمیل زیر درمیان بگذارید<br>info2@motamem.org",
 		"difficulty": "سخت",
 		"keytype": "hard-label"
+	},
+	{
+		"name" : "اپچار",
+		"website": "https://appchar.com/",
+		"deleteurl": "#",
+		"info": "با پشتیبانی تماس بگیرید. info@appchar.com",
+		"difficulty": "سخت",
+		"keytype": "hard-label"
 	}
 ]
