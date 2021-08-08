@@ -51,9 +51,9 @@
 		"name" : "سازیتو",
 		"website": "https://sazito.com/",
 		"deleteurl": "#",
-		"info": "امکان حذف وجود ندارد.",
-		"difficulty": "غیرممکن",
-		"keytype": "impossible-label"
+		"info": "از طریق ارسال تیکت درخواست خود را ارسال کنید.",
+		"difficulty": "سخت",
+		"keytype": "hard-label"
 	},
 	{
 		"name" : "آپارات",
