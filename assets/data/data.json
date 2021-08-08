@@ -531,7 +531,7 @@
 		"name" : "متمم",
 		"website": "httpshttps://motamem.org/",
 		"deleteurl": "#",
-		"info": "درخواست خود را با ایمیل زیر درمیان بگذارید<br>info2@motamem.org",
+		"info": "درخواست خود را با ایمیل زیر درمیان بگذارید:<br>info2@motamem.org",
 		"difficulty": "سخت",
 		"keytype": "hard-label"
 	},
@@ -542,5 +542,13 @@
 		"info": "با پشتیبانی تماس بگیرید. info@appchar.com",
 		"difficulty": "سخت",
 		"keytype": "hard-label"
+	},
+	{
+		"name" : "کافه‌بازار",
+		"website": "https://cafebazaar.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
 	}
 ]
