@@ -550,5 +550,13 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "impossible-label"
+	},
+	{
+		"name" : "اپتو",
+		"website": "https://appeto.ir/",
+		"deleteurl": "#",
+		"info": "با پشتیبانی تماس بگیرید. info@appchar.com",
+		"difficulty": "سخت",
+		"keytype": "hard-label"
 	}
 ]
