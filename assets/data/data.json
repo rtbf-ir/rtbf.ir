@@ -574,5 +574,13 @@
 		"info": "در صورتی که از سایت خرید نکرده باشید می‌توانید درخواست خود را به ایمیل زیر ارسال کنید:<br>info@30book.com",
 		"difficulty": "سخت",
 		"keytype": "hard-label"
+	},
+	{
+		"name" : "نیوُ",
+		"website": "https://nivoapp.com/",
+		"deleteurl": "#",
+		"info": "با پشتیبانی تماس بگیرید.",
+		"difficulty": "سخت",
+		"keytype": "hard-label"
 	}
 ]
