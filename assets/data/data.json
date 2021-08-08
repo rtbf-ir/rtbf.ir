@@ -566,5 +566,13 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "impossible-label"
+	},
+	{
+		"name" : "30بوک",
+		"website": "https://www.30book.com/",
+		"deleteurl": "#",
+		"info": "با پشتیبانی تماس بگیرید. info@appchar.com",
+		"difficulty": "سخت",
+		"keytype": "hard-label"
 	}
 ]
