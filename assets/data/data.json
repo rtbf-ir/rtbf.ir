@@ -558,5 +558,13 @@
 		"info": "با پشتیبانی تماس بگیرید. info@appchar.com",
 		"difficulty": "سخت",
 		"keytype": "hard-label"
+	},
+	{
+		"name" : "فونت‌ایران",
+		"website": "https://fontiran.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
 	}
 ]
