@@ -590,5 +590,13 @@
 		"info": "برای حذف حساب کاربری، کافیست از زبانه بیشتر وارد بخش «تنظیمات» شده و در قسمت «حریم خصوصی و امنیت» گزینه «حذف حساب کاربری» را انتخاب نمایید. (<a href=\"https://faq.bale.ai/#%D8%AD%D8%B0%D9%81%20%D8%AD%D8%B3%D8%A7%D8%A8%20%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%DB%8C\">اطلاعات بیشتر</a>)",
 		"difficulty": "ساده",
 		"keytype": "easy-label"
+	},
+	{
+		"name" : "واژه‌یاب",
+		"website": "https://www.vajehyab.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
 	}
 ]
