@@ -139,9 +139,9 @@
 		"name" : "روبیکا",
 		"website": "https://rubika.ir/",
 		"deleteurl": "#",
-		"info": "امکان حذف وجود ندارد.",
-		"difficulty": "غیرممکن",
-		"keytype": "impossible-label"
+		"info": "با پشتیبانی روبیکا از طریق شماره ۰۲۱۹۱۳۳۱۲۲۲ تماس بگیرید تا پس از احراز هویت اکانت شما حذف شود.",
+		"difficulty": "سخت",
+		"keytype": "hard-label"
 	},
 	{
 		"name" : "PersianGig - پرشین‌گیگ",
