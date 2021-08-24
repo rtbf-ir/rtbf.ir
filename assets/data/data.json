@@ -630,5 +630,13 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "impossible-label"
+	},
+	{
+		"name" : "بلاگفا",
+		"website": "http://blogfa.com/",
+		"deleteurl": "https://www.blogfa.com/desktop/Options.aspx",
+		"info": "با انتخاب گزینه تنظیمات و دیگر امکانات در بخش حذف وبلاگ و کلیه نوشته ها و اطلاعات کاربری فرآیند حذف حساب کاربری را به‌سادگی انجام دهید.",
+		"difficulty": "ساده",
+		"keytype": "easy-label"
 	}
 ]
