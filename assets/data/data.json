@@ -622,5 +622,13 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "impossible-label"
+	},
+	{
+		"name" : "نماشا",
+		"website": "https://www.namasha.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
 	}
 ]
