@@ -654,5 +654,13 @@
 		"info": "در بخش تنظیمات حساب کاربری امکان غیرفعال سازی با وارد کردن رمزعبور ممکن می باشد.",
 		"difficulty": "ساده",
 		"keytype": "easy-label"
+	},
+	{
+		"name" : "مدرسه افروز",
+		"website": "https://www.afroozschool.org/",
+		"deleteurl": "#",
+		"info": "درخواست خود به همراه آدرس ایمیل را به info@afroozschool.org ارسال کنید.",
+		"difficulty": "سخت",
+		"keytype": "hard-label"
 	}
 ]
