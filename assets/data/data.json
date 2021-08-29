@@ -662,5 +662,13 @@
 		"info": "درخواست خود به همراه آدرس ایمیل را به info@afroozschool.org ارسال کنید.",
 		"difficulty": "سخت",
 		"keytype": "hard-label"
+	},
+	{
+		"name" : "اپلیکیشن 724",
+		"website": "https://www.724.ir/",
+		"deleteurl": "",
+		"info": "با مراجعه به بخش حساب کاربری و انتخاب گزینه حذف حساب کاربری درخواست خود را ثبت کنید",
+		"difficulty": "ساده",
+		"keytype": "easy-label"
 	}
 ]
