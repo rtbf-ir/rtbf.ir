@@ -35,9 +35,9 @@
 		"name" : "طرفداری",
 		"website": "https://www.tarafdari.com/",
 		"deleteurl": "#",
-		"info": "امکان حذف وجود ندارد.",
-		"difficulty": "غیرممکن",
-		"keytype": "impossible-label"
+		"info": "درخواست خود را به ایمیل زیر ارسال کنید:<br>support@tarafdari.com",
+		"difficulty": "سخت",
+		"keytype": "hard-label"
 	},
 	{
 		"name" : "زوپ",
