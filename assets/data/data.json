@@ -694,5 +694,13 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "impossible-label"
+	},
+	{
+		"name" : "پایلی",
+		"website": "https://pylie.com/",
+		"deleteurl": "#",
+		"info": "درخواست خود را با ایمیل زیر درمیان بگذارید:<br>pylieworld@gmail.com",
+		"difficulty": "سخت",
+		"keytype": "hard-label"
 	}
 ]
