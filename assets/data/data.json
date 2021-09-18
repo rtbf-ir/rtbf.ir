@@ -710,5 +710,45 @@
 		"info": "با انتخاب گزینه حذف حساب کاربری در تنظیمات حساب، فرآیند حذف را به‌سادگی انجام دهید.",
 		"difficulty": "ساده",
 		"keytype": "easy-label"
+	},
+	{
+		"name" : "هیولا",
+		"website": "https://hayoola.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "آرین‌پال",
+		"website": "https://www.arianpal.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "کتابناک",
+		"website": "https://ketabnak.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "آکادمی زمانه",
+		"website": "https://academyzamaneh.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "بربید سرور",
+		"website": "https://berbidserver.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
 	}
 ]
