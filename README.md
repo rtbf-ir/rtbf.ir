@@ -13,5 +13,7 @@ right to be forgotten (RTBF)
 <p><strong><a href="http://amirshnll.github.io/rtbf.ir/donate" title="حمایت مالی از پروژه">اگر علاقه به حمایت از این پروژه را دارید کلیک کنید.</a></strong></p>
 <p>ما در توییتر : <strong>https://twitter.com/rtbf_ir</strong></p>
 <p>ما در اینستاگرام : <strong>https://instagram.com/rtbf_ir</strong></p>
+<p>همچنین می توانید برای افزودن سرویس از فرم ایمیل زیر نیز استفاده کنید.</p>
+<p dir="ltr">https://rtbf.ir/issue</p>
   
 </div>
