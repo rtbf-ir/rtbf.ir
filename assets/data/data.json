@@ -187,9 +187,9 @@
 		"name" : "همراه کارت",
 		"website": "https://hamrahcard.ir/",
 		"deleteurl": "#",
-		"info": "امکان حذف وجود ندارد.",
-		"difficulty": "غیرممکن",
-		"keytype": "impossible-label"
+		"info": "جهت حذف کامل حساب کاربری درخواست خود را از طریق شماره تماس زیر با پشتیبانی در میان بگذارید.</br>02191020009",
+		"difficulty": "سخت",
+		"keytype": "hard-label"
 	},
 	{
 		"name" : "میهن وبهاست",
