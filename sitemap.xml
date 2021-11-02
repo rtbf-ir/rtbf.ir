@@ -9,112 +9,177 @@
 
 <url>
   <loc>https://rtbf.ir/</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/index</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/collabrator</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/banners</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/blog</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/donate</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/faq</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/issue</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://rtbf.ir/post/protect-your-internet-privacy</loc>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rtbf.ir/post/protect-personal-information-in-cyberspace</loc>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rtbf.ir/post/are-you-familiar-with-the-dangers-of-fake-technical-support</loc>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rtbf.ir/post/how-to-prevent-the-dangers-of-online-trackers</loc>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rtbf.ir/post/remove-personal-information-from-the-internet</loc>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rtbf.ir/post/detail-of-right-to-be-forgotten</loc>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rtbf.ir/post/how-to-protect-your-digital-privacy</loc>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rtbf.ir/post/10-truths-about-online-privacy</loc>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rtbf.ir/post/problems-and-important-issues-of-Internet-privacy</loc>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rtbf.ir/post/rtbf-in-internet</loc>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rtbf.ir/post/one-should-be-very-careful-and-concerned-about-the-privacy-of-the-Internet</loc>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rtbf.ir/post/protect-the-privacy-of-your-information-online</loc>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rtbf.ir/post/privacy-in-cyberspace-dream-or-reality</loc>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://rtbf.ir/post/rtbf-fandogh-cloud</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/post/why-is-online-privacy-important</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/post/how-is-your-personal-information-protected-online</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/post/rtbf-in-twitter</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/post/right-to-be-forgotten</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/post/anonymity-in-internet</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/post/information-privacy</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/post/tor-and-onion</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/post/how-to-delete-all-social-media-content</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/post/how-to-delete-all-your-data-from-internet</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/post/gdpr</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/post/National-data-protection-authority</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/post/privacy-court-in-india</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://rtbf.ir/post/index</loc>
-  <lastmod>2021-09-22T08:43:43+00:00</lastmod>
+  <lastmod>2021-11-02T15:10:16+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 
