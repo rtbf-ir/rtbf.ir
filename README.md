@@ -15,7 +15,7 @@ right to be forgotten (RTBF)
 <p>ما در اینستاگرام : <strong>https://instagram.com/rtbf_ir</strong></p>
 <p>همچنین می توانید برای افزودن سرویس از فرم ایمیل زیر نیز استفاده کنید.</p>
 <p dir="ltr">https://rtbf.ir/issue</p>
-<p>فهرست حامیان مالی</p>
+<p>برای مشاهده ی فهرست حامیان مالی روی لینک زیر کلیک کنید.</p>
 <p dir="ltr">https://rtbf.ir/donate</p>
   
 </div>
