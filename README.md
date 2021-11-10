@@ -3,7 +3,7 @@ right to be forgotten (RTBF)
 
 <div dir="rtl">
 
-![right to be forgotten (RTBF) Logo](https://raw.githubusercontent.com/amirshnll/rtbf.ir/main/logo-readme.png)
+<img src="https://raw.githubusercontent.com/amirshnll/rtbf.ir/main/logo-readme.png" alt="right to be forgotten (RTBF) Logo">
 
 <p><strong>لینک دسترسی به سرویس : <a href="http://amirshnll.github.io/rtbf.ir" title="rtbf.ir">rtbf.ir</a></strong></p>
 <p>بسیاری از سرویس های اینترنتی اینگونه عمل می کنند که امکان حذف حساب کاربری را به شما نمی دهند و از نظر ما کاربران این موضوع نقض حریم شخصی است. با توجه به حق فراموش شدن یا Right to be forgotten این یک تضاد می باشد.</p>
