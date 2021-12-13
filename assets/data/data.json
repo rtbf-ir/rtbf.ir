@@ -19,7 +19,7 @@
 		"name" : "پونیشا",
 		"website": "https://ponisha.ir/",
 		"deleteurl": "#",
-		"info": "امکان حذف وجود ندارد.",
+		"info": "برای مسدود سازی حساب کاربری از <a href=\"https://ponisha.ir/support/new-ticket\" target=\"_blank\" rel=\"nofollow\">بخش پشتیبانی</a> اقدام کنید.",
 		"difficulty": "غیرممکن",
 		"keytype": "impossible-label"
 	},
