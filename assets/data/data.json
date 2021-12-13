@@ -778,10 +778,10 @@
 	{
 		"name" : "گاما",
 		"website": "https://www.gama.ir/",
-		"deleteurl": "#",
-		"info": "امکان حذف وجود ندارد.",
-		"difficulty": "غیرممکن",
-		"keytype": "impossible-label"
+		"deleteurl": "https://gama.ir/ticket/newticket",
+		"info": "از طریق تیکت امکان حذف حساب کاربری وجود دارد اما با توجه به تجربه کاربران توضیحات زیادی از شما خواسته می شود.",
+		"difficulty": "سخت",
+		"keytype": "hard-label"
 	},
 	{
 		"name" : "اکانتی شاپ",
