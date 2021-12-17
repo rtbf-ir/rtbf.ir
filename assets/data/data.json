@@ -640,14 +640,6 @@
 		"keytype": "easy-label"
 	},
 	{
-		"name" : "جاب نیک",
-		"website": "https://jobnic.net/",
-		"deleteurl": "https://jobnic.net/user/?tab=settings",
-		"info": "در بخش تنظیمات حساب کاربری امکان غیرفعال سازی با وارد کردن رمزعبور ممکن می باشد.",
-		"difficulty": "ساده",
-		"keytype": "easy-label"
-	},
-	{
 		"name" : "کارلنسر",
 		"website": "https://www.karlancer.com/",
 		"deleteurl": "https://www.karlancer.com/panel/profile/edit-profile",
