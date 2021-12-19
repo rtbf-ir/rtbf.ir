@@ -769,7 +769,7 @@
 	},
 	{
 		"name" : "گاما",
-		"website": "https://www.gama.ir/",
+		"website": "https://gama.ir/",
 		"deleteurl": "https://gama.ir/ticket/newticket",
 		"info": "از طریق تیکت امکان حذف حساب کاربری وجود دارد اما با توجه به تجربه کاربران توضیحات زیادی از شما خواسته می شود.",
 		"difficulty": "سخت",
