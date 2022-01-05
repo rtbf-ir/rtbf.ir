@@ -790,5 +790,13 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "impossible-label"
+	},
+	{
+		"name" : "ایکس نوین",
+		"website": "https://exnovin.net/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
 	}
 ]
