@@ -798,5 +798,13 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "impossible-label"
+	},
+	{
+		"name" : "شبکه پرداخت تیپول",
+		"website": "https://about.tipoul.com/",
+		"deleteurl": "https://panel.tipoul.com/notification/tickets",
+		"info": "حذف حساب کاربری با ایجاد تیکتی با همین عنوان از بخش تیکت ها در پنل کاربری انجام می شود.",
+		"difficulty": "متوسط",
+		"keytype": "medium-label"
 	}
 ]
