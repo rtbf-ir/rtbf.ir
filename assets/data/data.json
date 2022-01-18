@@ -806,5 +806,13 @@
 		"info": "حذف حساب کاربری با ایجاد تیکتی با همین عنوان از بخش تیکت ها در پنل کاربری انجام می شود.",
 		"difficulty": "متوسط",
 		"keytype": "medium-label"
+	},
+	{
+		"name" : "اکسکوینو",
+		"website": "https://www.excoino.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
 	}
 ]
