@@ -822,5 +822,13 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "impossible-label"
+	},
+	{
+		"name" : "سولوکد",
+		"website": "https://solocode.ir/",
+		"deleteurl": "https://solocode.ir/delete/",
+		"info": "درخواست حذف حساب کاربری را به ایمیل پشتیبانی سولوکُد ارسال کنید. قبل از ثبت درخواست، نکاتی که در <a href=\"https://solocode.ir/delete\" target=\"_blank\" rel=\"nofollow\">صفحه حذف حساب کاربری</a> نوشته شده را مطالعه کنید.",
+		"difficulty": "متوسط",
+		"keytype": "medium-label"
 	}
 ]
