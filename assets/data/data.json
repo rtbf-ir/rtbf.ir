@@ -830,5 +830,13 @@
 		"info": "درخواست حذف حساب کاربری را به ایمیل پشتیبانی سولوکُد ارسال کنید. قبل از ثبت درخواست، نکاتی که در <a href=\"https://solocode.ir/delete\" target=\"_blank\" rel=\"nofollow\">صفحه حذف حساب کاربری</a> نوشته شده را مطالعه کنید.",
 		"difficulty": "متوسط",
 		"keytype": "medium-label"
+	},
+	{
+		"name" : "خنیاگر",
+		"website": "https://khonyagar.com/",
+		"deleteurl": "https://khonyagar.com/dashboard/message/support",
+		"info": "از طریق ارسال تیکت درخواست خود را ثبت کنید.",
+		"difficulty": "سخت",
+		"keytype": "hard-label"
 	}
 ]
