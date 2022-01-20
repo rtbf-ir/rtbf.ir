@@ -838,5 +838,13 @@
 		"info": "از طریق ارسال تیکت درخواست خود را ثبت کنید.",
 		"difficulty": "سخت",
 		"keytype": "hard-label"
+	},
+	{
+		"name" : "وان دی آف",
+		"website": "https://www.1dayoff.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
 	}
 ]
