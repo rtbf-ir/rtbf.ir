@@ -846,5 +846,13 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "impossible-label"
+	},
+	{
+		"name" : "پذیرش24",
+		"website": "https://www.paziresh24.com/",
+		"deleteurl": "https://www.paziresh24.com/home/support-form-other/",
+		"info": "جهت حذف حساب کاربری درخواست خود را از طریق <a href=\"https://www.paziresh24.com/home/support-form-other\" target=\"_blank\" rel=\"nofollow\">صفحه پشتیبانی</a> ثبت کنید.",
+		"difficulty": "سخت",
+		"keytype": "hard-label"
 	}
 ]
