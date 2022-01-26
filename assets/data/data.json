@@ -854,5 +854,13 @@
 		"info": "جهت حذف حساب کاربری درخواست خود را از طریق <a href=\"https://www.paziresh24.com/home/support-form-other\" target=\"_blank\" rel=\"nofollow\">صفحه پشتیبانی</a> ثبت کنید.",
 		"difficulty": "سخت",
 		"keytype": "hard-label"
+	},
+	{
+		"name" : "اسکای‌روم",
+		"website": "https://www.skyroom.online/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
 	}
 ]
