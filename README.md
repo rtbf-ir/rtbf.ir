@@ -18,4 +18,6 @@ right to be forgotten (RTBF)
 <p>برای مشاهده ی فهرست حامیان مالی روی لینک زیر کلیک کنید.</p>
 <p dir="ltr">https://rtbf.ir/donate</p>
   
+  <p dir="rtl">فونت موجود در پروژه اوپن سورس نمی باشد و لایسنس دارد.</p>
+  
 </div>
