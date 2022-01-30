@@ -171,7 +171,7 @@
                 e.value;
             }
             (document.getElementById("copyrightyear").innerHTML = new Date().getFullYear()),
-                readTextFile("https://rtbf.ir/assets/data/data.json", function (e) {
+                readTextFile("https://rtbf.ir/data/data.json", function (e) {
                     for (var t = JSON.parse(e), a = t.length - 1; a >= 0; a--)
                         "#" == t[a].deleteurl
                             ? $(".myitems").append(

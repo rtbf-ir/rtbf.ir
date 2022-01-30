@@ -25,7 +25,7 @@ def check_links(url):
 logging.basicConfig(level=logging.INFO)
 
 # Read json file
-json_file = open("assets/data/data.json")
+json_file = open("data/data.json")
 
 # Load json file
 data = json.load(json_file)
