@@ -862,5 +862,13 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "impossible-label"
+	},
+	{
+		"name" : "آی بیو - IBio",
+		"website": "https://ibio.link/",
+		"deleteurl": "https://ibio.link/settings",
+		"info": "با انتخاب گزینه حذف در تنظیمات حساب، فرآیند حذف حساب کاربری را به‌سادگی انجام دهید.",
+		"difficulty": "ساده",
+		"keytype": "easy-label"
 	}
 ]
