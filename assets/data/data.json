@@ -870,5 +870,13 @@
 		"info": "با انتخاب گزینه حذف در تنظیمات حساب، فرآیند حذف حساب کاربری را به‌سادگی انجام دهید.",
 		"difficulty": "ساده",
 		"keytype": "easy-label"
+	},
+	{
+		"name" : "فایل سل",
+		"website": "https://filesell.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
 	}
 ]
