@@ -878,5 +878,29 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "impossible-label"
+	},
+	{
+		"name" : "بانی مد",
+		"website": "https://www.banimode.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "ای استخدام",
+		"website": "https://www.e-estekhdam.com/",
+		"deleteurl": "#",
+		"info": "برای حذف اطلاعات کاربری میبایستی درخواست حذف حساب به ایمیل info@e-estekhdam.com ارسال گردد.",
+		"difficulty": "سخت",
+		"keytype": "hard-label"
+	},
+	{
+		"name" : "مونگارد",
+		"website": "https://www.mongard.ir/",
+		"deleteurl": "#",
+		"info": "برای حذف اطلاعات کاربری میبایستی درخواست حذف حساب به ایمیل mongard.amir@gmail.com ارسال گردد.",
+		"difficulty": "سخت",
+		"keytype": "hard-label"
 	}
 ]
