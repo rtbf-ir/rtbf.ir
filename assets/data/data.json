@@ -886,5 +886,13 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "impossible-label"
+	},
+	{
+		"name" : "ای استخدام",
+		"website": "https://www.e-estekhdam.com/",
+		"deleteurl": "#",
+		"info": "برای حذف اطلاعات کاربری میبایستی درخواست حذف حساب به ایمیل info@e-estekhdam.com ارسال گردد.",
+		"difficulty": "سخت",
+		"keytype": "hard-label"
 	}
 ]
