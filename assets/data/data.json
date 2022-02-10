@@ -894,5 +894,13 @@
 		"info": "برای حذف اطلاعات کاربری میبایستی درخواست حذف حساب به ایمیل info@e-estekhdam.com ارسال گردد.",
 		"difficulty": "سخت",
 		"keytype": "hard-label"
+	},
+	{
+		"name" : "مونگارد",
+		"website": "https://www.mongard.ir/",
+		"deleteurl": "#",
+		"info": "برای حذف اطلاعات کاربری میبایستی درخواست حذف حساب به ایمیل mongard.amir@gmail.com ارسال گردد.",
+		"difficulty": "سخت",
+		"keytype": "hard-label"
 	}
 ]
