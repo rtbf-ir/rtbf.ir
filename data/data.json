@@ -910,5 +910,213 @@
 		"info": "برای حذف اطلاعات کاربری میبایستی درخواست حذف حساب به ایمیل info@nafisfile.com ارسال گردد.",
 		"difficulty": "سخت",
 		"keytype": "hard-label"
+	},
+	{
+		"name" : "تکنولایف",
+		"website": "https://www.technolife.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "تماشا",
+		"website": "https://tamasha.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "جااینجاس",
+		"website": "https://jainjas.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "حجرک",
+		"website": "https://hojrak.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "زلکا",
+		"website": "https://zelkaa.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "سه کلیک",
+		"website": "https://3click.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "قسطی کلاب",
+		"website": "https://www.ghesticlub.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "کارنامه",
+		"website": "https://karnameh.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "کتابچین",
+		"website": "https://www.ketabchin.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "ماکسیم",
+		"website": "https://taximaxim.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "مدرسه نویسندگی",
+		"website": "https://madresenevisandegi.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "آچارباز",
+		"website": "https://a4baz.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "اتاقک",
+		"website": "https://www.otaghak.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "ازکی",
+		"website": "https://www.azki.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "اقامت ۲۴",
+		"website": "https://www.eghamat24.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "الو کانتنت",
+		"website": "https://alocontent.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "ایران ادز",
+		"website": "https://iranads.club/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "باما",
+		"website": "https://bama.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "بیمیتو",
+		"website": "https://bimito.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "پلاک",
+		"website": "https://www.pelak.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "شاواز",
+		"website": "https://shavaz.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "صباویژن",
+		"website": "https://www.sabavision.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "فینیکس",
+		"website": "https://phinix.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "لندین",
+		"website": "https://landin.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "لندو",
+		"website": "https://lendo.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "همراه مکانیک",
+		"website": "https://www.hamrah-mechanic.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
 	}
 ]
