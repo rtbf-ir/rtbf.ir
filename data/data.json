@@ -902,5 +902,13 @@
 		"info": "برای حذف اطلاعات کاربری میبایستی درخواست حذف حساب به ایمیل mongard.amir@gmail.com ارسال گردد.",
 		"difficulty": "سخت",
 		"keytype": "hard-label"
+	},
+	{
+		"name" : "نفیس فایل",
+		"website": "http://nafisfile.com/",
+		"deleteurl": "#",
+		"info": "برای حذف اطلاعات کاربری میبایستی درخواست حذف حساب به ایمیل info@nafisfile.com ارسال گردد.",
+		"difficulty": "سخت",
+		"keytype": "hard-label"
 	}
 ]
