@@ -1118,5 +1118,13 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "impossible-label"
+	},
+	{
+		"name" : "گنجور",
+		"website": "https://ganjoor.net/",
+		"deleteurl": "#",
+		"info": "از دکمه «حذف حساب کاربری» در پیشخان کاربر استفاده کنید.",
+		"difficulty": "ساده",
+		"keytype": "easy-label"
 	}
 ]
