@@ -21,12 +21,13 @@ right to be forgotten (RTBF)
   <p dir="rtl">فونت دانا موجود در پروژه اوپن سورس نمی باشد و لایسنس دارد.</p>
   
   <p>لینک های مرتبط با پروژه</p>
+  
+  
+</div>
+
   - https://ashokri.com/blog/rtbf/
   - https://blog.sabavision.com/sm/right-to-be-forgotten
   - https://payping.io/blog/support-software-developement/
   - https://jadi.net/2022/01/mondays-00-09/
   - https://www.youtube.com/watch?v=Zqo4j-3s6Rk
   - https://www.youtube.com/watch?v=q2mCo_u2R6c&t=1351s
-  
-  
-</div>
