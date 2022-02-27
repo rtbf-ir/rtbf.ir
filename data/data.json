@@ -1139,7 +1139,7 @@
 		"name" : "لیموناد",
 		"website": "https://www.limoonad.com/",
 		"deleteurl": "#",
-		"info": "برای تغییر ایمیل، تغییر نام کاربری یا حذف اکانت با همان ایمیلی که ثبت نام کرده اید به limoonad@outlook.com ایمیل بزنید. <a href=\"https://about.limoonad.com/faq-page/\">(اطلاعات بیشتر)</a>",
+		"info": "برای تغییر ایمیل، تغییر نام کاربری یا حذف اکانت با همان ایمیلی که ثبت نام کرده اید به limoonad@outlook.com ایمیل بزنید. <a href=\"https://about.limoonad.com/faq-page/\" target=\"_blank\" rel=\"nofollow\">(اطلاعات بیشتر)</a>",
 		"difficulty": "سخت",
 		"keytype": "hard-label"
 	}
