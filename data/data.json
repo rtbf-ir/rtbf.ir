@@ -1142,5 +1142,21 @@
 		"info": "برای تغییر ایمیل، تغییر نام کاربری یا حذف اکانت با همان ایمیلی که ثبت نام کرده اید به limoonad@outlook.com ایمیل بزنید. <a href=\"https://about.limoonad.com/faq-page/\" target=\"_blank\" rel=\"nofollow\">(اطلاعات بیشتر)</a>",
 		"difficulty": "سخت",
 		"keytype": "hard-label"
+	},
+	{
+		"name" : "نویسش",
+		"website": "https://nevisesh.com/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
+	},
+	{
+		"name" : "میزیتو",
+		"website": "https://www.mizito.ir/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
 	}
 ]
