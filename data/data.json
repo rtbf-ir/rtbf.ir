@@ -1158,5 +1158,13 @@
 		"info": "امکان حذف وجود ندارد.",
 		"difficulty": "غیرممکن",
 		"keytype": "impossible-label"
+	},
+	{
+		"name" : "نزدیک",
+		"website": "https://nazdik.org/",
+		"deleteurl": "#",
+		"info": "امکان حذف وجود ندارد.",
+		"difficulty": "غیرممکن",
+		"keytype": "impossible-label"
 	}
 ]
