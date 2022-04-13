@@ -51,7 +51,7 @@ p {
 }
 
 .copyright p {
-    padding: :25px;
+    padding: : 25px;
     font-size: 13px;
     margin-top: 20px
 }
@@ -415,4 +415,17 @@ p {
 
 .bg-blur {
     backdrop-filter: blur(15px)
+}
+
+.banner-code {
+    resize: none;
+    height: 120px;
+    width: 100%;
+    max-width: 300px;
+    direction: ltr;
+    font-family: tahoma;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #383737
 }
