@@ -1,6 +1,19 @@
 # rtbf.ir
 right to be forgotten (RTBF)
 
+<br />
+
+Right to be forgotten - directory of direct links to delete your account from persian web services.
+
+<br />
+
+collaborators:
+- Amir Shokri (owner, developer) - [amirshnll](https://github.com/amirshnll)
+- Matin Baloochestani (developer) - [Matin-B](https://github.com/Matin-B)
+- Sodeh Mohammadabadi (designer) - [irSodeh](https://github.com/irSodeh)
+
+<br /><br />
+
 <div dir="rtl">
 
 <img src="https://raw.githubusercontent.com/amirshnll/rtbf.ir/main/logo-readme.png" alt="right to be forgotten (RTBF) Logo">
