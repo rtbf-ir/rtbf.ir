@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: dana
+    font-family: dana, sans-serif
 }
 
 a {
@@ -51,7 +51,6 @@ p {
 }
 
 .copyright p {
-    padding: :25px;
     font-size: 13px;
     margin-top: 20px
 }
@@ -106,10 +105,6 @@ p {
     margin-bottom: 10px
 }
 
-.myitems .card .card-opt90 a {
-    max-width: 90%
-}
-
 .gap-card {
     height: 50px;
     margin-bottom: 40px;
@@ -126,7 +121,7 @@ p {
 .email-box {
     letter-spacing: 3px;
     font-size: 13px;
-    font-family: tahoma
+    font-family: tahoma, sans-serif
 }
 
 .menu ul {
@@ -408,7 +403,7 @@ p {
 }
 
 .copyright .float-right p strong:nth-child(3) a {
-    font-family: tahoma;
+    font-family: tahoma, sans-serif;
     font-size: 11px;
     letter-spacing: 1px
 }

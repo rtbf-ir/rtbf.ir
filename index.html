@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="assets/css/layout.css" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
     </head>
+
     <body dir="rtl">
         <header>
             <div class="container menu">
@@ -67,6 +68,7 @@
                 </div>
             </div>
         </header>
+
         <section>
             <div class="homepage-content">
                 <div class="container">
@@ -82,6 +84,7 @@
                 </div>
             </div>
         </section>
+
         <footer>
             <div class="footer">
                 <div class="footer-sidebar">
@@ -161,59 +164,63 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
         <script>
-            function readTextFile(e, t) {
-                var a = new XMLHttpRequest();
-                a.overrideMimeType("application/json"),
-                    a.open("GET", e, !0),
-                    (a.onreadystatechange = function () {
-                        4 === a.readyState && "200" == a.status && t(a.responseText);
-                    }),
-                    a.send(null);
+            function readTextFile(callback) {
+                const DATA_URL = "https://rtbf.ir/data/data.json"
+                let a = new XMLHttpRequest()
+                a.overrideMimeType("application/json")
+                a.open("GET", DATA_URL, !0)
+                a.onreadystatechange = function () {
+                    4 === a.readyState && a.status == "200" && callback(a.responseText)
+                }
+                a.send(null)
             }
-            function searchFunction() {
-                var e = document.getElementById("searchtext");
-                e.value;
-            }
-            (document.getElementById("copyrightyear").innerHTML = new Date().getFullYear()),
-                readTextFile("https://rtbf.ir/data/data.json", function (e) {
-                    for (var t = JSON.parse(e), a = t.length - 1; a >= 0; a--)
-                        "#" == t[a].deleteurl
-                            ? $(".myitems").append(
-                                  '<div class="float-right"><div class="card"><div class="card-body"><h5 class="card-title"><a target="_blank" class="text-dark" rel="nofollow" title="سایت ' +
-                                      t[a].name +
-                                      '" href="' +
-                                      t[a].website +
-                                      '">' +
-                                      t[a].name +
-                                      '</a>&nbsp;<a href="https://github.com/amirshnll/rtbf.ir/issues/new/choose" style="font-size:12px;" class="text-warning" title="اطلاعات این بخش اشتباه است قصد اصلاح دارم"><small><span class="fas fa-1x fa-bolt"></span> تصحیح<small></a></h5><p class="card-text">' +
-                                      t[a].info +
-                                      '</p><div class="gap-card"></div><div><p class="card-opt"><a class="btn text-light ' +
-                                      t[a].keytype +
-                                      '">' +
-                                      t[a].difficulty +
-                                      "</a></p></div></div></div></div>"
-                              )
-                            : $(".myitems").append(
-                                  '<div class="float-right"><div class="card"><div class="card-body"><h5 class="card-title"><a target="_blank" class="text-dark" rel="nofollow" title="سایت ' +
-                                      t[a].name +
-                                      '" href="' +
-                                      t[a].website +
-                                      '">' +
-                                      t[a].name +
-                                      '</a>&nbsp;<a href="https://github.com/amirshnll/rtbf.ir/issues/new/choose" style="font-size:12px;" class="text-warning" title="اطلاعات این بخش اشتباه است قصد اصلاح دارم"><small><span class="fas fa-1x fa-bolt"></span> تصحیح<small></a></h5><p class="card-text">' +
-                                      t[a].info +
-                                      '</p><div class="gap-card"></div><div><p class="card-opt card-opt90"><a class="btn text-light ' +
-                                      t[a].keytype +
-                                      '">' +
-                                      t[a].difficulty +
-                                      '</a>&nbsp;<a target="_blank" rel="nofollow" href="' +
-                                      t[a].deleteurl +
-                                      '" class="btn label-remove"><span class="fa fa-1x fa-trash"></span> &nbsp;حذف حساب کاربری</a></p></div></div></div></div>'
-                              );
-                    $(".myitems").append(
-                        '<div class="float-right"><a class="text-light" href="https://rtbf.ir/issue" title="افزودن سایت/سرویس به لیست"><div class="card bg-success text-light text-center"><div class="card-body"><span class="display-1 plus-service">+</span></div></a></div>'
-                    );
-                });
+
+            document.getElementById("copyrightyear").innerHTML = String(new Date().getFullYear())
+
+            readTextFile(function (e) {
+                const websites = JSON.parse(e)
+                const sortedData = websites.sort((a, b) => b.name.localeCompare(a.name))
+
+                for (let a = sortedData.length - 1; a >= 0; a--) {
+                    sortedData[a].deleteurl === "#"
+                        ? $(".myitems").append(
+                            '<div class="float-right"><div class="card"><div class="card-body"><h5 class="card-title"><a target="_blank" class="text-dark" rel="nofollow" title="سایت ' +
+                            sortedData[a].name +
+                            '" href="' +
+                            sortedData[a].website +
+                            '">' +
+                            sortedData[a].name +
+                            '</a>&nbsp;<a href="https://github.com/amirshnll/rtbf.ir/issues/new/choose" style="font-size:12px;" class="text-warning" title="اطلاعات این بخش اشتباه است قصد اصلاح دارم"><small><span class="fas fa-1x fa-bolt"></span> تصحیح<small></a></h5><p class="card-text">' +
+                            sortedData[a].info +
+                            '</p><div class="gap-card"></div><div><p class="card-opt"><a class="btn text-light ' +
+                            sortedData[a].keytype +
+                            '">' +
+                            sortedData[a].difficulty +
+                            "</a></p></div></div></div></div>"
+                        )
+                        : $(".myitems").append(
+                            '<div class="float-right"><div class="card"><div class="card-body"><h5 class="card-title"><a target="_blank" class="text-dark" rel="nofollow" title="سایت ' +
+                            sortedData[a].name +
+                            '" href="' +
+                            sortedData[a].website +
+                            '">' +
+                            sortedData[a].name +
+                            '</a>&nbsp;<a href="https://github.com/amirshnll/rtbf.ir/issues/new/choose" style="font-size:12px;" class="text-warning" title="اطلاعات این بخش اشتباه است قصد اصلاح دارم"><small><span class="fas fa-1x fa-bolt"></span> تصحیح<small></a></h5><p class="card-text">' +
+                            sortedData[a].info +
+                            '</p><div class="gap-card"></div><div><p class="card-opt"><a class="btn text-light ' +
+                            sortedData[a].keytype +
+                            '">' +
+                            sortedData[a].difficulty +
+                            '</a>&nbsp;<a target="_blank" rel="nofollow" href="' +
+                            sortedData[a].deleteurl +
+                            '" class="btn label-remove"><span class="fa fa-1x fa-trash"></span> &nbsp;حذف حساب کاربری</a></p></div></div></div></div>'
+                        );
+                }
+
+                $(".myitems").append(
+                    '<div class="float-right"><a class="text-light" href="https://rtbf.ir/issue" title="افزودن سایت/سرویس به لیست"><div class="card bg-success text-light text-center"><div class="card-body"><span class="display-1 plus-service">+</span></div></a></div>'
+                );
+            });
         </script>
     </body>
 </html>
