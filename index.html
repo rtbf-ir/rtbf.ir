@@ -18,7 +18,8 @@
                         <nav class="navbar fixed-top bg-blur">
                             <ul class="nav m-auto text-center">
                                 <li class="nav-item">
-                                    <a href="index" title="صفحه اصلی" class="nav-link text-dark"><span class="fas fa-1x fa-home"></span> صفحه اصلی</a>
+                                    <a href="index" title="صفحه اصلی" class="nav-link text-dark"><span
+                                            class="fas fa-1x fa-home"></span> صفحه اصلی</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="collabrator" title="مشارکت کنندگان" class="nav-link text-dark"><span class="fas fa-1x fa-network-wired"></span> مشارکت کنندگان</a>
@@ -27,7 +28,8 @@
                                     <a href="banners" title="بنرها" class="nav-link text-dark"><span class="fas fa-1x fa-scroll"></span> بنرها</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="https://anchor.fm/datatalk" target="_blank" target="nofollow" title="پادکست" class="nav-link text-dark"><span class="fas fa-1x fa-podcast"></span> پادکست</a>
+                                    <a href="https://anchor.fm/datatalk" target="_blank" rel="nofollow" title="پادکست"
+                                       class="nav-link text-dark"><span class="fas fa-1x fa-podcast"></span> پادکست</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="blog" title="وبلاگ" class="nav-link text-dark"><span class="fas fa-1x fa-home"></span> وبلاگ</a>
@@ -163,64 +165,6 @@
         </footer>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-        <script>
-            function readTextFile(callback) {
-                const DATA_URL = "https://rtbf.ir/data/data.json"
-                let a = new XMLHttpRequest()
-                a.overrideMimeType("application/json")
-                a.open("GET", DATA_URL, !0)
-                a.onreadystatechange = function () {
-                    4 === a.readyState && a.status == "200" && callback(a.responseText)
-                }
-                a.send(null)
-            }
-
-            document.getElementById("copyrightyear").innerHTML = String(new Date().getFullYear())
-
-            readTextFile(function (e) {
-                const websites = JSON.parse(e)
-                const sortedData = websites.sort((a, b) => b.name.localeCompare(a.name))
-
-                for (let a = sortedData.length - 1; a >= 0; a--) {
-                    sortedData[a].deleteurl === "#"
-                        ? $(".myitems").append(
-                            '<div class="float-right"><div class="card"><div class="card-body"><h5 class="card-title"><a target="_blank" class="text-dark" rel="nofollow" title="سایت ' +
-                            sortedData[a].name +
-                            '" href="' +
-                            sortedData[a].website +
-                            '">' +
-                            sortedData[a].name +
-                            '</a>&nbsp;<a href="https://github.com/amirshnll/rtbf.ir/issues/new/choose" style="font-size:12px;" class="text-warning" title="اطلاعات این بخش اشتباه است قصد اصلاح دارم"><small><span class="fas fa-1x fa-bolt"></span> تصحیح<small></a></h5><p class="card-text">' +
-                            sortedData[a].info +
-                            '</p><div class="gap-card"></div><div><p class="card-opt"><a class="btn text-light ' +
-                            sortedData[a].keytype +
-                            '">' +
-                            sortedData[a].difficulty +
-                            "</a></p></div></div></div></div>"
-                        )
-                        : $(".myitems").append(
-                            '<div class="float-right"><div class="card"><div class="card-body"><h5 class="card-title"><a target="_blank" class="text-dark" rel="nofollow" title="سایت ' +
-                            sortedData[a].name +
-                            '" href="' +
-                            sortedData[a].website +
-                            '">' +
-                            sortedData[a].name +
-                            '</a>&nbsp;<a href="https://github.com/amirshnll/rtbf.ir/issues/new/choose" style="font-size:12px;" class="text-warning" title="اطلاعات این بخش اشتباه است قصد اصلاح دارم"><small><span class="fas fa-1x fa-bolt"></span> تصحیح<small></a></h5><p class="card-text">' +
-                            sortedData[a].info +
-                            '</p><div class="gap-card"></div><div><p class="card-opt"><a class="btn text-light ' +
-                            sortedData[a].keytype +
-                            '">' +
-                            sortedData[a].difficulty +
-                            '</a>&nbsp;<a target="_blank" rel="nofollow" href="' +
-                            sortedData[a].deleteurl +
-                            '" class="btn label-remove"><span class="fa fa-1x fa-trash"></span> &nbsp;حذف حساب کاربری</a></p></div></div></div></div>'
-                        );
-                }
-
-                $(".myitems").append(
-                    '<div class="float-right"><a class="text-light" href="https://rtbf.ir/issue" title="افزودن سایت/سرویس به لیست"><div class="card bg-success text-light text-center"><div class="card-body"><span class="display-1 plus-service">+</span></div></a></div>'
-                );
-            });
-        </script>
+        <script src="/scripts/index.js"></script>
     </body>
 </html>
