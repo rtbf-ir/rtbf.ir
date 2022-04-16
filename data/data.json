@@ -329,7 +329,7 @@
 	},
 	{
 		"name" : "GoToClass",
-		"website": "https://dars.gotoclass.ir",
+		"website": "https://gotoclass.ir",
 		"deleteurl": "https://dars.gotoclass.ir/account/settings",
 		"info": "در صفحه تنظیمات حساب کاربری اقدام به حذف حساب کاربری خود کنید.",
 		"difficulty": "ساده",
