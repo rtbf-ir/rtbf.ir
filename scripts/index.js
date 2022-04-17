@@ -49,33 +49,16 @@ function appendCard(website) {
           </div>`
 
     document.getElementsByClassName("myitems")[0]
-        .insertAdjacentHTML('beforeend', websiteCard)
-}
-
-function addNewWebsiteButton() {
-    document.getElementsByClassName("myitems")[0]
-        .insertAdjacentHTML('beforeend',
-            `<div class="float-right">
-                     <a class="text-light" href="https://rtbf.ir/issue" title="افزودن سایت/سرویس به لیست">
-                        <div class="card bg-success text-light text-center">
-                            <div class="card-body d-flex justify-content-center align-items-center">
-                                <span class="fas fa-1x fa-plus plus-service">
-                            </div>
-                        </div>
-                     </a>
-                   </div>`)
+        .insertAdjacentHTML('afterbegin', websiteCard)
 }
 
 async function appendToDOM() {
     const websites = await fetchData()
-    const sortedAlphabetically = websites.sort((a, b) => b.name.localeCompare(a.name))
-    const websitesCount = sortedAlphabetically.length - 1
+    const sortedAlphabetically = websites.sort((a, b) => a.name.localeCompare(b.name))
 
-    for (let i = websitesCount; i >= 0; i--) {
-        appendCard(sortedAlphabetically[i])
+    for (const website of sortedAlphabetically) {
+        appendCard(website)
     }
-
-    addNewWebsiteButton()
 }
 
 appendToDOM()
