@@ -1,4 +1,4 @@
-document.getElementById("copyrightyear").innerHTML = String(new Date().getFullYear());
+document.getElementById("copyrightyear").innerHTML = String(new Date().getFullYear())
 
 function fetchData() {
     const DATA_URL = "https://rtbf.ir/data/data.json"
@@ -12,41 +12,11 @@ function fetchData() {
 }
 
 function appendCard(website) {
-    const websiteCard = `<div class="float-right">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        <a target="_blank" class="text-dark" rel="nofollow" title="سایت ${website.name}" href="${website.website}"/>
-                            ${website.name}
-                        </a>
-                        <a href="https://github.com/amirshnll/rtbf.ir/issues/new/choose"
-                            style="font-size:12px;"
-                            class="text-warning" title="اطلاعات این بخش اشتباه است قصد اصلاح دارم">
-                                <small>
-                                    <span class="fas fa-1x fa-bolt"></span>
-                                 تصحیح<small>
-                         </a>
-                    </h5>
+    const deleteAccountButton = `<a target="_blank" rel="nofollow" href="${website.deleteurl}" class="btn label-remove">
+        <span class="fa fa-1x fa-trash"></span>
+        <span>حذف حساب کاربری</span>
+    </a>`
 
-                    <p class="card-text"><small>${website.info}</small></p>
-
-                    <div class="gap-card"></div>
-
-                    <div>
-                        <p class="card-opt">
-                            <a class="btn text-light ${website.keytype}">${website.difficulty}</a>
-                        </p>
-                     </div>
-                </div>
-            </div>
-         </div>`
-
-
-    document.getElementsByClassName("myitems")[0]
-        .insertAdjacentHTML('beforeend', websiteCard)
-}
-
-function AppendCardWithDeleteAccountButton(website) {
     const websiteCard = `<div class="float-right test-mohammad">
             <div class="card">
                 <div class="card-body">
@@ -70,10 +40,8 @@ function AppendCardWithDeleteAccountButton(website) {
                     <div>
                         <p class="card-opt">
                             <a class="btn text-light ${website.keytype}">${website.difficulty}</a>
-                            <a target="_blank" rel="nofollow" href="${website.deleteurl}" class="btn label-remove">
-                                <span class="fa fa-1x fa-trash"></span>
-                                    &nbsp;حذف حساب کاربری
-                            </a>
+                            
+                            ${website.deleteurl !== '#' ? deleteAccountButton : ''}
                         </p>
                     </div>
                 </div>
@@ -100,13 +68,11 @@ function addNewWebsiteButton() {
 
 async function appendToDOM() {
     const websites = await fetchData()
-    const sortedAlphabetically =  websites.sort((a, b) => b.name.localeCompare(a.name))
+    const sortedAlphabetically = websites.sort((a, b) => b.name.localeCompare(a.name))
     const websitesCount = sortedAlphabetically.length - 1
 
     for (let i = websitesCount; i >= 0; i--) {
-        sortedAlphabetically[i].deleteurl === "#"
-            ? appendCard(sortedAlphabetically[i])
-            : AppendCardWithDeleteAccountButton(sortedAlphabetically[i]);
+        appendCard(sortedAlphabetically[i])
     }
 
     addNewWebsiteButton()
