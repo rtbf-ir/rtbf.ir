@@ -112,10 +112,7 @@ p {
 }
 
 .plus-service {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
-    font-size: 130px
+    font-size: 70px
 }
 
 .email-box {
