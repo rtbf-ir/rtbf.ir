@@ -54,9 +54,10 @@ function appendCard(website) {
 
 async function appendToDOM() {
     const websites = await fetchData()
-    const sortedAlphabetically = websites.sort((a, b) => a.name.localeCompare(b.name))
+    // TODO: uncomment whenever we have specific name for Persian name for website
+    // const sortedAlphabetically = websites.sort((a, b) => a.name.localeCompare(b.name))
 
-    for (const website of sortedAlphabetically) {
+    for (const website of websites) {
         appendCard(website)
     }
 }
