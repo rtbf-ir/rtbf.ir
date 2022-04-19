@@ -21,13 +21,13 @@ collaborators:
 ## توضیحات پروژه حق فراموش شدن
 
 <p><strong>لینک دسترسی به سرویس : <a href="https://rtbf.ir" title="rtbf.ir">rtbf.ir</a></strong></p>
-<p>بسیاری از سرویس های اینترنتی اینگونه عمل می کنند که امکان حذف حساب کاربری را به شما نمی دهند و از نظر ما کاربران این موضوع نقض حریم شخصی است. با توجه به حق فراموش شدن یا Right to be forgotten این یک تضاد می باشد.</p>
-<p>ایده ی اولیه ی این سرویس از  <strong><a target="_blank" href="https://backgroundchecks.org/justdeleteme/" title="justdeleteme">justdeleteme</a></strong> گرفته شده است و بعد از  <strong><a target="_blank" href="https://twitter.com/nima/status/1398335801042386947?s=20">این توییت</a></strong> تصمیم به راه اندازی آن گرفتم.</p>
+<p>بسیاری از سرویس‌های اینترنتی اینگونه عمل می‌کنند که امکان حذف حساب کاربری را به شما نمی‌دهند و از نظر ما کاربران این موضوع نقض حریم شخصی است. با توجه به حق فراموش شدن یا Right to be forgotten این یک تضاد می‌باشد.</p>
+<p>ایده‌ی اولیه‌ی این سرویس از  <strong><a target="_blank" href="https://backgroundchecks.org/justdeleteme/" title="justdeleteme">justdeleteme</a></strong> گرفته شده است و بعد از  <strong><a target="_blank" href="https://twitter.com/nima/status/1398335801042386947?s=20">این توییت</a></strong> تصمیم به راه‌اندازی آن گرفتیم.</p>
 <p>اگر قصد مشارکت دارید <strong><a target="_blank" href="https://github.com/rtbf-ir/rtbf.ir/issues/new/choose" title="rtbf.ir Source">از بخش issueها این کار را انجام دهید</a></strong>.</p>
 <p><strong><a href="https://rtbf.ir/donate" title="حمایت مالی از پروژه">اگر علاقه به حمایت از این پروژه را دارید کلیک کنید.</a></strong></p>
 <p>ما در توییتر : <strong>https://twitter.com/rtbf_ir</strong></p>
 <p>ما در اینستاگرام : <strong>https://instagram.com/rtbf_ir</strong></p>
-<p>همچنین می توانید برای افزودن سرویس از فرم ایمیل زیر نیز استفاده کنید.</p>
+<p>همچنین می‌توانید برای افزودن سرویس از فرم ایمیل زیر نیز استفاده کنید.</p>
 <p dir="ltr">https://rtbf.ir/issue</p>
 <p>برای مشاهده ی فهرست حامیان مالی روی لینک زیر کلیک کنید.</p>
 <p dir="ltr">https://rtbf.ir/donate</p>
@@ -37,7 +37,7 @@ collaborators:
   ### فونت پروژه
   
   
-<p dir="rtl">فونت دانا موجود در پروژه اوپن سورس نمی باشد و لایسنس دارد.</p>
+<p dir="rtl">فونت دانا موجود در پروژه اوپن سورس نمی‌باشد و لایسنس دارد.</p>
   
 <br />
   
@@ -55,14 +55,15 @@ http://github.com/rtbf.ir/rtbf.ir
   
 <br />
 
- ### لینک های مرتبط با پروژه
+ ### لینک‌های مرتبط با پروژه
   
   
 </div>
 
-  - https://ashokri.com/blog/rtbf/
-  - https://blog.sabavision.com/sm/right-to-be-forgotten
-  - https://payping.io/blog/support-software-developement/
-  - https://jadi.net/2022/01/mondays-00-09/
-  - https://www.youtube.com/watch?v=Zqo4j-3s6Rk
-  - https://www.youtube.com/watch?v=q2mCo_u2R6c&t=1351s
+- https://ashokri.com/blog/rtbf/
+- https://blog.sabavision.com/sm/right-to-be-forgotten
+- https://payping.io/blog/support-software-developement/
+- https://jadi.net/2022/01/mondays-00-09/
+- https://www.youtube.com/watch?v=Zqo4j-3s6Rk
+- https://www.youtube.com/watch?v=q2mCo_u2R6c&t=1351s
+- https://youtu.be/i8lSf9nLTk8
