@@ -67,3 +67,5 @@ http://github.com/rtbf.ir/rtbf.ir
 - https://www.youtube.com/watch?v=Zqo4j-3s6Rk
 - https://www.youtube.com/watch?v=q2mCo_u2R6c&t=1351s
 - https://youtu.be/i8lSf9nLTk8
+- https://chng.it/5zxjCKqHGN
+- https://www.karzar.net/rtbf
