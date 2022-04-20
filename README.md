@@ -27,6 +27,7 @@ collaborators:
 <p><strong><a href="https://rtbf.ir/donate" title="حمایت مالی از پروژه">اگر علاقه به حمایت از این پروژه را دارید کلیک کنید.</a></strong></p>
 <p>ما در توییتر : <strong>https://twitter.com/rtbf_ir</strong></p>
 <p>ما در اینستاگرام : <strong>https://instagram.com/rtbf_ir</strong></p>
+<p>ما در تلگرام : <strong>https://t.me/rtbf_ir</strong></p>
 <p>همچنین می‌توانید برای افزودن سرویس از فرم ایمیل زیر نیز استفاده کنید.</p>
 <p dir="ltr">https://rtbf.ir/issue</p>
 <p>برای مشاهده ی فهرست حامیان مالی روی لینک زیر کلیک کنید.</p>
