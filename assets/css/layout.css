@@ -166,19 +166,19 @@ p {
 }
 
 .collabrator-social li:nth-child(4) a {
-    color: #1DA1F2 !important
+    color: #1DA1F2!important
 }
 
 .collabrator-social li:nth-child(3) a {
-    color: #24292e !important
+    color: #24292e!important
 }
 
 .collabrator-social li:nth-child(4) a {
-    color: #EA4335 !important
+    color: #EA4335!important
 }
 
 .collabrator-social li:nth-child(1) a {
-    color: #00749C !important
+    color: #00749C!important
 }
 
 .collabrator-social li a {
@@ -262,7 +262,7 @@ p {
 }
 
 .footer .service-detail img {
-    max-width: 150px !important
+    max-width: 150px!important
 }
 
 .footer .service-detail ul,
@@ -318,7 +318,7 @@ p {
 }
 
 .collabrator-text p {
-    text-align: right !important
+    text-align: right!important
 }
 
 .collabrator-text p a {
@@ -326,8 +326,8 @@ p {
 }
 
 :focus {
-    outline: 0 !important;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important
+    outline: 0!important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)!important
 }
 
 .searchtext {
@@ -354,7 +354,7 @@ p {
     width: 100%;
     max-width: 300px;
     direction: ltr;
-    font-family: tahoma, sans-serif;;
+    font-family: tahoma, sans-serif;
     font-size: 12px;
     padding: 10px;
     border-radius: 3px;

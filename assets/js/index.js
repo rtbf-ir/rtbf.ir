@@ -24,7 +24,7 @@ function appendCard(website) {
                         <a target="_blank" class="text-dark" rel="nofollow" title="سایت ${website.name}" href="${website.website}">
                             ${website.name}
                         </a>
-                        <a href="https://github.com/amirshnll/rtbf.ir/issues/new/choose"
+                        <a href="https://github.com/rtbf-ir/rtbf.ir/issues/new/choose"
                             style="font-size:12px;"
                             class="text-warning" title="اطلاعات این بخش اشتباه است قصد اصلاح دارم">
                                 <small>
@@ -54,8 +54,8 @@ function appendCard(website) {
 
 async function appendToDOM() {
     const websites = await fetchData()
-    // TODO: uncomment whenever we have specific name for Persian name for website
-    // const sortedAlphabetically = websites.sort((a, b) => a.name.localeCompare(b.name))
+        // TODO: uncomment whenever we have specific name for Persian name for website
+        // const sortedAlphabetically = websites.sort((a, b) => a.name.localeCompare(b.name))
 
     for (const website of websites) {
         appendCard(website)
