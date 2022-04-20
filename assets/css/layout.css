@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: dana
+    font-family: dana, sans-serif
 }
 
 a {
@@ -51,7 +51,6 @@ p {
 }
 
 .copyright p {
-    padding: : 25px;
     font-size: 13px;
     margin-top: 20px
 }
@@ -106,10 +105,6 @@ p {
     margin-bottom: 10px
 }
 
-.myitems .card .card-opt90 a {
-    max-width: 90%
-}
-
 .gap-card {
     height: 50px;
     margin-bottom: 40px;
@@ -117,16 +112,13 @@ p {
 }
 
 .plus-service {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
-    font-size: 130px
+    font-size: 60px
 }
 
 .email-box {
     letter-spacing: 3px;
     font-size: 13px;
-    font-family: tahoma
+    font-family: tahoma, sans-serif
 }
 
 .menu ul {
@@ -174,19 +166,19 @@ p {
 }
 
 .collabrator-social li:nth-child(4) a {
-    color: #1DA1F2!important
+    color: #1DA1F2 !important
 }
 
 .collabrator-social li:nth-child(3) a {
-    color: #24292e!important
+    color: #24292e !important
 }
 
 .collabrator-social li:nth-child(4) a {
-    color: #EA4335!important
+    color: #EA4335 !important
 }
 
 .collabrator-social li:nth-child(1) a {
-    color: #00749C!important
+    color: #00749C !important
 }
 
 .collabrator-social li a {
@@ -270,7 +262,7 @@ p {
 }
 
 .footer .service-detail img {
-    max-width: 150px!important
+    max-width: 150px !important
 }
 
 .footer .service-detail ul,
@@ -326,7 +318,7 @@ p {
 }
 
 .collabrator-text p {
-    text-align: right!important
+    text-align: right !important
 }
 
 .collabrator-text p a {
@@ -334,8 +326,8 @@ p {
 }
 
 :focus {
-    outline: 0!important;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)!important
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important
 }
 
 .searchtext {
@@ -347,7 +339,7 @@ p {
 }
 
 .copyright .float-right p strong:nth-child(3) a {
-    font-family: tahoma;
+    font-family: tahoma, sans-serif;
     font-size: 11px;
     letter-spacing: 1px
 }
@@ -362,7 +354,7 @@ p {
     width: 100%;
     max-width: 300px;
     direction: ltr;
-    font-family: tahoma;
+    font-family: tahoma, sans-serif;;
     font-size: 12px;
     padding: 10px;
     border-radius: 3px;
