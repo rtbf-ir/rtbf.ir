@@ -35,8 +35,6 @@ function appendCard(website) {
 
                     <p class="card-text"><small>${website.info}</small></p>
 
-                    <div class="gap-card"></div>
-
                     <div>
                         <p class="card-opt">
                             <a class="btn text-light ${website.keytype}">${website.difficulty}</a>
@@ -54,8 +52,6 @@ function appendCard(website) {
 
 async function appendToDOM() {
     const websites = await fetchData()
-        // TODO: uncomment whenever we have specific name for Persian name for website
-        // const sortedAlphabetically = websites.sort((a, b) => a.name.localeCompare(b.name))
 
     for (const website of websites) {
         appendCard(website)
@@ -63,3 +59,15 @@ async function appendToDOM() {
 }
 
 appendToDOM()
+
+
+// Close menu in mobile size on click outside
+document.addEventListener("click", event => {
+    const opened = document.querySelector('.navbar-collapse').classList.contains('show');
+
+    if (opened === true && !event.target.classList.contains('navbar-toggler')) {
+        document.querySelector('.navbar-toggler').click();
+    }
+});
+
+

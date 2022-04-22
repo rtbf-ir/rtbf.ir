@@ -1,4 +1,13 @@
 @charset "UTF-8";
+
+:root {
+    --mobile_portrait: 575.98px;
+    --mobile_landscape: 767.98px;
+    --tablet: 991.98px;
+    --desktop: 1199.98px;
+    --large_desktops: 1399.98px;
+}
+
 @font-face {
     font-family: dana;
     font-style: normal;
@@ -16,7 +25,7 @@ body {
 }
 
 a {
-    text-decoration: none!important
+    text-decoration: none !important
 }
 
 div {
@@ -34,7 +43,7 @@ p {
 .header-wall {
     background: url(../img/header.png) center no-repeat;
     background-size: cover;
-    min-height: 300px
+    min-height: 340px;
 }
 
 .heading h1 {
@@ -166,19 +175,19 @@ p {
 }
 
 .collabrator-social li:nth-child(4) a {
-    color: #1DA1F2!important
+    color: #1DA1F2 !important
 }
 
 .collabrator-social li:nth-child(3) a {
-    color: #24292e!important
+    color: #24292e !important
 }
 
 .collabrator-social li:nth-child(4) a {
-    color: #EA4335!important
+    color: #EA4335 !important
 }
 
 .collabrator-social li:nth-child(1) a {
-    color: #00749C!important
+    color: #00749C !important
 }
 
 .collabrator-social li a {
@@ -262,7 +271,7 @@ p {
 }
 
 .footer .service-detail img {
-    max-width: 150px!important
+    max-width: 150px !important
 }
 
 .footer .service-detail ul,
@@ -318,7 +327,7 @@ p {
 }
 
 .collabrator-text p {
-    text-align: right!important
+    text-align: right !important
 }
 
 .collabrator-text p a {
@@ -326,8 +335,8 @@ p {
 }
 
 :focus {
-    outline: 0!important;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)!important
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important
 }
 
 .searchtext {
@@ -390,72 +399,108 @@ p {
 
 .breadcrumb li:last-child a {
     font-weight: bolder;
-    font-style: bold;
-    font-size: 16px!important;
-    padding-top: 0!important
+    font-size: 16px !important;
+    padding-top: 0 !important
 }
 
 .breadcrumb li:last-child a:after {
-    content: ""!important
+    content: "" !important
 }
 
 @media screen and (max-width: 900px) {
     .myitems .float-right {
         width: 50%
     }
+
     .myitems .card .card-opt {
-        font-size: 9px!important
+        font-size: 9px !important
     }
+
     .header-wall {
         background-size: contain;
         min-height: 210px
     }
+
     .header-wall p {
         display: none
     }
+
     .accordion-button {
         text-align: right;
         line-height: 30px
     }
 }
 
-@media screen and (max-width: 500px) {
-    .fixed-top {
-        position: relative!important
-    }
+@media (max-width: var(--mobile_portrait)) {
     .homepage-content .blog-box-right {
-        width: 100%!important;
-        float: none!important
+        width: 100% !important;
+        float: none !important
     }
+
     .homepage-content .blog-box-left {
         display: none
     }
+
     .accordion-button {
         text-align: right;
         line-height: 30px
     }
+
     .header-wall {
         background-size: contain;
         min-height: 130px
     }
+
     .header-wall p {
         display: none
     }
+
     .copyright div {
         float: none;
         width: 100%
     }
+
     .copyright * {
         text-align: center
     }
+
     .copyright .float-left {
         display: none
     }
+
     .myitems .float-right {
-        width: 100%!important
+        width: 100% !important
     }
+
     .menu li {
         display: block;
         width: 100%
     }
+
+    .main-menu .navbar-collapse .navbar-nav {
+        background-color: #ffe43c;
+        direction: rtl;
+        padding: 0 1rem;
+        border-radius: 5px;
+    }
+
+    .main-menu {
+        direction: ltr;
+    }
+}
+
+.main-menu .navbar-toggler {
+    background-color: #ffe43c;
+}
+
+.main-menu .container-fluid {
+    padding-left: 0.8rem;
+}
+
+.main-menu .navbar-collapse {
+    justify-content: center;
+}
+
+.main-menu .navbar-collapse .navbar-nav .nav-item {
+    padding: 5px 0;
 }
