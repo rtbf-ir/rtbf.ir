@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-:root {
-    --mobile_portrait: 575.98px;
-    --mobile_landscape: 767.98px;
-    --tablet: 991.98px;
-    --desktop: 1199.98px;
-    --large_desktops: 1399.98px;
-}
-
 @font-face {
     font-family: dana;
     font-style: normal;
@@ -112,12 +104,6 @@ p {
 
 .myitems .card .card-opt a {
     margin-bottom: 10px
-}
-
-.gap-card {
-    height: 50px;
-    margin-bottom: 40px;
-    width: 100%
 }
 
 .plus-service {
@@ -274,6 +260,11 @@ p {
     max-width: 150px !important
 }
 
+.footer .service-detail ul {
+    display: flex;
+    justify-content: center;
+}
+
 .footer .service-detail ul,
 .footer .service-detail li {
     padding: 0;
@@ -285,10 +276,6 @@ p {
     margin: 10px;
     padding: 6px 8px 3px;
     color: #3c3c3c
-}
-
-.footer p {
-    margin-bottom: 0
 }
 
 .footer .label-buttom {
@@ -357,6 +344,12 @@ p {
     backdrop-filter: blur(15px)
 }
 
+@media screen and (max-width: 991.98px) {
+    .bg-blur {
+        backdrop-filter: none;
+    }
+}
+
 .banner-code {
     resize: none;
     height: 120px;
@@ -377,7 +370,7 @@ p {
 }
 
 .breadcrumb {
-    padding: 30px 0;
+    padding: 15px 0;
     background-color: #f8f9fa
 }
 
@@ -407,7 +400,7 @@ p {
     content: "" !important
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 991.98px) {
     .myitems .float-right {
         width: 50%
     }
@@ -431,7 +424,7 @@ p {
     }
 }
 
-@media (max-width: var(--mobile_portrait)) {
+@media (max-width: 991.98px) {
     .homepage-content .blog-box-right {
         width: 100% !important;
         float: none !important
@@ -447,7 +440,7 @@ p {
     }
 
     .header-wall {
-        background-size: contain;
+        background-size: cover;
         min-height: 130px
     }
 
@@ -472,13 +465,8 @@ p {
         width: 100% !important
     }
 
-    .menu li {
-        display: block;
-        width: 100%
-    }
-
     .main-menu .navbar-collapse .navbar-nav {
-        background-color: #ffe43c;
+        background-color: #ffe43cf2;
         direction: rtl;
         padding: 0 1rem;
         border-radius: 5px;
@@ -503,4 +491,8 @@ p {
 
 .main-menu .navbar-collapse .navbar-nav .nav-item {
     padding: 5px 0;
+}
+
+.main-menu .navbar-collapse .navbar-nav .nav-item {
+    padding: 0.5rem 1rem;
 }
