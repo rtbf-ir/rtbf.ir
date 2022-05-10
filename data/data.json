@@ -1477,5 +1477,15 @@
         "keytype": "impossible-label",
         "priority": "1",
         "category": "provider"
+    },
+    {
+        "name": "Iranians Who Design",
+        "website": "https://www.iranianxdesign.com/",
+        "deleteurl": "#",
+        "info": "برای حذف اطلاعات در توییتر به حساب کاربری <a href=\"https://twitter.com/IraniansD\" target=\"_blank\" rel=\"nofollow\">@IraniansD</a> پیام دهید. (<a href=\"https://www.iranianxdesign.com/about\" target=\"_blank\" rel=\"nofollow\">اطلاعات بیشتر</a>)",
+        "difficulty": "سخت",
+        "keytype": "hard-label",
+        "priority": "3",
+        "category": "event"
     }
 ]
