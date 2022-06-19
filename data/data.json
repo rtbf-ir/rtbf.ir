@@ -1487,5 +1487,15 @@
         "keytype": "hard-label",
         "priority": "3",
         "category": "event"
+    },
+    {
+        "name": "بهینشو",
+        "website": "https://behinsu24.com/",
+        "deleteurl": "#",
+        "info": "از طریق ارسال پیام/تیکت به پشتیبانی درخواست خود را ثبت کنید.",
+        "difficulty": "متوسط",
+        "keytype": "medium-label",
+        "priority": "1",
+        "category": "insurance"
     }
 ]
