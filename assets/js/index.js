@@ -1,27 +1,34 @@
-document.getElementById("copyrightyear").innerHTML = String(new Date().getFullYear())
+document.getElementById("copyrightyear").innerHTML = String(
+  new Date().getFullYear()
+);
 
 function fetchData() {
-    const DATA_URL = "https://rtbf.ir/data/data.json"
+  const DATA_URL = "https://rtbf.ir/data/data.json";
 
-    return fetch(DATA_URL)
-        .then(response => response.json())
-        .catch(error => {
-            console.error('There has been a problem with fetch websites data:', error)
-            return null
-        })
+  return fetch(DATA_URL)
+    .then((response) => response.json())
+    .catch((error) => {
+      console.error(
+        "There has been a problem with fetch websites data:",
+        error
+      );
+      return null;
+    });
 }
 
 function appendCard(website) {
-    const deleteAccountButton = `<a target="_blank" rel="nofollow" href="${website.deleteurl}" class="btn label-remove">
+  const deleteAccountButton = `<a target="_blank" rel="nofollow" href="${website.deleteurl}" class="btn label-remove">
         <span class="fa fa-1x fa-trash"></span>
         <span>حذف حساب کاربری</span>
-    </a>`
+    </a>`;
 
-    const websiteCard = `<div class="float-right test-mohammad">
+  const websiteCard = `<div class="float-right test-mohammad">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">
-                        <a target="_blank" class="text-dark" rel="nofollow" title="سایت ${website.name}" href="${website.website}">
+                        <a target="_blank" class="text-dark" rel="nofollow" title="سایت ${
+                          website.name
+                        }" href="${website.website}">
                             ${website.name}
                         </a>
                         <a href="https://github.com/rtbf-ir/rtbf.ir/issues/new/choose"
@@ -37,42 +44,49 @@ function appendCard(website) {
 
                     <div>
                         <p class="card-opt">
-                            <a class="btn text-light ${website.keytype}">${website.difficulty}</a>
+                            <a class="btn text-light ${website.keytype}">${
+    website.difficulty
+  }</a>
                             
-                            ${website.deleteurl !== '#' ? deleteAccountButton : ''}
+                            ${
+                              website.deleteurl !== "#"
+                                ? deleteAccountButton
+                                : ""
+                            }
                         </p>
                     </div>
                 </div>
             </div>
-          </div>`
+          </div>`;
 
-    document.getElementsByClassName("myitems")[0]
-        .insertAdjacentHTML('afterbegin', websiteCard)
+  document
+    .getElementsByClassName("myitems")[0]
+    .insertAdjacentHTML("afterbegin", websiteCard);
 }
 
 async function appendToDOM() {
-    const websites = await fetchData()
+  const websites = await fetchData();
 
-    for (const website of websites) {
-        appendCard(website)
-    }
+  for (const website of websites) {
+    appendCard(website);
+  }
 }
 
-appendToDOM()
-
+appendToDOM();
 
 // Close menu in mobile size on click outside
-document.addEventListener("click", event => {
-    const opened = document.querySelector('.navbar-collapse').classList.contains('show');
+document.addEventListener("click", (event) => {
+  const opened = document
+    .querySelector(".navbar-collapse")
+    .classList.contains("show");
 
-    if (opened === true && !event.target.classList.contains('navbar-toggler')) {
-        document.querySelector('.navbar-toggler').click();
-    }
+  if (opened === true && !event.target.classList.contains("navbar-toggler")) {
+    document.querySelector(".navbar-toggler").click();
+  }
 });
 
-
 function appendHeader() {
-    const headerTemplate = `<div class="container menu">
+  const headerTemplate = `<div class="container menu">
         <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <nav class="navbar navbar-expand-lg navbar-light bg-blur fixed-top main-menu">
@@ -152,10 +166,11 @@ function appendHeader() {
                 </div>
             </div>
         </div>
-    </div>`
+    </div>`;
 
-    document.getElementById('header')
-        .insertAdjacentHTML('afterbegin', headerTemplate)
+  document
+    .getElementById("header")
+    .insertAdjacentHTML("afterbegin", headerTemplate);
 }
 
-appendHeader()
+appendHeader();
