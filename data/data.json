@@ -1498,5 +1498,15 @@
         "keytype": "medium-label",
         "priority": "1",
         "category": "insurance"
+    },
+    {
+        "name": "میزبان‌سام",
+        "website": "https://mizbansam.com/",
+        "deleteurl": "#",
+        "info": "امکان حذف وجود ندارد.",
+        "difficulty": "غیرممکن",
+        "keytype": "impossible-label",
+        "priority": "2",
+        "category": "provider"
     }
 ]
