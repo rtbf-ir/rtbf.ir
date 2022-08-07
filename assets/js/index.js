@@ -117,7 +117,7 @@ function appendHeader() {
                                 </li>
                                 <li class="nav-item">
                                     <a href="blog" title="وبلاگ" class="nav-link text-dark"><span
-                                            class="fas fa-1x fa-home"></span> وبلاگ</a>
+                                            class="fas fa-1x fa-newspaper"></span> وبلاگ</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="donate" title="حمایت مالی" class="nav-link text-dark"><span

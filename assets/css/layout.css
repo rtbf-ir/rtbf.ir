@@ -346,12 +346,6 @@ p {
   backdrop-filter: blur(15px);
 }
 
-@media screen and (max-width: 991.98px) {
-  .bg-blur {
-    backdrop-filter: none;
-  }
-}
-
 .banner-code {
   resize: none;
   height: 120px;
@@ -400,6 +394,54 @@ p {
 
 .breadcrumb li:last-child a:after {
   content: "" !important;
+}
+.homepage-section-row {
+  margin: 10px auto;
+}
+
+.bg-firefox {
+  background-color: #ff9400 !important;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.bg-chrome {
+  background-color: #db4437 !important;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.homepage-section-row div {
+  padding: 20px;
+}
+
+.homepage-section-row .homepage-section-row-image {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin: auto;
+  display: block;
+}
+
+.homepage-section-row .btn-warning {
+  border: none;
+  margin-bottom: 10px;
+}
+
+.homepage-section-row .btn-warning:hover {
+  background: #2f2f2f;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.go-to-service {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 991.98px) {
+  .bg-blur {
+    backdrop-filter: none;
+  }
 }
 
 @media screen and (max-width: 991.98px) {
