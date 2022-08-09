@@ -1518,5 +1518,15 @@
         "keytype": "impossible-label",
         "priority": "1",
         "category": "job"
+    },
+    {
+        "name": "سرویس ابری لیارا",
+        "website": "https://liara.ir/",
+        "deleteurl": "#",
+        "info": "امکان حذف وجود ندارد.",
+        "difficulty": "غیرممکن",
+        "keytype": "impossible-label",
+        "priority": "1",
+        "category": "provider"
     }
 ]
