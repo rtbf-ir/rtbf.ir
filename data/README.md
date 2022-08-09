@@ -42,8 +42,8 @@
 
 ### `priority` field:
 
-[priority.md](https://github.com/rtbf-ir/rtbf.ir/blob/main/data/data/priority.md)
+[priority.md](https://github.com/rtbf-ir/rtbf.ir/data/priority.md)
 
 ### `category` field:
 
-[category.md](https://github.com/rtbf-ir/rtbf.ir/blob/main/data/data/category.md)
+[category.md](https://github.com/rtbf-ir/rtbf.ir/data/category.md)
