@@ -134,8 +134,75 @@
         <div class="homepage-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-                        <h4><span class="fas fa-1x fa-list blog-list-icon"></span> فهرست سایت‌ها/سرویس‌ها</h4>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h4 class="text-center"><span class="fas fa-1x fa-list blog-list-icon"></span> فهرست
+                            سایت‌ها/سرویس‌ها</h4>
+
+                        <div class="form-group">
+                            <div class="row filter-service-box">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 float-right">
+                                    <p><label class="text-muted"><i class="fa fa-1x fa-tag"></i> وضعیت
+                                            سرویس‌ها</label></p>
+                                    <p>
+                                        <select onchange="filterData()" id="status" name="status"
+                                            class="w-100 form-select">
+                                            <option value="all">همه موارد</option>
+                                            <option value="easy-label">ساده</option>
+                                            <option value="medium-label">متوسط</option>
+                                            <option value="hard-label">سخت</option>
+                                            <option value="impossible-label">غیر‌ممکن</option>
+                                        </select>
+                                    </p>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 float-right">
+                                    <p><label class="text-muted"><i class="fa fa-1x fa-sitemap"></i> دسته‌بندی
+                                            سرویس‌ها</label></p>
+                                    <p>
+                                        <select onchange="filterData()" id="category" name="category"
+                                            class="w-100 form-select">
+                                            <option value="all">همه دسته‌بندی‌ها</option>
+                                            <option value="e-commerce">فروشگاهی</option>
+                                            <option value="transport">حمل و نقل</option>
+                                            <option value="job">کاریابی</option>
+                                            <option value="news">اخبار</option>
+                                            <option value="healthcare">سلامت</option>
+                                            <option value="software-as-a-service">نرم‌افزار</option>
+                                            <option value="media">رسانه</option>
+                                            <option value="event">رویداد</option>
+                                            <option value="finance">مالی</option>
+                                            <option value="provider">سرویس دهنده‌ها</option>
+                                            <option value="messaging">پیام‌رسانی</option>
+                                            <option value="reservation">رزرو</option>
+                                            <option value="education">آموزشی</option>
+                                            <option value="entertainment">سرگرمی</option>
+                                            <option value="marketing">بازاریابی</option>
+                                            <option value="information">اطلاعات و داده</option>
+                                            <option value="advertisement">تبلیغات</option>
+                                            <option value="travel">سفر</option>
+                                            <option value="mobile">موبایل</option>
+                                            <option value="design">طراحی</option>
+                                            <option value="blog">وبلاگ‌ها</option>
+                                            <option value="game">بازی</option>
+                                            <option value="insurance">بیمه</option>
+                                        </select>
+                                    </p>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 float-right">
+                                    <p><label class="text-muted">اولویت سرویس‌ها</label></p>
+                                    <p>
+                                        <select onchange="filterData()" id="priority" name="priority"
+                                            class="w-100 form-select">
+                                            <option value="all">همه موارد</option>
+                                            <option value="1">سرویس‌های که استفاده روزمره دارند</option>
+                                            <option value="2">سرویس‌های که استفاده روزمره ندارند</option>
+                                            <option value="3">سرویس‌های که کم کاربرد هستند</option>
+                                        </select>
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+
                         <p>&nbsp;</p>
                     </div>
                 </div>
@@ -143,6 +210,9 @@
             <div class="container">
                 <div class="row">
                     <div class="myitems justify-content-center">
+
+                        <div class="directoryData"></div>
+
                         <div class="float-right">
                             <a class="text-light" href="https://rtbf.ir/issue" title="افزودن سایت/سرویس به لیست">
                                 <div class="card bg-success text-light text-center">
@@ -211,7 +281,7 @@
                                         href="https://backgroundchecks.org/justdeleteme/" rel="nofollow"
                                         title="justdeleteme">justdeleteme</a></strong> گرفته شده است و بعد از
                                 <strong><a target="_blank" rel="nofollow"
-                                        href="https://twitter.com/nima/status/1398335801042386947?s=20">این
+                                        href="https://twitter.com/nima/status/1398335801042386947">این
                                         توییت</a></strong> تصمیم به راه اندازی آن گرفتم.
                             </p>
                             <p>
@@ -229,7 +299,7 @@
                                 چندمرحله ای</p>
                             <p class="label-buttom"><span class="btn hard-label text-white">سخت</span> - نیاز به ارسال
                                 پیام/تیکت به پشتیبانی</p>
-                            <p class="label-buttom"><span class="btn impossible-label text-white">غیر ممکن</span> -
+                            <p class="label-buttom"><span class="btn impossible-label text-white">غیر‌ممکن</span> -
                                 غیرقابل حذف</p>
                             <p>
                                 برای افزودن سرویس جدید <strong><a target="_blank" href="https://rtbf.ir/issue"
@@ -269,6 +339,7 @@
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
     <script src="assets/js/index.js"></script>
+    <input type="hidden" id="jsondata" value="" />
 </body>
 
 </html>

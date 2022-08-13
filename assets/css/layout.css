@@ -395,6 +395,7 @@ p {
 .breadcrumb li:last-child a:after {
   content: "" !important;
 }
+
 .homepage-section-row {
   margin: 10px auto;
 }
@@ -438,13 +439,17 @@ p {
   font-size: 25px;
 }
 
+.filter-service-box div,
+.search-service-box div {
+  padding: 5px 20px;
+  box-sizing: border-box;
+}
+
 @media screen and (max-width: 991.98px) {
   .bg-blur {
     backdrop-filter: none;
   }
-}
 
-@media screen and (max-width: 991.98px) {
   .myitems .float-right {
     width: 50%;
   }
