@@ -89,18 +89,20 @@ function filterData() {
   var categoryDom = document.getElementById("category");
   var priorityDom = document.getElementById("priority");
   var statusDom = document.getElementById("status");
+  var serviceNameDom = document.getElementById("servicename");
   try {
     changeData(
       categoryDom.value,
       priorityDom.value,
-      statusDom.value
+      statusDom.value,
+      serviceNameDom.value
     );
   } catch (err) {
     appendToDOMAll();
   }
 }
 
-async function changeData(category, priority, status) {
+async function changeData(category, priority, status, service_name) {
   var items = "";
 
   try {
@@ -148,6 +150,16 @@ async function changeData(category, priority, status) {
     filtered = [];
   }
 
+  if (service_name != "") {
+    for (let index = 0; index < items.length; index++) {
+      const element = items[index];
+      if (element["name"].search(service_name) != -1) {
+        filtered.push(element);
+      }
+    }
+    items = filtered;
+    filtered = [];
+  }
 
   document.getElementsByClassName("directoryData")[0].innerHTML = "";
 
