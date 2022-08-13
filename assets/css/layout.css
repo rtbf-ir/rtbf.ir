@@ -445,6 +445,43 @@ p {
   box-sizing: border-box;
 }
 
+.main-menu .navbar-toggler {
+  background-color: #ffe43c;
+}
+
+.main-menu .container-fluid {
+  padding-left: 0.8rem;
+}
+
+.main-menu .navbar-collapse {
+  justify-content: center;
+}
+
+.main-menu .navbar-collapse .navbar-nav .nav-item {
+  padding: 5px 0;
+  padding: 0.5rem 1rem;
+}
+
+#stickylink {
+  color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: block;
+  bottom: 10px;
+  width: 200px;
+  max-width: 80%;
+  float: left;
+  clear: both;
+  z-index: 200;
+  font-size: 18px;
+  background: #ffb600;
+  padding: 10px 15px;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+}
+
 @media screen and (max-width: 991.98px) {
   .bg-blur {
     backdrop-filter: none;
@@ -524,21 +561,4 @@ p {
   .main-menu {
     direction: ltr;
   }
-}
-
-.main-menu .navbar-toggler {
-  background-color: #ffe43c;
-}
-
-.main-menu .container-fluid {
-  padding-left: 0.8rem;
-}
-
-.main-menu .navbar-collapse {
-  justify-content: center;
-}
-
-.main-menu .navbar-collapse .navbar-nav .nav-item {
-  padding: 5px 0;
-  padding: 0.5rem 1rem;
 }
