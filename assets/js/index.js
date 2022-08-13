@@ -150,7 +150,7 @@ async function changeData(category, priority, status, service_name) {
     filtered = [];
   }
 
-  console.log(service_name);
+  service_name = service_name;
   if (service_name != "") {
     for (let index = 0; index < items.length; index++) {
       const element = items[index];
