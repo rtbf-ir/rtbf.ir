@@ -61,7 +61,6 @@ http://github.com/rtbf.ir/rtbf.ir
   
 </div>
 
-- https://ashokri.com/blog/rtbf/
 - https://blog.sabavision.com/sm/right-to-be-forgotten
 - https://payping.io/blog/support-software-developement/
 - https://jadi.net/2022/01/mondays-00-09/
