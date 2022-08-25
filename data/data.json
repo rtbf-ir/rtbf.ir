@@ -806,7 +806,7 @@
         "info": "در بخش تنظیمات حساب کاربری امکان غیرفعال‌سازی با وارد کردن رمزعبور ممکن می‌باشد.",
         "difficulty": "ساده",
         "keytype": "easy-label",
-        "priority": "3",
+        "priority": "1",
         "category": "job"
     },
     {
@@ -1538,5 +1538,15 @@
         "keytype": "impossible-label",
         "priority": "2",
         "category": "finance"
+    },
+    {
+        "name": "انجام میدم",
+        "website": "https://www.anjammidam.com/",
+        "deleteurl": "#",
+        "info": "از طریق ارسال تیکت درخواست خود را ارسال کنید.",
+        "difficulty": "سخت",
+        "keytype": "hard-label",
+        "priority": "3",
+        "category": "job"
     }
 ]
