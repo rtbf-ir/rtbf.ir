@@ -1548,5 +1548,15 @@
         "keytype": "hard-label",
         "priority": "3",
         "category": "job"
-    }
+    },
+    {
+        "name": "لیوویتو",
+        "website": "https://livito.tv/",
+        "deleteurl": "#",
+        "info": "امکان حذف وجود ندارد.",
+        "difficulty": "غیرممکن",
+        "keytype": "impossible-label",
+        "priority": "3",
+        "category": "media"
+    },
 ]
