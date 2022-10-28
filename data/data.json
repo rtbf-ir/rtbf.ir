@@ -1558,5 +1558,15 @@
         "keytype": "impossible-label",
         "priority": "3",
         "category": "media"
+    },
+    {
+        "name": "ایتا",
+        "website": "https://eitaa.com/",
+        "deleteurl": "https://my.eitaa.com/",
+        "info": "شماره تلفن و رمز عبور یکبارمصرف ارسال شده به اکانت خود را وارد کنید. سپس حساب خود را حذف کنید.",
+        "difficulty": "ساده",
+        "keytype": "easy-label",
+        "priority": "3",
+        "category": "messaging"
     }
 ]
