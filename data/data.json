@@ -1578,5 +1578,15 @@
         "keytype": "hard-label",
         "priority": "1",
         "category": "map"
+    },
+    {
+        "name": "شجره ساز",
+        "website": "https://shajaresaz.com/",
+        "deleteurl": "https://shajaresaz.com/admin/deleteuser",
+        "info": " در صورت نداشتن هیچ نسلی از صفحه لغویت عضویت اقدام کنید و در صورت داشتن نسل مشترک از بخش نسل‌ها به کاربرانی که با آن‌ها نسل مشترک دارید درخواست حذف نسل دهید و در آخر لغو عضویت کنید.",
+        "difficulty": "سخت",
+        "keytype": "hard-label",
+        "priority": "3",
+        "category": "information"
     }
 ]
