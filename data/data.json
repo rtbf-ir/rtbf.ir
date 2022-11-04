@@ -1568,5 +1568,15 @@
         "keytype": "easy-label",
         "priority": "3",
         "category": "messaging"
+    },
+    {
+        "name": "نقشه و مسیریاب بلد",
+        "website": "https://balad.ir/",
+        "deleteurl": "https://help.balad.io/fa/post/61b715a9c34059457b293dcb/%D8%AD%D8%B0%D9%81-%D8%AD%D8%B3%D8%A7%D8%A8-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%DB%8C-%D8%AF%D8%B1-%D8%A8%D9%84%D8%AF",
+        "info": "در صورتی که می‌خواهید حساب کاربری بلد را حذف کنید کافی‌ست متن مورد نظر را به آدرس ایمیل پشتیبانی بلد و یا واتساپ بلد ارسال کنید.",
+        "difficulty": "سخت",
+        "keytype": "hard-label",
+        "priority": "1",
+        "category": "map"
     }
 ]
