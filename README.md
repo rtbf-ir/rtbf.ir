@@ -70,3 +70,4 @@ http://github.com/rtbf.ir/rtbf.ir
 - https://chng.it/5zxjCKqHGN
 - https://www.karzar.net/rtbf
 - https://youtu.be/nirbjP9mNPU
+- https://github.com/sir-kokabi/delete-friendly
