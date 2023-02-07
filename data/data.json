@@ -371,7 +371,7 @@
   },
   {
     "name": "زیگ",
-    "website": "https://zeeg.me/fa/",
+    "website": "https://zeeg.me/",
     "deleteurl": "https://app.zeeg.me/fa/account/settings/delete",
     "info": "با انتخاب گزینه حذف در تنظیمات حساب، فرآیند حذف حساب کاربری را به‌سادگی انجام دهید.",
     "difficulty": "ساده",
@@ -1471,7 +1471,7 @@
   },
   {
     "name": "پنکیک - پایگاه داده ابری",
-    "website": "https://getpancake.com/fa/",
+    "website": "https://getpancake.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1598,5 +1598,195 @@
     "keytype": "hard-label",
     "priority": "3",
     "category": "e-commerce"
+  },
+  {
+    "name": "گنجه هاست",
+    "website": "https://ganje.host/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "provider"
+  },
+  {
+    "name": "گنجه هاست",
+    "website": "https://ganje.host/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "provider"
+  },
+  {
+    "name": "ایران وب",
+    "website": "https://iranweb.org/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "provider"
+  },
+  {
+    "name": "سرور پارس",
+    "website": "https://pars.host/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "provider"
+  },
+  {
+    "name": "پارس سرور",
+    "website": "https://parswebserver.com/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "provider"
+  },
+  {
+    "name": "صبا هاست",
+    "website": "https://saba.host/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "provider"
+  },
+  {
+    "name": "رادکام",
+    "website": "https://www.radcom.co/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "provider"
+  },
+  {
+    "name": "نت افراز",
+    "website": "https://www.netafraz.com/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "provider"
+  },
+  {
+    "name": "آذر آنلاین",
+    "website": "https://azaronline.com/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "provider"
+  },
+  {
+    "name": "برتینا",
+    "website": "https://www.bertina.ir/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "provider"
+  },
+  {
+    "name": "لیمو هاست",
+    "website": "https://limoo.host/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "provider"
+  },
+  {
+    "name": "ایران هاست",
+    "website": "https://iranhost.com/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "provider"
+  },
+  {
+    "name": "وب رمز",
+    "website": "https://www.webramz.com/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "provider"
+  },
+  {
+    "name": "هاست ایران",
+    "website": "https://hostiran.net/",
+    "deleteurl": "#",
+    "info": "پس از گذشت ۶ ماه از آخرین استفاده‌ی خود، درخواست حذف حساب کاربری خود را به صورت کتبی ارسال کنید.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "2",
+    "category": "provider"
+  },
+  {
+    "name": "میزبان فا",
+    "website": "https://mizbanfa.net/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "provider"
+  },
+  {
+    "name": "سون هاست",
+    "website": "http://7ho.st/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "provider"
+  },
+  {
+    "name": "مستر 90",
+    "website": "http://mr90.ir/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "game"
+  },
+  {
+    "name": "گرز",
+    "website": "http://gorz.ir/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "game"
+  },
+  {
+    "name": "تیبان",
+    "website": "https://www.tebyan.net/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "entertainment"
   }
 ]
