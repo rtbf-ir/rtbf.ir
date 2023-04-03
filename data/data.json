@@ -1788,5 +1788,15 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "entertainment"
+  },
+  {
+    "name": "تسکولو",
+    "website": "https://taskulu.com/fa",
+    "deleteurl": "#",
+    "info": "درخواست خود را به ایمیل زیر ارسال کنید:<br>Support@taskulu.com",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "2",
+    "category": "software-as-a-service"
   }
 ]
