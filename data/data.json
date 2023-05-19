@@ -1798,5 +1798,15 @@
     "keytype": "hard-label",
     "priority": "2",
     "category": "software-as-a-service"
+  },
+  {
+    "name": "تیمچه",
+    "website": "https://timcheh.com/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "1",
+    "category": "e-commerce"
   }
 ]
