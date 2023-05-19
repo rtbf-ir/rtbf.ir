@@ -1818,5 +1818,15 @@
     "keytype": "hard-label",
     "priority": "3",
     "category": "event"
+  },
+  {
+    "name": "زنبیل",
+    "website": "https://www.zanbil.ir/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "1",
+    "category": "e-commerce"
   }
 ]
