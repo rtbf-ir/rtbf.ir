@@ -1808,5 +1808,15 @@
     "keytype": "impossible-label",
     "priority": "1",
     "category": "e-commerce"
+  },
+  {
+    "name": "یار کتاب",
+    "website": "https://yarketab.com/",
+    "deleteurl": "#",
+    "info": "درخواست خود را از بخش پشتیبانی ثبت کنید.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "3",
+    "category": "event"
   }
 ]
