@@ -1828,5 +1828,15 @@
     "keytype": "impossible-label",
     "priority": "1",
     "category": "e-commerce"
+  },
+  {
+    "name": "ایران تلنت",
+    "website": "https://www.irantalent.com/",
+    "deleteurl": "#",
+    "info": "جهت حذف حساب کاربری از طریق آدرس ایمیل info@irantalent.com درخواست خود را ثبت کنید.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "2",
+    "category": "job"
   }
 ]
