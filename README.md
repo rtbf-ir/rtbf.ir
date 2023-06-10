@@ -71,3 +71,4 @@ http://github.com/rtbf.ir/rtbf.ir
 - https://www.karzar.net/rtbf
 - https://youtu.be/nirbjP9mNPU
 - https://github.com/sir-kokabi/delete-friendly
+- https://www.youtube.com/watch?v=zb7UL9OPg2w&t=2481s
