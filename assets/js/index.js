@@ -17,16 +17,16 @@ async function fetchData() {
 }
 
 function appendCard(website) {
-  const deleteAccountButton = `<a target="_blank" rel="nofollow" href="${website.deleteurl}" class="btn label-remove">
+  const deleteAccountButton = `<a target="_blank" rel="nofollow noreferrer noopener" href="${website.deleteurl}" class="btn label-remove">
         <span class="fa fa-1x fa-trash"></span>
-        <span>حذف حساب کاربری</span>
+        <span>حذف حساب‌کاربری</span>
     </a>`;
 
   const websiteCard = `<div class="float-right test-mohammad">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">
-                        <a target="_blank" class="text-dark" rel="nofollow" title="سایت ${
+                        <a target="_blank" class="text-dark" rel="nofollow noreferrer noopener" title="سایت ${
                           website.name
                         }" href="${website.website}">
                             ${website.name}

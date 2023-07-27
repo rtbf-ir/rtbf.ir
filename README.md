@@ -21,7 +21,7 @@ collaborators:
 ## توضیحات پروژه حق فراموش شدن
 
 <p><strong>لینک دسترسی به سرویس : <a href="https://rtbf.ir" title="rtbf.ir">rtbf.ir</a></strong></p>
-<p>بسیاری از سرویس‌های اینترنتی اینگونه عمل می‌کنند که امکان حذف حساب کاربری را به شما نمی‌دهند و از نظر ما کاربران این موضوع نقض حریم شخصی است. با توجه به حق فراموش شدن یا Right to be forgotten این یک تضاد می‌باشد.</p>
+<p>بسیاری از سرویس‌های اینترنتی اینگونه عمل می‌کنند که امکان حذف حساب‌کاربری را به شما نمی‌دهند و از نظر ما کاربران این موضوع نقض حریم شخصی است. با توجه به حق فراموش شدن یا Right to be forgotten این یک تضاد می‌باشد.</p>
 <p>ایده‌ی اولیه‌ی این سرویس از  <strong><a target="_blank" href="https://backgroundchecks.org/justdeleteme/" title="justdeleteme">justdeleteme</a></strong> گرفته شده است و بعد از  <strong><a target="_blank" href="https://twitter.com/nima/status/1398335801042386947">این توییت</a></strong> تصمیم به راه‌اندازی آن گرفتیم.</p>
 <p>اگر قصد مشارکت دارید <strong><a target="_blank" href="https://github.com/rtbf-ir/rtbf.ir/issues/new/choose" title="rtbf.ir Source">از بخش issueها این کار را انجام دهید</a></strong>.</p>
 <p><strong><a href="https://rtbf.ir/donate" title="حمایت مالی از پروژه">اگر علاقه به حمایت از این پروژه را دارید کلیک کنید.</a></strong></p>
