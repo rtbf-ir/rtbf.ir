@@ -1838,5 +1838,15 @@
     "keytype": "hard-label",
     "priority": "2",
     "category": "job"
+  },
+  {
+    "name": "Mohit - محیط",
+    "website": "https://mohit.online/",
+    "deleteurl": "https://panel.mohit.online/dashboard/user-profile/",
+    "info": "گزینه حذف در پایین صفحه پروفایل کاربر در پلتفرم و با زدن تیک تایید انجام می‌شود.",
+    "difficulty": "ساده",
+    "keytype": "easy-label",
+    "priority": "2",
+    "category": "education"
   }
 ]
