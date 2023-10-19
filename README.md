@@ -46,11 +46,11 @@ collaborators:
   
 <p dir="rtl">پس از اینکه پروژه کمی شکل رسمی تری پیدا کرد تصمیم بر این شد مخزن پروژه از آدرس:</p>
   
-<del>http://github.com/amirshnll/rtbf.ir</del>
+<del>https://github.com/amirshnll/rtbf.ir</del>
   
 <p dir="rtl">به آدرس:</p>
   
-http://github.com/rtbf.ir/rtbf.ir
+https://github.com/rtbf.ir/rtbf.ir
   
 <p dir="rtl">انتقال پیدا کند.</p>
   

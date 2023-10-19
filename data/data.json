@@ -311,7 +311,7 @@
   },
   {
     "name": "شعر نو",
-    "website": "http://shereno.com/",
+    "website": "https://shereno.com/",
     "deleteurl": "#",
     "info": "برای حذف باید پرداخت انجام شود.",
     "difficulty": "سخت",
@@ -791,7 +791,7 @@
   },
   {
     "name": "بلاگفا",
-    "website": "http://blogfa.com/",
+    "website": "https://blogfa.com/",
     "deleteurl": "https://www.blogfa.com/desktop/Options.aspx",
     "info": "با انتخاب گزینه تنظیمات و دیگر امکانات در بخش حذف وبلاگ و کلیه نوشته‌ها و اطلاعات کاربری فرآیند حذف حساب‌کاربری را به‌سادگی انجام دهید.",
     "difficulty": "ساده",
@@ -1121,7 +1121,7 @@
   },
   {
     "name": "نفیس فایل",
-    "website": "http://nafisfile.com/",
+    "website": "https://nafisfile.com/",
     "deleteurl": "#",
     "info": "برای حذف اطلاعات کاربری میبایستی درخواست حذف حساب به ایمیل info@nafisfile.com ارسال گردد.",
     "difficulty": "سخت",
@@ -1461,7 +1461,7 @@
   },
   {
     "name": "مشهد هاست",
-    "website": "http://mashhadhost.com/",
+    "website": "https://mashhadhost.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1751,7 +1751,7 @@
   },
   {
     "name": "سون هاست",
-    "website": "http://7ho.st/",
+    "website": "https://7ho.st/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1761,7 +1761,7 @@
   },
   {
     "name": "مستر 90",
-    "website": "http://mr90.ir/",
+    "website": "https://mr90.ir/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1771,7 +1771,7 @@
   },
   {
     "name": "گرز",
-    "website": "http://gorz.ir/",
+    "website": "https://gorz.ir/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
