@@ -16,7 +16,7 @@ collaborators:
 
 <div dir="rtl">
 
-<img src="https://raw.githubusercontent.com/amirshnll/rtbf.ir/main/logo-readme.png" alt="right to be forgotten (RTBF) Logo">
+<img src="https://raw.githubusercontent.com/amirshnll/rtbf.ir/main/logo-readme.png" alt="right to be forgotten (RTBF) Logo" title="right to be forgotten (RTBF) Logo" />
   
 ## توضیحات پروژه حق فراموش شدن
 
