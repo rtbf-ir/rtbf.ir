@@ -1,16 +1,6 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 400;
-  src: url(../font/dana-fanum-regular.eot);
-  src: url(../font/dana-fanum-regular.eot?#iefix) format("embedded-opentype"),
-    url(../font/dana-fanum-regular.woff2) format("woff2"),
-    url(../font/dana-fanum-regular.woff) format("woff");
-}
-
-@font-face {
   font-family: vazir;
   font-style: normal;
   font-weight: 400;
