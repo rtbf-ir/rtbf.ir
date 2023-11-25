@@ -10,12 +10,19 @@
     url(../font/dana-fanum-regular.woff) format("woff");
 }
 
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/vazir.ttf);
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: dana, sans-serif;
+  font-family: vazir, sans-serif;
 }
 
 a {
