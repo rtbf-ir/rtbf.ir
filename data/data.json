@@ -1,5 +1,15 @@
 [
   {
+    "name": "وندار",
+    "website": "https://www.vandar.io/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "1",
+    "category": "finance"
+  },
+  {
     "name": "دیجی کالا",
     "website": "https://www.digikala.com/",
     "deleteurl": "#",
@@ -221,7 +231,7 @@
   },
   {
     "name": "دیجی پی",
-    "website": "https://www.mydigipay.com",
+    "website": "https://www.mydigipay.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -302,7 +312,7 @@
   {
     "name": "ویرگول",
     "website": "https://virgool.io/",
-    "deleteurl": "https://virgool.io/me/settings",
+    "deleteurl": "https://virgool.io/me/settings/",
     "info": "با انتخاب گزینه حذف حساب‌کاربری در پنل تنظیمات کاربری فرآیند حذف حساب‌کاربری را شروع کنید.",
     "difficulty": "ساده",
     "keytype": "easy-label",
@@ -372,7 +382,7 @@
   {
     "name": "زیگ",
     "website": "https://zeeg.me/",
-    "deleteurl": "https://app.zeeg.me/fa/account/settings/delete",
+    "deleteurl": "https://app.zeeg.me/fa/account/settings/delete/",
     "info": "با انتخاب گزینه حذف در تنظیمات حساب، فرآیند حذف حساب‌کاربری را به‌سادگی انجام دهید.",
     "difficulty": "ساده",
     "keytype": "easy-label",
@@ -412,7 +422,7 @@
   {
     "name": "آموزشگاه ارژنگ",
     "website": "https://dars.gotoclass.ir",
-    "deleteurl": "https://dars.gotoclass.ir/account/settings",
+    "deleteurl": "https://dars.gotoclass.ir/account/settings/",
     "info": "در صفحه تنظیمات حساب‌کاربری اقدام به حذف حساب‌کاربری خود کنید.",
     "difficulty": "ساده",
     "keytype": "easy-label",
@@ -792,7 +802,7 @@
   {
     "name": "بلاگفا",
     "website": "https://blogfa.com/",
-    "deleteurl": "https://www.blogfa.com/desktop/Options.aspx",
+    "deleteurl": "https://www.blogfa.com/desktop/Options.aspx/",
     "info": "با انتخاب گزینه تنظیمات و دیگر امکانات در بخش حذف وبلاگ و کلیه نوشته‌ها و اطلاعات کاربری فرآیند حذف حساب‌کاربری را به‌سادگی انجام دهید.",
     "difficulty": "ساده",
     "keytype": "easy-label",
@@ -872,7 +882,7 @@
   {
     "name": "زایا",
     "website": "https://zaya.io/",
-    "deleteurl": "https://zaya.io/settings/delete",
+    "deleteurl": "https://zaya.io/settings/delete/",
     "info": "با انتخاب گزینه حذف حساب‌کاربری در تنظیمات حساب، فرآیند حذف را به‌سادگی انجام دهید.",
     "difficulty": "ساده",
     "keytype": "easy-label",
@@ -952,7 +962,7 @@
   {
     "name": "گاما",
     "website": "https://gama.ir/",
-    "deleteurl": "https://gama.ir/ticket/newticket",
+    "deleteurl": "https://gama.ir/ticket/newticket/",
     "info": "از طریق تیکت امکان حذف حساب‌کاربری وجود دارد اما با توجه به تجربه کاربران توضیحات زیادی از شما خواسته می‌شود.",
     "difficulty": "سخت",
     "keytype": "hard-label",
@@ -992,8 +1002,8 @@
   {
     "name": "شبکه پرداخت تیپول",
     "website": "https://about.tipoul.com/",
-    "deleteurl": "https://panel.tipoul.com/notification/tickets",
-    "info": "حذف حساب‌کاربری با ایجاد تیکتی با همین عنوان از بخش تیکت ها در پنل کاربری انجام می‌شود.",
+    "deleteurl": "https://panel.tipoul.com/notification/tickets/",
+    "info": "حذف حساب‌کاربری با ایجاد تیکتی با همین عنوان از بخش تیکت‌ها در پنل کاربری انجام می‌شود.",
     "difficulty": "متوسط",
     "keytype": "medium-label",
     "priority": "3",
@@ -1072,7 +1082,7 @@
   {
     "name": "آی بیو",
     "website": "https://ibio.link/",
-    "deleteurl": "https://ibio.link/settings",
+    "deleteurl": "https://ibio.link/settings/",
     "info": "با انتخاب گزینه حذف در تنظیمات حساب، فرآیند حذف حساب‌کاربری را به‌سادگی انجام دهید.",
     "difficulty": "ساده",
     "keytype": "easy-label",
