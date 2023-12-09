@@ -1,7 +1,17 @@
 [
   {
+    "name": "ابزار وردپرس",
+    "website": "https://abzarwp.com/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "e-commerce"
+  },
+  {
     "name": "وندار",
-    "website": "https://www.vandar.io/",
+    "website": "https://vandar.io/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -11,7 +21,7 @@
   },
   {
     "name": "دیجی کالا",
-    "website": "https://www.digikala.com/",
+    "website": "https://digikala.com/",
     "deleteurl": "#",
     "info": "از طریق فرم صفحه تماس با ما  تصویر کارت ملی مالک پروفایل (احراز‌هویت) به همراه متن: اینجانب ..... به دلیل ..... درخواست حذف اکانت کاربری با شماره همراه..... و نمونه کد سفارش ..... را دارم. ارسال کنید.",
     "difficulty": "سخت",
@@ -51,7 +61,7 @@
   },
   {
     "name": "طرفداری",
-    "website": "https://www.tarafdari.com/",
+    "website": "https://tarafdari.com/",
     "deleteurl": "#",
     "info": "درخواست خود را به ایمیل زیر ارسال کنید:<br>support@tarafdari.com",
     "difficulty": "سخت",
@@ -81,8 +91,8 @@
   },
   {
     "name": "آپارات",
-    "website": "https://www.aparat.com/",
-    "deleteurl": "https://www.aparat.com/user/profile/remove_account",
+    "website": "https://aparat.com/",
+    "deleteurl": "https://aparat.com/user/profile/remove_account",
     "info": "در صورتی که کانال فعال ندارید با پشتیبانی تماس بگیرید.",
     "difficulty": "متوسط",
     "keytype": "medium-label",
@@ -101,7 +111,7 @@
   },
   {
     "name": "زرین پال",
-    "website": "https://www.zarinpal.com/",
+    "website": "https://zarinpal.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -111,7 +121,7 @@
   },
   {
     "name": "پی پینگ",
-    "website": "https://www.payping.ir/",
+    "website": "https://payping.ir/",
     "deleteurl": "#",
     "info": "درصورتیکه هیچ تراکنشی بر روی حساب انجام نشده باشد امکان حذف حساب وجود دارد که از طریق چت آنلاین و یا تماس با شماره 02191001520 داخلی پشتیبانی می‌توانید درخواست خودتون رو اعلام بفرمایید.",
     "difficulty": "سخت",
@@ -131,7 +141,7 @@
   },
   {
     "name": "ابرآروان",
-    "website": "https://www.arvancloud.com/",
+    "website": "https://arvancloud.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -141,7 +151,7 @@
   },
   {
     "name": "فیلیمو",
-    "website": "https://www.filimo.com/",
+    "website": "https://filimo.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -151,7 +161,7 @@
   },
   {
     "name": "نماوا",
-    "website": "https://www.namava.ir/",
+    "website": "https://namava.ir/",
     "deleteurl": "#",
     "info": "نیاز است دلیل تمایل خود به حذف حساب به همراه تصویری از کارت ملی به ایمیل support@namava.ir ارسال بفرمایید.",
     "difficulty": "سخت",
@@ -191,7 +201,7 @@
   },
   {
     "name": "پرشین‌گیگ",
-    "website": "https://www.persiangig.com/",
+    "website": "https://persiangig.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -201,7 +211,7 @@
   },
   {
     "name": "دکورشاپ",
-    "website": "https://www.decorshop.ir/",
+    "website": "https://decorshop.ir/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -211,7 +221,7 @@
   },
   {
     "name": "کافیته",
-    "website": "https://www.cafiteh.com/",
+    "website": "https://cafiteh.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -221,7 +231,7 @@
   },
   {
     "name": "افرانت",
-    "website": "https://www.afranet.com/",
+    "website": "https://afranet.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -231,7 +241,7 @@
   },
   {
     "name": "دیجی پی",
-    "website": "https://www.mydigipay.com/",
+    "website": "https://mydigipay.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -301,7 +311,7 @@
   },
   {
     "name": "کارزار",
-    "website": "https://www.karzar.net/",
+    "website": "https://karzar.net/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -341,7 +351,7 @@
   },
   {
     "name": "یکتا نت",
-    "website": "https://www.yektanet.com/",
+    "website": "https://yektanet.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -361,7 +371,7 @@
   },
   {
     "name": "راست چین",
-    "website": "https://www.rtl-theme.com/",
+    "website": "https://rtl-theme.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -371,7 +381,7 @@
   },
   {
     "name": "ژاکت",
-    "website": "https://www.zhaket.com/",
+    "website": "https://zhaket.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -461,7 +471,7 @@
   },
   {
     "name": "او‌ام‌پی فینکس",
-    "website": "https://www.ompfinex.com/",
+    "website": "https://ompfinex.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -471,9 +481,9 @@
   },
   {
     "name": "سکوی ابری فندق",
-    "website": "https://www.fandogh.cloud/",
+    "website": "https://fandogh.cloud/",
     "deleteurl": "#",
-    "info": "جهت کسب اطلاعات به <a href=\"https://www.fandogh.cloud/rtbf\" target=\"_blank\" rel=\"nofollow\">صفحه حق فراموش شدن</a> فندق مراجعه کنید.",
+    "info": "جهت کسب اطلاعات به <a href=\"https://fandogh.cloud/rtbf\" target=\"_blank\" rel=\"nofollow\">صفحه حق فراموش شدن</a> فندق مراجعه کنید.",
     "difficulty": "سخت",
     "keytype": "hard-label",
     "priority": "3",
@@ -511,7 +521,7 @@
   },
   {
     "name": "تلوبیون",
-    "website": "https://www.telewebion.com/",
+    "website": "https://telewebion.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -611,7 +621,7 @@
   },
   {
     "name": "ایران سرور",
-    "website": "https://www.iranserver.com/",
+    "website": "https://iranserver.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -641,7 +651,7 @@
   },
   {
     "name": "علی‌بابا",
-    "website": "https://www.alibaba.ir/",
+    "website": "https://alibaba.ir/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -661,7 +671,7 @@
   },
   {
     "name": "ایرانیکارت",
-    "website": "https://www.iranicard.ir/",
+    "website": "https://iranicard.ir/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -721,7 +731,7 @@
   },
   {
     "name": "30بوک",
-    "website": "https://www.30book.com/",
+    "website": "https://30book.com/",
     "deleteurl": "#",
     "info": "در صورتی که از سایت خرید نکرده باشید می‌توانید درخواست خود را به ایمیل زیر ارسال کنید:<br>info@30book.com",
     "difficulty": "سخت",
@@ -751,7 +761,7 @@
   },
   {
     "name": "واژه‌یاب",
-    "website": "https://www.vajehyab.com/",
+    "website": "https://vajehyab.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -791,7 +801,7 @@
   },
   {
     "name": "نماشا",
-    "website": "https://www.namasha.com/",
+    "website": "https://namasha.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -802,7 +812,7 @@
   {
     "name": "بلاگفا",
     "website": "https://blogfa.com/",
-    "deleteurl": "https://www.blogfa.com/desktop/Options.aspx/",
+    "deleteurl": "https://blogfa.com/desktop/Options.aspx/",
     "info": "با انتخاب گزینه تنظیمات و دیگر امکانات در بخش حذف وبلاگ و کلیه نوشته‌ها و اطلاعات کاربری فرآیند حذف حساب‌کاربری را به‌سادگی انجام دهید.",
     "difficulty": "ساده",
     "keytype": "easy-label",
@@ -811,8 +821,8 @@
   },
   {
     "name": "کارلنسر",
-    "website": "https://www.karlancer.com/",
-    "deleteurl": "https://www.karlancer.com/panel/profile/edit-profile",
+    "website": "https://karlancer.com/",
+    "deleteurl": "https://karlancer.com/panel/profile/edit-profile",
     "info": "در بخش تنظیمات حساب‌کاربری امکان غیرفعال‌سازی با وارد کردن رمزعبور ممکن می‌باشد.",
     "difficulty": "ساده",
     "keytype": "easy-label",
@@ -821,7 +831,7 @@
   },
   {
     "name": "مدرسه افروز",
-    "website": "https://www.afroozschool.org/",
+    "website": "https://afroozschool.org/",
     "deleteurl": "#",
     "info": "درخواست خود به همراه آدرس ایمیل را به info@afroozschool.org ارسال کنید.",
     "difficulty": "سخت",
@@ -831,7 +841,7 @@
   },
   {
     "name": "اپلیکیشن 724",
-    "website": "https://www.724.ir/",
+    "website": "https://724.ir/",
     "deleteurl": "#",
     "info": "با مراجعه به بخش حساب‌کاربری و انتخاب گزینه حذف حساب‌کاربری درخواست خود را ثبت کنید",
     "difficulty": "ساده",
@@ -841,7 +851,7 @@
   },
   {
     "name": "کتابراه",
-    "website": "https://www.ketabrah.ir/",
+    "website": "https://ketabrah.ir/",
     "deleteurl": "#",
     "info": "در صورتی که کاربر درخواست حذف حساب‌کاربری‌ خود را داشته باشد، نیاز است درخواست خود را به همراه علت از طریق دکمه \"ارسال درخواست پشتیبانی\" ارسال کند.",
     "difficulty": "سخت",
@@ -861,7 +871,7 @@
   },
   {
     "name": "ایرنیک",
-    "website": "https://www.nic.ir/",
+    "website": "https://nic.ir/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -901,7 +911,7 @@
   },
   {
     "name": "آرین‌پال",
-    "website": "https://www.arianpal.com/",
+    "website": "https://arianpal.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -941,7 +951,7 @@
   },
   {
     "name": "رایانامه چاپار",
-    "website": "https://www.chmail.ir/",
+    "website": "https://chmail.ir/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -951,7 +961,7 @@
   },
   {
     "name": "اپلای چنس",
-    "website": "https://www.applychance.com/",
+    "website": "https://applychance.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1011,7 +1021,7 @@
   },
   {
     "name": "اکسکوینو",
-    "website": "https://www.excoino.com/",
+    "website": "https://excoino.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1051,7 +1061,7 @@
   },
   {
     "name": "وان دی آف",
-    "website": "https://www.1dayoff.ir/",
+    "website": "https://1dayoff.ir/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1061,9 +1071,9 @@
   },
   {
     "name": "پذیرش24",
-    "website": "https://www.paziresh24.com/",
-    "deleteurl": "https://www.paziresh24.com/home/support-form-other/",
-    "info": "جهت حذف حساب‌کاربری درخواست خود را از طریق <a href=\"https://www.paziresh24.com/home/support-form-other\" target=\"_blank\" rel=\"nofollow\">صفحه پشتیبانی</a> ثبت کنید.",
+    "website": "https://paziresh24.com/",
+    "deleteurl": "https://paziresh24.com/home/support-form-other/",
+    "info": "جهت حذف حساب‌کاربری درخواست خود را از طریق <a href=\"https://paziresh24.com/home/support-form-other\" target=\"_blank\" rel=\"nofollow\">صفحه پشتیبانی</a> ثبت کنید.",
     "difficulty": "سخت",
     "keytype": "hard-label",
     "priority": "3",
@@ -1071,7 +1081,7 @@
   },
   {
     "name": "اسکای‌روم",
-    "website": "https://www.skyroom.online/",
+    "website": "https://skyroom.online/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1101,7 +1111,7 @@
   },
   {
     "name": "بانی مد",
-    "website": "https://www.banimode.com/",
+    "website": "https://banimode.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1111,7 +1121,7 @@
   },
   {
     "name": "ای استخدام",
-    "website": "https://www.e-estekhdam.com/",
+    "website": "https://e-estekhdam.com/",
     "deleteurl": "#",
     "info": "برای حذف اطلاعات کاربری میبایستی درخواست حذف حساب به ایمیل info@e-estekhdam.com ارسال گردد.",
     "difficulty": "سخت",
@@ -1121,7 +1131,7 @@
   },
   {
     "name": "مونگارد",
-    "website": "https://www.mongard.ir/",
+    "website": "https://mongard.ir/",
     "deleteurl": "#",
     "info": "برای حذف اطلاعات کاربری میبایستی درخواست حذف حساب به ایمیل mongard.amir@gmail.com ارسال گردد.",
     "difficulty": "سخت",
@@ -1141,7 +1151,7 @@
   },
   {
     "name": "تکنولایف",
-    "website": "https://www.technolife.ir/",
+    "website": "https://technolife.ir/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1201,7 +1211,7 @@
   },
   {
     "name": "قسطی کلاب",
-    "website": "https://www.ghesticlub.com/",
+    "website": "https://ghesticlub.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1221,7 +1231,7 @@
   },
   {
     "name": "کتابچین",
-    "website": "https://www.ketabchin.com/",
+    "website": "https://ketabchin.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1261,7 +1271,7 @@
   },
   {
     "name": "اتاقک",
-    "website": "https://www.otaghak.com/",
+    "website": "https://otaghak.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1271,7 +1281,7 @@
   },
   {
     "name": "ازکی",
-    "website": "https://www.azki.com/",
+    "website": "https://azki.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1281,7 +1291,7 @@
   },
   {
     "name": "اقامت ۲۴",
-    "website": "https://www.eghamat24.com/",
+    "website": "https://eghamat24.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1331,7 +1341,7 @@
   },
   {
     "name": "پلاک",
-    "website": "https://www.pelak.com/",
+    "website": "https://pelak.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1351,7 +1361,7 @@
   },
   {
     "name": "صباویژن",
-    "website": "https://www.sabavision.com/",
+    "website": "https://sabavision.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1391,7 +1401,7 @@
   },
   {
     "name": "همراه مکانیک",
-    "website": "https://www.hamrah-mechanic.com/",
+    "website": "https://hamrah-mechanic.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1421,7 +1431,7 @@
   },
   {
     "name": "لیموناد",
-    "website": "https://www.limoonad.com/",
+    "website": "https://limoonad.com/",
     "deleteurl": "#",
     "info": "برای تغییر ایمیل، تغییر نام‌کاربری یا حذف اکانت با همان ایمیلی که ثبت‌نام کرده‌اید به limoonad@outlook.com ایمیل بزنید. <a href=\"https://about.limoonad.com/faq-page/\" target=\"_blank\" rel=\"nofollow\">(اطلاعات بیشتر)</a>",
     "difficulty": "سخت",
@@ -1441,7 +1451,7 @@
   },
   {
     "name": "میزیتو",
-    "website": "https://www.mizito.ir/",
+    "website": "https://mizito.ir/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1461,7 +1471,7 @@
   },
   {
     "name": "ایزی اپلای",
-    "website": "https://www.ezapply.ir/",
+    "website": "https://ezapply.ir/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1491,9 +1501,9 @@
   },
   {
     "name": "Iranians Who Design",
-    "website": "https://www.iranianxdesign.com/",
+    "website": "https://iranianxdesign.com/",
     "deleteurl": "#",
-    "info": "برای حذف اطلاعات در توییتر به حساب‌کاربری <a href=\"https://twitter.com/IraniansD\" target=\"_blank\" rel=\"nofollow\">@IraniansD</a> پیام دهید. (<a href=\"https://www.iranianxdesign.com/about\" target=\"_blank\" rel=\"nofollow\">اطلاعات بیشتر</a>)",
+    "info": "برای حذف اطلاعات در توییتر به حساب‌کاربری <a href=\"https://twitter.com/IraniansD\" target=\"_blank\" rel=\"nofollow\">@IraniansD</a> پیام دهید. (<a href=\"https://iranianxdesign.com/about\" target=\"_blank\" rel=\"nofollow\">اطلاعات بیشتر</a>)",
     "difficulty": "سخت",
     "keytype": "hard-label",
     "priority": "3",
@@ -1521,7 +1531,7 @@
   },
   {
     "name": "IranTalent | ایران‌تلنت",
-    "website": "https://www.irantalent.com/",
+    "website": "https://irantalent.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1551,7 +1561,7 @@
   },
   {
     "name": "انجام میدم",
-    "website": "https://www.anjammidam.com/",
+    "website": "https://anjammidam.com/",
     "deleteurl": "#",
     "info": "از طریق ارسال تیکت درخواست خود را ارسال کنید.",
     "difficulty": "سخت",
@@ -1671,7 +1681,7 @@
   },
   {
     "name": "رادکام",
-    "website": "https://www.radcom.co/",
+    "website": "https://radcom.co/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1681,7 +1691,7 @@
   },
   {
     "name": "نت افراز",
-    "website": "https://www.netafraz.com/",
+    "website": "https://netafraz.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1701,7 +1711,7 @@
   },
   {
     "name": "برتینا",
-    "website": "https://www.bertina.ir/",
+    "website": "https://bertina.ir/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1731,7 +1741,7 @@
   },
   {
     "name": "وب رمز",
-    "website": "https://www.webramz.com/",
+    "website": "https://webramz.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1791,7 +1801,7 @@
   },
   {
     "name": "تیبان",
-    "website": "https://www.tebyan.net/",
+    "website": "https://tebyan.net/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1831,7 +1841,7 @@
   },
   {
     "name": "زنبیل",
-    "website": "https://www.zanbil.ir/",
+    "website": "https://zanbil.ir/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1841,7 +1851,7 @@
   },
   {
     "name": "ایران تلنت",
-    "website": "https://www.irantalent.com/",
+    "website": "https://irantalent.com/",
     "deleteurl": "#",
     "info": "جهت حذف حساب‌کاربری از طریق آدرس ایمیل info@irantalent.com درخواست خود را ثبت کنید.",
     "difficulty": "سخت",
