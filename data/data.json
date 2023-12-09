@@ -1,12 +1,32 @@
 [
   {
+    "name": "ایمالز",
+    "website": "http://emalls.ir/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "advertisement"
+  },
+  {
+    "name": "ترب",
+    "website": "https://torob.com/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "advertisement"
+  },
+  {
     "name": "ابزار وردپرس",
     "website": "https://abzarwp.com/",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
     "keytype": "impossible-label",
-    "priority": "2",
+    "priority": "3",
     "category": "e-commerce"
   },
   {
@@ -16,7 +36,7 @@
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
     "keytype": "impossible-label",
-    "priority": "1",
+    "priority": "3",
     "category": "finance"
   },
   {
