@@ -66,3 +66,4 @@ https://github.com/rtbf.ir/rtbf.ir
 - https://github.com/sir-kokabi/delete-friendly
 - https://www.youtube.com/watch?v=zb7UL9OPg2w&t=2481s
 - https://www.youtube.com/watch?v=QNPQuVWmXG0&t=3601s
+- https://www.youtube.com/watch?v=OTMvSFmUJIE&t=582s
