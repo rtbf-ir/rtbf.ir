@@ -1888,5 +1888,15 @@
     "keytype": "easy-label",
     "priority": "2",
     "category": "education"
+  },
+  {
+    "name": "اسنپ فود",
+    "website": "https://snappfood.ir/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "1",
+    "category": "e-commerce"
   }
 ]
