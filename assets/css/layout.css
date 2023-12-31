@@ -479,6 +479,10 @@ p {
   border-radius: 5px;
 }
 
+.star-required {
+  color: #f00;
+}
+
 @media screen and (max-width: 991.98px) {
   .bg-blur {
     backdrop-filter: none;

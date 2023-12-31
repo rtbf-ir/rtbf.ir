@@ -154,14 +154,18 @@
                             <div class="float-right w-100">
                                 <form action="https://formspree.io/f/xaygarpw"
                                 method="POST" autocomplete="off" accept-charset="UTF-8" action="mailto:info@rtbf.ir">
-                                    <p><label for="servicename">نام سرویس/سایت/اپلیکیشن :</label></p>
-                                    <p><input autocomplete="off" class="form-control" name="servicename" required /></p>
-                                    <p><label for="websiteurl">سایت :</label></p>
-                                    <p><input autocomplete="off" class="form-control" type="url" name="websiteurl" required /></p>
-                                    <p><label for="deleteurl">صفحه حذف :</label></p>
-                                    <p><input autocomplete="off" class="form-control" name="deleteurl" /></p>
-                                    <p><label for="issuedescription">توضیحات :</label></p>
-                                    <p><input autocomplete="off" class="form-control" name="issuedescription" required /></p>
+                                    <p><label for="servicename">نام سرویس/سایت/اپلیکیشن <sup class="star-required">*</sup></label></p>
+                                    <p><input autocomplete="off" class="form-control" name="servicename" id="servicename" required /></p>
+                                    <p><label for="websiteurl">سایت <sup class="star-required">*</sup></label></p>
+                                    <p><input autocomplete="off" class="form-control" type="url" name="websiteurl" id="websiteurl" required /></p>
+                                    <p><label for="deleteurl">صفحه حذف <sup class="star-required">*</sup></label></p>
+                                    <p><input autocomplete="off" class="form-control" name="deleteurl" id="deleteurl" /></p>
+                                    <p><label for="issuedescription">توضیحات <sup class="star-required">*</sup></label></p>
+                                    <p><input autocomplete="off" class="form-control" name="issuedescription" id="issuedescription" required /></p>
+                                    <br />
+                                    <p><label for="email">ایمیل شما <small>(اختیاری جهت اطلاع‌رسانی وضعیت)</small></label></p>
+                                    <p><input autocomplete="off" class="form-control" name="email" id="email" type="email" /></p>
+                                    <p class="text-muted"><small>ایمیل شما برای تبلیغات و ارسال خبرنامه استفاده نمی‌شود و تنها جهت اطلاع‌رسانی وضعیت سرویس ثبت‌ شده استفاده می‌شود.</small></p>
                                     <p><input class="btn btn-success float-left" type="submit"
                                             value="ثبت سایت/سرویس جدید" /></p>
                                     <div class="clear"></div>
