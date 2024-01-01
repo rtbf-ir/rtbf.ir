@@ -1898,5 +1898,25 @@
     "keytype": "impossible-label",
     "priority": "1",
     "category": "e-commerce"
+  },
+  {
+    "name": "دکوریار",
+    "website": "https://decoryar.com/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "e-commerce"
+  },
+  {
+    "name": "لوپت",
+    "website": "https://loo.pet/",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "e-commerce"
   }
 ]
