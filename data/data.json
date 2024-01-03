@@ -53,9 +53,9 @@
     "name": "اسنپ",
     "website": "snapp.ir",
     "deleteurl": "#",
-    "info": "امکان حذف وجود ندارد.",
-    "difficulty": "غیرممکن",
-    "keytype": "impossible-label",
+    "info": "درخواست‌تان را از طریق سوپراپلیکیشن ثبت، تیم پشتیبانی پس از بررسی، در یک بازه‌ی ۱۴ روزه، از طریق پیامک به شماره‌ی تلفن متصل به حساب نتیجه را به شما اعلام خواهد کرد.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
     "priority": "1",
     "category": "transport"
   },
