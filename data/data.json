@@ -1918,5 +1918,15 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "e-commerce"
+  },
+  {
+    "name": "استیم کلاب",
+    "website": "steamclub.ir/",
+    "deleteurl": "https://steamclub.ir/my-account/wpf-delete-account/",
+    "info": "از طریق بخش حذف حساب در پنل کاربری میتوانید حساب کاربری خود را حذف کنید.",
+    "difficulty": "ساده",
+    "keytype": "easy-label",
+    "priority": "3",
+    "category": "e-commerce"
   }
 ]
