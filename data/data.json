@@ -1928,5 +1928,15 @@
     "keytype": "easy-label",
     "priority": "3",
     "category": "e-commerce"
+  },
+  {
+    "name": "بازی زولا",
+    "website": "https://www.zula.ir/",
+    "deleteurl": "#",
+    "info": "حساب شما تا زمانی که دوباره وارد بازی شوید غیر فعال باقی ماند. حساب شما برای همیشه از سیستم حذف نمی شود.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "game"
   }
 ]
