@@ -1931,12 +1931,22 @@
   },
   {
     "name": "بازی زولا",
-    "website": "https://www.zula.ir/",
+    "website": "https://zula.ir/",
     "deleteurl": "#",
-    "info": "حساب شما تا زمانی که دوباره وارد بازی شوید غیر فعال باقی ماند. حساب شما برای همیشه از سیستم حذف نمی شود.",
+    "info": "حساب شما تا زمانی که دوباره وارد بازی شوید غیر فعال باقی می‌ماند و امکان حذف آن برای همیشه از سیستم وجود ندارد.",
     "difficulty": "غیرممکن",
     "keytype": "impossible-label",
     "priority": "3",
     "category": "game"
+  },
+  {
+    "name": "پروفایل‌سنتر",
+    "website": "https://profile.center",
+    "deleteurl": "#",
+    "info": "تصویر کارت ملی خود را از طریق واتساپ به شماره‌ی ۰۹۳۶۸۸۲۰۸۸۳ ارسال کنید.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "3",
+    "category": "information"
   }
 ]
