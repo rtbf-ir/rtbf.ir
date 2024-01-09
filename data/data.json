@@ -1910,6 +1910,16 @@
     "category": "e-commerce"
   },
   {
+    "name": "ویدابال",
+    "website": "vidabal.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "e-commerce"
+  },
+  {
     "name": "لوپت",
     "website": "loo.pet",
     "deleteurl": "#",
