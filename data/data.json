@@ -163,9 +163,9 @@
     "name": "ابرآروان",
     "website": "arvancloud.com",
     "deleteurl": "#",
-    "info": "امکان حذف وجود ندارد.",
-    "difficulty": "غیرممکن",
-    "keytype": "impossible-label",
+    "info": "درخواست مکتوب خود را به آدرس ایمیل support@arvancloud.ir ارسال کنید پس از بررسی از طریق پشتیبانی به شما اطلاع داده می‌شود.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
     "priority": "1",
     "category": "provider"
   },
