@@ -17,6 +17,5 @@ function toPersianNumber(number) {
     .join("");
 }
 
-document.getElementById("copyrightyear").innerHTML = toPersianNumber(
-  new Date().getFullYear()
-);
+document.getElementById("copyrightyear").innerHTML =
+  toPersianNumber(new Date().getFullYear()) + " - ۲۰۲۱";

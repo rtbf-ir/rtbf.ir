@@ -17,9 +17,8 @@ function toPersianNumber(number) {
     .join("");
 }
 
-document.getElementById("copyrightyear").innerHTML = toPersianNumber(
-  new Date().getFullYear()
-);
+document.getElementById("copyrightyear").innerHTML =
+  toPersianNumber(new Date().getFullYear()) + " - ۲۰۲۱";
 
 async function fetchData() {
   const DATA_URL = "https://rtbf.ir/data/data.json";
