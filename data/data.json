@@ -2079,5 +2079,14 @@
     "keytype": "impossible-label",
     "priority": "2",
     "category": "finance"
+  },{
+    "name": "بیت ۲۴",
+    "website": "bit24.cash",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "finance"
   }
 ]
