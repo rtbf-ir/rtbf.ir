@@ -1995,7 +1995,7 @@
     "difficulty": "سخت",
     "keytype": "hard-label",
     "priority": "1",
-    "category": "healthcare"
+    "category": "reservation"
   },{
     "name": "شنوتو",
     "website": "shenoto.com",
@@ -2015,5 +2015,15 @@
     "keytype": "hard-label",
     "priority": "3",
     "category": "software-as-a-service"
+  },
+  {
+    "name": "بایا",
+    "website": "baya.ir",
+    "deleteurl": "#",
+    "info": "برای اعلام درخواست با شماره 02143992000 تماس حاصل فرمایید.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "3",
+    "category": "insurance"
   }
 ]
