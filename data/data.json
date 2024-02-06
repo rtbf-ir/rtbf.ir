@@ -1958,5 +1958,14 @@
     "keytype": "hard-label",
     "priority": "3",
     "category": "information"
+  },{
+    "name": "قرآن صوتی حبل المتین",
+    "website": "myghoran.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "mobile"
   }
 ]
