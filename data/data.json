@@ -1996,5 +1996,14 @@
     "keytype": "hard-label",
     "priority": "1",
     "category": "healthcare"
+  },{
+    "name": "شنوتو",
+    "website": "shenoto.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "media"
   }
 ]
