@@ -2025,5 +2025,14 @@
     "keytype": "hard-label",
     "priority": "3",
     "category": "insurance"
+  },{
+    "name": "Shad",
+    "website": "shad.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "1",
+    "category": "messaging"
   }
 ]
