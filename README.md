@@ -1,18 +1,16 @@
 # rtbf.ir
-right to be forgotten (RTBF)
+**Right to be forgotten (RTBF)**
 
-<br />
+Directory of direct links to delete your account from persian web services.
 
-Right to be forgotten - directory of direct links to delete your account from persian web services.
 
-<br />
-
-collaborators:
+**collaborators:**
 - Amir Shokri (owner, developer) - [amirshnll](https://github.com/amirshnll)
 - Matin Baloochestani (developer) - [Matin-B](https://github.com/Matin-B)
+- Mohammadjamal Dashtaki (developer) - [dashtaki](https://github.com/dashtaki)
 - Sodeh Mohammadabadi (designer) - [irSodeh](https://github.com/irSodeh)
 
-<br /><br />
+<br />
 
 <div dir="rtl">
 
@@ -25,27 +23,10 @@ collaborators:
 <p>ایده‌ی اولیه‌ی این سرویس از  <strong><a target="_blank" href="https://backgroundchecks.org/justdeleteme/" title="justdeleteme">justdeleteme</a></strong> گرفته شده است و بعد از  <strong><a target="_blank" href="https://twitter.com/nima/status/1398335801042386947">این توییت</a></strong> تصمیم به راه‌اندازی آن گرفتیم.</p>
 <p>اگر قصد مشارکت دارید <strong><a target="_blank" href="https://github.com/rtbf-ir/rtbf.ir/issues/new/choose" title="rtbf.ir Source">از بخش issueها این کار را انجام دهید</a></strong>.</p>
 <p><strong><a href="https://rtbf.ir/donate" title="حمایت مالی از پروژه">اگر علاقه به حمایت از این پروژه را دارید کلیک کنید.</a></strong></p>
-<p>ما در توییتر : <strong>https://twitter.com/rtbf_ir</strong></p>
-<p>ما در اینستاگرام : <strong>https://instagram.com/rtbf_ir</strong></p>
-<p>ما در تلگرام : <strong>https://t.me/rtbf_ir</strong></p>
 <p>همچنین می‌توانید برای افزودن سرویس از فرم ایمیل زیر نیز استفاده کنید.</p>
 <p dir="ltr">https://rtbf.ir/issue</p>
 <p>برای مشاهده ی فهرست حامیان مالی روی لینک زیر کلیک کنید.</p>
 <p dir="ltr">https://rtbf.ir/donate</p>
-  
-<br />
-  
-  ### انتقال مخزن پروژه
-  
-<p dir="rtl">پس از اینکه پروژه کمی شکل رسمی تری پیدا کرد تصمیم بر این شد مخزن پروژه از آدرس:</p>
-  
-<del>https://github.com/amirshnll/rtbf.ir</del>
-  
-<p dir="rtl">به آدرس:</p>
-  
-https://github.com/rtbf.ir/rtbf.ir
-  
-<p dir="rtl">انتقال پیدا کند.</p>
   
 <br />
 
