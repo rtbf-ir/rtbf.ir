@@ -1976,6 +1976,15 @@
     "difficulty": "سخت",
     "keytype": "hard-label",
     "priority": "3",
-    "category": "e-commerce"
+    "category": "education"
+  },{
+    "name": "راکت",
+    "website": "roocket.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "education"
   }
 ]
