@@ -2005,5 +2005,15 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "media"
+  },
+  {
+    "name": "تم فور",
+    "website": "themefour.com",
+    "deleteurl": "#",
+    "info": "از طریق ثبت تیکت پشتیبانی به همراه امضای نامه کتبی (اعلام درخواست حذف حساب کاربری در نامه کتبی) درخواست حذف حساب در سایت امکان پذیر است. ",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "3",
+    "category": "software-as-a-service"
   }
 ]
