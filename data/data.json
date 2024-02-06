@@ -2061,5 +2061,14 @@
     "keytype": "impossible-label",
     "priority": "2",
     "category": "travel"
+  },{
+    "name": "ایران کتاب",
+    "website": "iranketab.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "e-commerce"
   }
 ]
