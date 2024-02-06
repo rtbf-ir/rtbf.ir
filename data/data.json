@@ -1986,5 +1986,15 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "education"
+  },
+  {
+    "name": "دکتر نکست",
+    "website": "drnext.ir",
+    "deleteurl": "#",
+    "info": "با ارسال درخواست به ایمیل زیر داده ها تا حد امکان حذف خواهد شد.:<br>support@drnext.ir",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "1",
+    "category": "healthcare"
   }
 ]
