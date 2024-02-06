@@ -1958,7 +1958,8 @@
     "keytype": "hard-label",
     "priority": "3",
     "category": "information"
-  },{
+  },
+  {
     "name": "قرآن صوتی حبل المتین",
     "website": "myghoran.com",
     "deleteurl": "#",
@@ -1972,12 +1973,13 @@
     "name": "تایم کد",
     "website": "timecode.ir",
     "deleteurl": "#",
-    "info": "درخواست خود را به ایمیل زیر ارسال کنید:<br>Info@timecode.ir",
+    "info": "درخواست خود را به ایمیل زیر ارسال کنید:<br>info@timecode.ir",
     "difficulty": "سخت",
     "keytype": "hard-label",
     "priority": "3",
     "category": "education"
-  },{
+  },
+  {
     "name": "راکت",
     "website": "roocket.ir",
     "deleteurl": "#",
@@ -1991,12 +1993,13 @@
     "name": "دکتر نکست",
     "website": "drnext.ir",
     "deleteurl": "#",
-    "info": "با ارسال درخواست به ایمیل زیر داده ها تا حد امکان حذف خواهد شد.:<br>support@drnext.ir",
+    "info": "با ارسال درخواست به ایمیل زیر داده‌ها تا حد امکان حذف خواهد شد.:<br>support@drnext.ir",
     "difficulty": "سخت",
     "keytype": "hard-label",
-    "priority": "1",
+    "priority": "3",
     "category": "reservation"
-  },{
+  },
+  {
     "name": "شنوتو",
     "website": "shenoto.com",
     "deleteurl": "#",
@@ -2010,7 +2013,7 @@
     "name": "تم فور",
     "website": "themefour.com",
     "deleteurl": "#",
-    "info": "از طریق ثبت تیکت پشتیبانی به همراه امضای نامه کتبی (اعلام درخواست حذف حساب کاربری در نامه کتبی) درخواست حذف حساب در سایت امکان پذیر است. ",
+    "info": "از طریق ثبت تیکت پشتیبانی به همراه امضای نامه کتبی (اعلام درخواست حذف حساب کاربری در نامه کتبی) درخواست حذف حساب در سایت امکان‌پذیر است. ",
     "difficulty": "سخت",
     "keytype": "hard-label",
     "priority": "3",
@@ -2025,7 +2028,8 @@
     "keytype": "hard-label",
     "priority": "3",
     "category": "insurance"
-  },{
+  },
+  {
     "name": "Shad",
     "website": "shad.ir",
     "deleteurl": "#",
@@ -2034,7 +2038,8 @@
     "keytype": "impossible-label",
     "priority": "1",
     "category": "messaging"
-  },{
+  },
+  {
     "name": "وب داده",
     "website": "webdade.com",
     "deleteurl": "#",
@@ -2043,7 +2048,8 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "provider"
-  },{
+  },
+  {
     "name": "VIP HOST",
     "website": "viphost.cloud",
     "deleteurl": "#",
@@ -2052,25 +2058,28 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "provider"
-  },{
+  },
+  {
     "name": "میهمان شو",
     "website": "mihmansho.com",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
     "keytype": "impossible-label",
-    "priority": "2",
+    "priority": "3",
     "category": "travel"
-  },{
+  },
+  {
     "name": "ایران کتاب",
     "website": "iranketab.ir",
     "deleteurl": "#",
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
     "keytype": "impossible-label",
-    "priority": "2",
+    "priority": "3",
     "category": "e-commerce"
-  },{
+  },
+  {
     "name": "آبان‌ تتر",
     "website": "abantether.com",
     "deleteurl": "#",
@@ -2079,7 +2088,8 @@
     "keytype": "impossible-label",
     "priority": "2",
     "category": "finance"
-  },{
+  },
+  {
     "name": "بیت ۲۴",
     "website": "bit24.cash",
     "deleteurl": "#",
@@ -2093,7 +2103,7 @@
     "name": "بیت پین",
     "website": "bitpin.ir",
     "deleteurl": "#",
-    "info": "نیاز است درخواست کتبی ارسال شود. جهت کسب اطلاعات بیشتر لینک زیر را مطالعه کنید.<br>https://help.bitpin.ir/fa/article/aia-mitoan-hsab-karbri-bitpin-ra-hthf-krd-1njc1uk/",
+    "info": "نیاز است درخواست کتبی ارسال شود. جهت کسب اطلاعات بیشتر لینک زیر را مطالعه کنید.<br><a href='https://help.bitpin.ir/fa/article/aia-mitoan-hsab-karbri-bitpin-ra-hthf-krd-1njc1uk/' target='_blank' rel='nofollow noreferrer noopener' title='https://help.bitpin.ir/fa/article/aia-mitoan-hsab-karbri-bitpin-ra-hthf-krd-1njc1uk/'>https://help.bitpin.ir/fa/article/aia-mitoan-hsab-karbri-bitpin-ra-hthf-krd-1njc1uk/</a>",
     "difficulty": "سخت",
     "keytype": "hard-label",
     "priority": "2",
