@@ -2088,5 +2088,15 @@
     "keytype": "impossible-label",
     "priority": "2",
     "category": "finance"
+  },
+  {
+    "name": "بیت پین",
+    "website": "bitpin.ir",
+    "deleteurl": "#",
+    "info": "نیاز است درخواست کتبی ارسال شود. جهت کسب اطلاعات بیشتر لینک زیر را مطالعه کنید.<br>https://help.bitpin.ir/fa/article/aia-mitoan-hsab-karbri-bitpin-ra-hthf-krd-1njc1uk/",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "2",
+    "category": "finance"
   }
 ]
