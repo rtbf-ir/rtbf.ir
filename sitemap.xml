@@ -10,11 +10,6 @@
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://rtbf.ir/index</loc>
-    <lastmod>2022-08-07T20:59:11+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://rtbf.ir/directory</loc>
     <lastmod>2022-08-07T20:59:11+00:00</lastmod>
     <priority>0.80</priority>
@@ -504,6 +499,22 @@
   <url>
     <loc>https://rtbf.ir/post/soc</loc>
     <lastmod>2024-01-06T10:59:11+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>
+      https://rtbf.ir/post/what-is-the-function-of-my-information-on-the-internet-for-commercial-companies</loc>
+    <lastmod>2024-02-07T09:28:23+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://rtbf.ir/post/the-impact-of-privacy-on-peoples-future</loc>
+    <lastmod>2024-02-07T09:28:23+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://rtbf.ir/post/the-impact-of-privacy-in-the-lives-of-our-children-and-the-internet</loc>
+    <lastmod>2024-02-07T09:28:23+00:00</lastmod>
     <priority>0.64</priority>
   </url>
 </urlset>
