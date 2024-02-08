@@ -643,9 +643,9 @@
     "name": "ایران سرور",
     "website": "iranserver.com",
     "deleteurl": "#",
-    "info": "امکان حذف وجود ندارد.",
-    "difficulty": "غیرممکن",
-    "keytype": "impossible-label",
+    "info": "وارد سیستم پشتیبانی شوید و موضوع حذف حساب کاربری را انتخاب کنید.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
     "priority": "2",
     "category": "provider"
   },
