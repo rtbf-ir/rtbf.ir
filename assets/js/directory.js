@@ -110,10 +110,10 @@ function filterData() {
   var serviceNameDom = document.getElementById("servicename");
   try {
     changeData(
-      categoryDom.value,
-      priorityDom.value,
-      statusDom.value,
-      serviceNameDom.value
+      categoryDom.value.toLowerCase(),
+      priorityDom.value.toLowerCase(),
+      statusDom.value.toLowerCase(),
+      serviceNameDom.value.toLowerCase()
     );
   } catch (err) {
     appendToDOMAll();
