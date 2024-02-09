@@ -332,10 +332,10 @@
   {
     "name": "کارزار",
     "website": "karzar.net",
-    "deleteurl": "#",
-    "info": "امکان حذف وجود ندارد.",
-    "difficulty": "غیرممکن",
-    "keytype": "impossible-label",
+    "deleteurl": "https://www.karzar.net/panel/tickets/create",
+    "info": "درخواست خود را از طریق همان ایمیل یا شماره موبایلی که امضای خود را ثبت کرده‌اید مبنی بر حذف امضاها برای تیم پشتیبانی از طریق تیکت ارسال کنید.<br>اطلاعات بیشتر:<br>https://www.karzar.net/privacy-policy",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
     "priority": "2",
     "category": "software-as-a-service"
   },
