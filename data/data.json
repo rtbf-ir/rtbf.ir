@@ -2108,5 +2108,15 @@
     "keytype": "hard-label",
     "priority": "2",
     "category": "finance"
+  },
+  {
+    "name": "دستیار هوش مصنوعی اول",
+    "website": "avalai.ir",
+    "deleteurl": "#",
+    "info": "به بخش تنظیمات بروید و سپس روی گزینه‌ی Delete account بزنید.",
+    "difficulty": "ساده",
+    "keytype": "easy-label",
+    "priority": "3",
+    "category": "software-as-a-service"
   }
 ]
