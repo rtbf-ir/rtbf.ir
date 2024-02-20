@@ -2118,5 +2118,15 @@
     "keytype": "easy-label",
     "priority": "3",
     "category": "software-as-a-service"
+  },
+  {
+    "name": "زودکس",
+    "website": "zoodex.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "e-commerce"
   }
 ]
