@@ -8,7 +8,7 @@ Directory of direct links to delete your account from persian web services.
 - Amir Shokri (owner, developer) - [amirshnll](https://github.com/amirshnll)
 - Matin Baloochestani (developer) - [Matin-B](https://github.com/Matin-B)
 - Mohammadjamal Dashtaki (developer) - [dashtaki](https://github.com/dashtaki)
-- Sodeh Mohammadabadi (designer) - [irSodeh](https://github.com/irSodeh)
+- Sodeh Mohammadabadi (designer) - [irsodeh](https://github.com/irsodeh)
 
 <br />
 
