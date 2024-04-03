@@ -2128,5 +2128,15 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "e-commerce"
+  },
+  {
+    "name": "کوئیز24",
+    "website": "quiz24.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "education"
   }
 ]
