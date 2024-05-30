@@ -213,7 +213,7 @@
     "name": "روبیکا",
     "website": "rubika.ir",
     "deleteurl": "#",
-    "info": "در نسخه جدید روبیکا در اپلیکیشن موبایل این برنامه امکان حذف حساب‌کاربری بعد از گذشت ۷ روز از نصب و لاگین توسط نرم افزار اندرویدی موجود می‌باشد. هنوز در نسخه دسکتاپ(وب) این امکان وجود ندارد.",
+    "info": "در نسخه جدید روبیکا در اپلیکیشن موبایل این برنامه امکان حذف حساب‌کاربری بعد از گذشت ۱۰ روز از نصب و لاگین توسط نرم افزار اندرویدی موجود می‌باشد. هنوز در نسخه دسکتاپ(وب) این امکان وجود ندارد.",
     "difficulty": "سخت",
     "keytype": "hard-label",
     "priority": "3",
@@ -2138,5 +2138,205 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "education"
+  },
+  {
+    "name": "گروه آموزشی مپ",
+    "website": "mapedu.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "education"
+  },
+  {
+    "name": "آی‌تی‌مال",
+    "website": "itmall.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "e-commerce"
+  },
+  {
+    "name": "ایسوس ایران",
+    "website": "asusiran.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "e-commerce"
+  },
+  {
+    "name": "سبز لرن",
+    "website": "sabzlearn.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "education"
+  },
+  {
+    "name": "آی کاپ",
+    "website": "icup.ir",
+    "deleteurl": "#",
+    "info": "اطلاعات هویتی تا یک سال پس از حذف حساب باقی می‌ماند و سپس حذف می‌شود، اما تاریخچه گردش حساب حفظ می‌شود.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "3",
+    "category": "finance"
+  },
+  {
+    "name": "کندو",
+    "website": "candoclub.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "education"
+  },
+  {
+    "name": "فست دیکشنری",
+    "website": "fastdic.com",
+    "deleteurl": "#",
+    "info": "از بخش تماس با ما درخواست حذف حساب‌کاربری خود را ثبت کنید.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "2",
+    "category": "education"
+  },
+  {
+    "name": "خانومی",
+    "website": "khanoumi.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "e-commerce"
+  },
+  {
+    "name": "چاپچی",
+    "website": "chapchi.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "e-commerce"
+  },
+  {
+    "name": "سون لرن",
+    "website": "7learn.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "education"
+  },
+  {
+    "name": "ایسمینار",
+    "website": "eseminar.tv",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "event"
+  },
+  {
+    "name": "شاواز",
+    "website": "shavaz.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "e-commerce"
+  },
+  {
+    "name": "صرافی پینگی",
+    "website": "pingi.co",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "finance"
+  },
+  {
+    "name": "صرافی یوبیتکس",
+    "website": "ubitex.io",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "finance"
+  },
+  {
+    "name": "صرافی تبدیل",
+    "website": "tabdeal.org",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "finance"
+  },
+  {
+    "name": "کافی بده",
+    "website": "coffeebede.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "finance"
+  },
+  {
+    "name": "کافیته",
+    "website": "coffeete.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "finance"
+  },
+  {
+    "name": "تی‌شادی",
+    "website": "tshadi.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "entertainment"
+  },
+  {
+    "name": "پارس وی‌دی‌اس",
+    "website": "parsvds.com",
+    "deleteurl": "#",
+    "info": "برای حذف حساب‌کاربری از طریق تیکت درخواست خود را ثبت کنید.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "3",
+    "category": "provider"
+  },
+  {
+    "name": "رادیب",
+    "website": "radib.com",
+    "deleteurl": "#",
+    "info": "برای حذف حساب‌کاربری از طریق تیکت درخواست خود را ثبت کنید.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "3",
+    "category": "marketing"
   }
 ]
