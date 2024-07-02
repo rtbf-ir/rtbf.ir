@@ -2338,5 +2338,25 @@
     "keytype": "hard-label",
     "priority": "3",
     "category": "marketing"
+  },
+  {
+    "name": "Boxzi",
+    "website": "boxzi.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "software-as-a-service"
+  },
+  {
+    "name": "اندازه",
+    "website": "andaze.io",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "information"
   }
 ]
