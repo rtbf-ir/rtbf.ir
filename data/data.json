@@ -2408,5 +2408,15 @@
     "keytype": "medium-label",
     "priority": "3",
     "category": "education"
+  },
+  {
+    "name": "فروشگاه بیرال",
+    "website": "biral.ir",
+    "deleteurl": "biral.ir/privacy-request",
+    "info": "کاربر از پنل کاربری روی گزینه حق فراموش شدن کلیک کرده و پس از تایید ایمیلی که در پنل کاربری مشخص کرده، اطلاعات کاربر توسط مدیر حذف می‌شود",
+    "difficulty": "ساده",
+    "keytype": "easy-label",
+    "priority": "3",
+    "category": "e-commerce"
   }
 ]
