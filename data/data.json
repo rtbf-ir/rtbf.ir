@@ -2358,5 +2358,55 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "information"
+  },
+  {
+    "name": "آقای پرداخت",
+    "website": "aqayepardakht.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "finance"
+  },
+  {
+    "name": "راستین",
+    "website": "raastin.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "finance"
+  },
+  {
+    "name": "جیبیت",
+    "website": "jibit.ir",
+    "deleteurl": "#",
+    "info": "کاربران می‌توانند در صورت عدم تمایل به ادامه‌ی فعالیت، حساب خود را متوقف نمایند و درخواست خود را از طریق تیکت ارسال نمایند.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "2",
+    "category": "finance"
+  },
+  {
+    "name": "آبادیس",
+    "website": "abadis.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "education"
+  },
+  {
+    "name": "آیو لرن",
+    "website": "aiolearn.com",
+    "deleteurl": "aiolearn.com/my-account/edit-account/",
+    "info": "برای حذف حساب کاربری به بخش ویرایش حساب کاربری بروید و در آنجا گزینه‌ی حذف حساب کاربری را بزنید.",
+    "difficulty": "متوسط",
+    "keytype": "medium-label",
+    "priority": "3",
+    "category": "education"
   }
 ]
