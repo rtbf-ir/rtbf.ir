@@ -2418,5 +2418,15 @@
     "keytype": "easy-label",
     "priority": "3",
     "category": "e-commerce"
+  },
+  {
+    "name": "جت سئو",
+    "website": "jetseo.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "marketing"
   }
 ]
