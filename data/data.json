@@ -2428,5 +2428,15 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "marketing"
+  },
+  {
+    "name": "رمزینکس",
+    "website": "ramzinex.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "finance"
   }
 ]
