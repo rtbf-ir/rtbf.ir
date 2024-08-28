@@ -2438,5 +2438,25 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "finance"
+  },
+  {
+    "name": "زبان‌شناس",
+    "website": "zabanshenas.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "education"
+  },
+  {
+    "name": "الانزا",
+    "website": "elanza.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "e-commerce"
   }
 ]
