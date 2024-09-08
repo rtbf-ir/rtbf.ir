@@ -2468,5 +2468,15 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "finance"
+  },
+  {
+    "name": "افلیو",
+    "website": "affilio.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "marketing"
   }
 ]
