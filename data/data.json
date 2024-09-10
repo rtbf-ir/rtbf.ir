@@ -2478,5 +2478,45 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "marketing"
+  },
+  {
+    "name": "یوگای بارداری",
+    "website": "yoga4mommy.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "healthcare"
+  },
+  {
+    "name": "کافه پخش",
+    "website": "cafe-pakhsh.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "e-commerce"
+  },
+  {
+    "name": "هورکاجاب",
+    "website": "hrcjobs.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "job"
+  },
+  {
+    "name": "جابیران",
+    "website": "jobiran.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "job"
   }
 ]
