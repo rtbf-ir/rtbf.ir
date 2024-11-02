@@ -32,7 +32,6 @@ Directory of direct links to delete your account from persian web services.
 - https://blog.sabavision.com/sm/right-to-be-forgotten
 - https://payping.io/blog/support-software-developement/
 - https://jadi.net/2022/01/mondays-00-09/
-- https://www.youtube.com/watch?v=Zqo4j-3s6Rk
 - https://www.youtube.com/watch?v=q2mCo_u2R6c&t=1351s
 - https://youtu.be/i8lSf9nLTk8
 - https://chng.it/5zxjCKqHGN
