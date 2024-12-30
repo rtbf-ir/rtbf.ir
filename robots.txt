@@ -1,4 +1,21 @@
 User-agent: *
+
 Disallow: /*?ref=
+disallow: *?*
 
 Sitemap: https://rtbf.ir/sitemap.xml
+
+User-Agent: Mediapartners-Google
+Allow: /
+
+User-Agent: Adsbot-Google
+Allow: /
+
+User-Agent: Googlebot-Image
+Allow: /
+
+User-Agent: Googlebot-Mobile
+Allow: /
+
+User-Agent: Googlebot
+Allow: /
