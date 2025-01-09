@@ -1,7 +1,8 @@
 User-agent: *
 
 Disallow: /*?ref=
-disallow: *?*
+Disallow: *?*
+Disallow: /cdn-cgi/
 
 Sitemap: https://rtbf.ir/sitemap.xml
 
