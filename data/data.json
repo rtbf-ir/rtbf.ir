@@ -2538,5 +2538,15 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "e-commerce"
+  },
+  {
+    "name": "پینکی",
+    "website": "pinki.shop",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "e-commerce"
   }
 ]
