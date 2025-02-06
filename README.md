@@ -10,11 +10,11 @@ Directory of direct links to delete your account from persian web services.
 - Mohammadjamal Dashtaki (developer) - [dashtaki](https://github.com/dashtaki)
 - Sodeh Mohammadabadi (designer) - [irsodeh](https://github.com/irsodeh)
 
-<br />
+<br>
 
 <div dir="rtl">
 
-<img src="https://raw.githubusercontent.com/amirshnll/rtbf.ir/main/logo-readme.png" alt="right to be forgotten (RTBF) Logo" title="right to be forgotten (RTBF) Logo" />
+<img src="https://raw.githubusercontent.com/amirshnll/rtbf.ir/main/logo-readme.png" alt="right to be forgotten (RTBF) Logo" title="right to be forgotten (RTBF) Logo">
   
 ## توضیحات پروژه حق فراموش شدن
 
@@ -22,7 +22,7 @@ Directory of direct links to delete your account from persian web services.
 <p>بسیاری از سرویس‌های اینترنتی اینگونه عمل می‌کنند که امکان حذف حساب‌کاربری را به شما نمی‌دهند و از نظر ما کاربران این موضوع نقض حریم شخصی است. با توجه به حق فراموش شدن یا Right to be forgotten این یک تضاد می‌باشد.</p>
 <p>ایده‌ی اولیه‌ی این سرویس از  <strong><a target="_blank" href="https://backgroundchecks.org/justdeleteme/" title="justdeleteme">justdeleteme</a></strong> گرفته شده است و بعد از  <strong><a target="_blank" href="https://x.com/nima/status/1398335801042386947">این توییت</a></strong> تصمیم به راه‌اندازی آن گرفتیم.</p>
   
-<br />
+<br>
 
  ### لینک‌های مرتبط با پروژه
   
