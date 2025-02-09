@@ -2558,5 +2558,15 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "finance"
+  },
+  {
+    "name": "ذره بین",
+    "website": "zarebin.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "search-engine"
   }
 ]
