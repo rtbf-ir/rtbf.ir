@@ -2568,5 +2568,15 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "search-engine"
+  },
+  {
+    "name": "اسنپ اکسپرس",
+    "website": "express.snapp.market",
+    "deleteurl": "#",
+    "info": "درخواست‌تان را از طریق بخش پشتیبانی و انتخاب گزینه حذف حساب کاربری از بخش مشکلات حساب کاربری ثبت نمایید، تیم پشتیبانی پس از بررسی تماس خواهند گرفت.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "1",
+    "category": "transport"
   }
 ]
