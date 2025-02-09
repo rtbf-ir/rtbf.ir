@@ -73,9 +73,9 @@
     "name": "تپسی",
     "website": "tapsi.ir",
     "deleteurl": "#",
-    "info": "امکان حذف وجود ندارد.",
-    "difficulty": "غیرممکن",
-    "keytype": "impossible-label",
+    "info": "از طریق بخش پروفایل، پشتیبانی، انتخاب گزینه تغییر اطلاعات حساب کاربری و سپس انتخاب گزینه حذف یا غیرفعالسازی حساب کاربری درخواست خود را با ذکر دلیل ثبت نمایید.",
+    "difficulty": " ",
+    "keytype": "hard-label",
     "priority": "1",
     "category": "transport"
   },
