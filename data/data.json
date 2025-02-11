@@ -2578,5 +2578,15 @@
     "keytype": "hard-label",
     "priority": "1",
     "category": "transport"
+  },
+  {
+    "name": "تاپ لرن",
+    "website": "toplearn.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "education"
   }
 ]
