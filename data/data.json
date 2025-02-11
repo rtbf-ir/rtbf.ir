@@ -2598,5 +2598,15 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "transport"
+  },
+  {
+    "name": "تارا",
+    "website": "tara360.ir",
+    "deleteurl": "#",
+    "info": "مطابق <a href=\"https://tara360.ir/termscondition\" target=\"_blank\" rel=\"nofollow\">بخش قوانین عمومی صفحه قوانین و مقررات</a> کاربران این سامانه اختیار دارند اطلاعات شخصی خود را که به هنگام ثبت ‌نام در اختیار سامانه تارا قرار داده‌­اند، در هر زمان حذف نمایند؛ این امر از طریق واحد پشتیبانی برای کاربران میسر گردیده است.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "1",
+    "category": "finance"
   }
 ]
