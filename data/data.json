@@ -2588,5 +2588,15 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "education"
+  },
+  {
+    "name": "زی‌رو",
+    "website": "zeero.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "transport"
   }
 ]
