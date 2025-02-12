@@ -332,8 +332,8 @@
   {
     "name": "کارزار",
     "website": "karzar.net",
-    "deleteurl": "https://www.karzar.net/panel/tickets/create",
-    "info": "درخواست خود را از طریق همان ایمیل یا شماره موبایلی که امضای خود را ثبت کرده‌اید مبنی بر حذف امضاها برای تیم پشتیبانی از طریق تیکت ارسال کنید.<br>اطلاعات بیشتر:<br><a href=\"https://www.karzar.net/privacy-policy\" target=\"_blank\" rel=\"nofollow noreferrer noopener\">صفحه حریم شخصی</a>",
+    "deleteurl": "https://karzar.net/panel/tickets/create",
+    "info": "درخواست خود را از طریق همان ایمیل یا شماره موبایلی که امضای خود را ثبت کرده‌اید مبنی بر حذف امضاها برای تیم پشتیبانی از طریق تیکت ارسال کنید.<br>اطلاعات بیشتر:<br><a href=\"https://karzar.net/privacy-policy\" target=\"_blank\" rel=\"nofollow noreferrer noopener\">صفحه حریم شخصی</a>",
     "difficulty": "سخت",
     "keytype": "hard-label",
     "priority": "2",
