@@ -2608,5 +2608,15 @@
     "keytype": "hard-label",
     "priority": "1",
     "category": "finance"
+  },
+  {
+    "name": "اسنپ شاپ",
+    "website": "snappshop.ir",
+    "deleteurl": "#",
+    "info": "برای حذف حساب کاربری، لطفا با پشتیبانی اسنپ شاپ به شماره 021-96612612 تماس حاصل فرمایید.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "1",
+    "category": "e-commerce"
   }
 ]
