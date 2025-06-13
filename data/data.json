@@ -2618,5 +2618,35 @@
     "keytype": "hard-label",
     "priority": "1",
     "category": "e-commerce"
+  },
+  {
+    "name": "اینستاگرام",
+    "website": "instagram.com",
+    "deleteurl": "#",
+    "info": "برای حذف حساب اینستاگرام مراحل زیر را دنبال کنید Account Profile > menu > Settings and privacy > Accounts Center > Personal details > Account ownership and control > Deactivation or deletion > Delete account > Continue از چندماه پیش امکان حذف حساب اینستاگرام در اپ موبایل اضافه شد",
+    "difficulty": "ساده",
+    "keytype": "easy-label",
+    "priority": "1",
+    "category": "social-media"
+  },
+  {
+    "name": "تلگرام",
+    "website": "telegram.org",
+    "deleteurl": "#",
+    "info": "برای حذف حساب کاربری تلگرام ابتدا تلگرام را باز کنید سپس به settings بروید و در بخش Privacy and Security گزینه‌ی Delete My Account را بزنید و بعد از وارد کردن کد تایید و دلیل حذف خود حساب کاربری شما پاک می‌شود.",
+    "difficulty": "ساده",
+    "keytype": "easy-label",
+    "priority": "1",
+    "category": "messaging"
+  },
+  {
+    "name": "توییتر",
+    "website": "x.com",
+    "deleteurl": "#",
+    "info": "اگر دوست داشتی اکانت توییترت یا X فعلی رو حذف کنی از روش زیر میتونی اینکارو کنی: More -> Settings and privacy -> Your account -> Deactivate your account",
+    "difficulty": "ساده",
+    "keytype": "easy-label",
+    "priority": "1",
+    "category": "social-media"
   }
 ]
