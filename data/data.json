@@ -2648,5 +2648,55 @@
     "keytype": "easy-label",
     "priority": "1",
     "category": "social-media"
+  },
+  {
+    "name": "بای چک",
+    "website": "bycheck.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "finance"
+  },
+  {
+    "name": "آپسان",
+    "website": "tally.credit",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "finance"
+  },
+  {
+    "name": "ویپاد",
+    "website": "wepod.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "finance"
+  },
+  {
+    "name": "بالون",
+    "website": "baloan.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "finance"
+  },
+  {
+    "name": "قسطا",
+    "website": "ghesta.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "finance"
   }
 ]
