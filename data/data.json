@@ -2698,5 +2698,15 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "finance"
+  },
+  {
+    "name": "واتساپ",
+    "website": "whatsapp.com",
+    "deleteurl": "#",
+    "info": "برای حذف حساب واتساپ، وارد Settings شوید، به بخش Account بروید، گزینه «Delete my account» را انتخاب کنید، شماره تلفن خود را وارد کرده و عملیات را تأیید کنید. تمام داده‌ها به‌طور دائمی حذف می‌شود.",
+    "difficulty": "ساده",
+    "keytype": "easy-label",
+    "priority": "1",
+    "category": "messaging"
   }
 ]
