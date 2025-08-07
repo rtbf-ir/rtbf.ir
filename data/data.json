@@ -2708,5 +2708,15 @@
     "keytype": "easy-label",
     "priority": "1",
     "category": "messaging"
+  },
+  {
+    "name": "شیپور",
+    "website": "sheypoor.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "1",
+    "category": "advertisement"
   }
 ]
