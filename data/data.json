@@ -2778,5 +2778,15 @@
     "keytype": "impossible-label",
     "priority": "1",
     "category": "finance"
+  },
+  {
+    "name": "آبانک",
+    "website": "abankapp.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "1",
+    "category": "finance"
   }
 ]
