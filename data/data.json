@@ -2758,5 +2758,15 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "job"
+  },
+  {
+    "name": "بلوبانک",
+    "website": "blubank.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "1",
+    "category": "finance"
   }
 ]
