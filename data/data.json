@@ -2786,7 +2786,17 @@
     "info": "امکان حذف وجود ندارد.",
     "difficulty": "غیرممکن",
     "keytype": "impossible-label",
-    "priority": "1",
+    "priority": "2",
+    "category": "finance"
+  },
+  {
+    "name": "توبانک",
+    "website": "tobank.ir",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
     "category": "finance"
   }
 ]
