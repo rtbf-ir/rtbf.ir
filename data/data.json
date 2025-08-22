@@ -2798,5 +2798,15 @@
     "keytype": "impossible-label",
     "priority": "2",
     "category": "finance"
+  },
+  {
+    "name": "آی گپ",
+    "website": "igap.net",
+    "deleteurl": "#",
+    "info": "عکس حساب‌کاربری را انتخاب کنید سپس از تنظیمات وارد حریم‌خصوصی و امنیت شوید و از منوی سه نقطه گزینه حذف حساب‌کاربری را انتخاب کنید.",
+    "difficulty": "ساده",
+    "keytype": "easy-label",
+    "priority": "3",
+    "category": "messaging"
   }
 ]
