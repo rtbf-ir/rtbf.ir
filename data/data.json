@@ -2808,5 +2808,15 @@
     "keytype": "easy-label",
     "priority": "3",
     "category": "messaging"
+  },
+  {
+    "name": "ویراستی",
+    "website": "virasty.com",
+    "deleteurl": "#",
+    "info": "برای حذف حساب کاربری در ویرَستی، باید به صفحه غیرفعال‌سازی (Deactivation) بروید و درخواست حذف حساب خود را ثبت کنید. با انجام این کار، تمام داده‌ها، شامل ویرَست‌ها، تصاویر، ویدیوها و تاریخچه حساب شما به‌طور کامل از سیستم حذف می‌شوند و امکان بازیابی وجود ندارد.",
+    "difficulty": "ساده",
+    "keytype": "easy-label",
+    "priority": "1",
+    "category": "social-media"
   }
 ]
