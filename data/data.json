@@ -2768,5 +2768,15 @@
     "keytype": "impossible-label",
     "priority": "1",
     "category": "finance"
+  },
+  {
+    "name": "بانکینو",
+    "website": "bankino.digital",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "1",
+    "category": "finance"
   }
 ]
