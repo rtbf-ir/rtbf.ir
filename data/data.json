@@ -1092,10 +1092,10 @@
   {
     "name": "پذیرش24",
     "website": "paziresh24.com",
-    "deleteurl": "paziresh24.com/home/support-form-other",
-    "info": "جهت حذف حساب‌کاربری درخواست خود را از طریق <a href=\"https://paziresh24.com/home/support-form-other\" target=\"_blank\" rel=\"nofollow noreferrer noopener\">صفحه پشتیبانی</a> ثبت کنید.",
-    "difficulty": "سخت",
-    "keytype": "hard-label",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
     "priority": "3",
     "category": "travel"
   },
