@@ -2818,5 +2818,15 @@
     "keytype": "easy-label",
     "priority": "1",
     "category": "social-media"
+  },
+  {
+    "name": "میزبان سام",
+    "website": "mizbansam.com",
+    "deleteurl": "#",
+    "info": "از طریق ارسال تیکت درخواست خود را ارسال کنید.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "3",
+    "category": "provider"
   }
 ]
