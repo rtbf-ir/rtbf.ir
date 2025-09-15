@@ -2828,5 +2828,15 @@
     "keytype": "hard-label",
     "priority": "3",
     "category": "provider"
+  },
+  {
+    "name": "شبه",
+    "website": "shabe.ir",
+    "deleteurl": "#",
+    "info": "از طریق ارسال تیکت درخواست خود را ارسال کنید.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "3",
+    "category": "entertainment"
   }
 ]
