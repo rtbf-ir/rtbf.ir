@@ -2838,5 +2838,15 @@
     "keytype": "hard-label",
     "priority": "3",
     "category": "entertainment"
+  },
+  {
+    "name": "سیب اپ",
+    "website": "sibapp.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "2",
+    "category": "mobile"
   }
 ]
