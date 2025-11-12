@@ -2848,5 +2848,35 @@
     "keytype": "impossible-label",
     "priority": "2",
     "category": "mobile"
+  },
+  {
+    "name": "ردلینک",
+    "website": "redl.ink",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "software-as-a-service"
+  },
+  {
+    "name": "زیلینک",
+    "website": "zil.ink",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "software-as-a-service"
+  },
+  {
+    "name": "ایران لنوو",
+    "website": "iranlenovo.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "e-commerce"
   }
 ]
