@@ -2878,5 +2878,25 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "e-commerce"
+  },
+  {
+    "name": "هم‌روش",
+    "website": "hamravesh.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "provider"
+  },
+  {
+    "name": "ابربیت",
+    "website": "abrbit.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "provider"
   }
 ]
