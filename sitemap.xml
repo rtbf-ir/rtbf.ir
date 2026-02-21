@@ -10,6 +10,11 @@
     <priority>1.00</priority>
   </url>
   <url>
+    <loc>https://rtbf.ir/index-en.html</loc>
+    <lastmod>2026-02-21T03:44:00+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
     <loc>https://rtbf.ir/directory</loc>
     <lastmod>2026-02-21T03:44:00+00:00</lastmod>
     <priority>0.80</priority>
