@@ -2908,5 +2908,25 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "finance"
+  },
+  {
+    "name": "آموزش برنامه نویسی فارسی",
+    "website": "camelcase.ir",
+    "deleteurl": "#",
+    "info": "از طریق ارسال تیکت درخواست خود را ارسال کنید.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
+    "priority": "2",
+    "category": "education"
+  },
+  {
+    "name": "کلون کلود",
+    "website": "keloncloud.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "provider"
   }
 ]
