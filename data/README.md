@@ -1,49 +1,16 @@
-# Data
+# Directory data contract
 
-## deta detail
+`data.json` is the public directory consumed by rtbf.ir and the browser extensions.
 
-```
-"name": "",
-"website": "",
-"deleteurl": "",
-"info": "",
-"difficulty": "",
-"keytype": "",
-"priority": "",
-"category": ""
-```
+Each record must include:
 
-## `name` field:
-- service name
+- `name`: service name.
+- `website`: canonical hostname, without a scheme or path.
+- `deleteurl`: deletion URL without a scheme, or `#` when no direct route exists.
+- `difficulty`: Persian label shown to users.
+- `keytype`: one of `easy-label`, `medium-label`, `hard-label`, or `impossible-label`.
+- `info`: concise deletion instructions.
 
-## `website` field:
-- website name
+`info` is legacy HTML in some records. New records should use plain text only. Links and evidence should be recorded in a future structured `references` field; do not add untrusted HTML to new records.
 
-### `deleteurl` field:
-- `#`
-- delete account url eg: `https://test.com/account-delete`
-
-### `info` field:
-- an instruction about "how to delete/deactivate an account in this service"
-
-### `difficulty` field:
-
-- ساده:‌ فرآیند آسان
-- متوسط: به صورت چند مرحله‌ای
-- سخت:‌ نیاز به ارسال پیام/تیکت به پشتیبانی
-- غیر‌ممکن: غیرقابل حذف
-
-### `keytype` field:
-
-- easy-label
-- medium-label
-- hard-label
-- impossible-label
-
-### `priority` field:
-
-[priority.md](https://github.com/rtbf-ir/rtbf.ir/blob/main/data/priority.md)
-
-### `category` field:
-
-[category.md](https://github.com/rtbf-ir/rtbf.ir/blob/main/data/category.md)
+Every changed record should be manually verified before merge, with its verification date and evidence recorded in the pull request.
