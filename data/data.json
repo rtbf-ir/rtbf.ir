@@ -2928,5 +2928,35 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "provider"
+  },
+  {
+    "name": "انتشارات پهپاد",
+    "website": "uavpub.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "education"
+  },
+  {
+    "name": "انتشارات راهبری اصیل",
+    "website": "rahbariasil.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "education"
+  },
+  {
+    "name": "کارمینان",
+    "website": "carminan.com",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "transport"
   }
 ]
