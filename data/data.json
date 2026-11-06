@@ -2958,5 +2958,15 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "transport"
+  },
+  {
+    "name": "اپیونی",
+    "website": "apeuni.com",
+    "deleteurl": "https://www.apeuni.com/pte/user_center?type=user",
+    "info": "ابتدا به بخش Settings بروید و سپس در بخش Account Delete روی گزینه‌ی Delete Account کلیک کنید و مراحل را دنبال کنید.",
+    "difficulty": "ساده",
+    "keytype": "easy-label",
+    "priority": "3",
+    "category": "education"
   }
 ]
