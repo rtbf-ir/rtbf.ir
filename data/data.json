@@ -2968,5 +2968,15 @@
     "keytype": "easy-label",
     "priority": "3",
     "category": "education"
+  },
+  {
+    "name": "آبالون",
+    "website": "abalon.cloud",
+    "deleteurl": "#",
+    "info": "امکان حذف وجود ندارد.",
+    "difficulty": "غیرممکن",
+    "keytype": "impossible-label",
+    "priority": "3",
+    "category": "provider"
   }
 ]
