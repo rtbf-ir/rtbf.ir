@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { createRequire } from "node:module";
 import { test, expect } from "@playwright/test";
@@ -45,20 +46,31 @@ async function expectServiceOrder(page, expected) {
 }
 
 test("sorts services by their position in the data file", async ({ page }) => {
+  // Unversioned URLs can resolve to a previously cached directory script.
+  await page.route(url => url.pathname.endsWith("/assets/js/directory.js") && !url.search,
+    route => route.abort());
   await page.goto("/directory.html");
+  const script = readFileSync(new URL("../../assets/js/directory.js", import.meta.url));
+  const version = createHash("sha256").update(script).digest("hex").slice(0, 12);
+  await expect(page.locator('script[src^="assets/js/directory.js"]'))
+    .toHaveAttribute("src", `assets/js/directory.js?v=${version}`);
+
   const sort = page.getByLabel("مرتب‌سازی");
-  const reset = page.getByRole("button", { name: "پاک کردن فیلترها" });
+  const reset = page.locator("#directory-reset");
+  await expect(reset).toBeAttached();
   await expect(sort).toHaveValue("newest");
   await expectServiceOrder(page, records.toReversed());
+  await expect(reset).toBeHidden();
 
   await sort.selectOption("oldest");
   await expect(page).toHaveURL(/#sort=oldest$/);
   await expectServiceOrder(page, records);
-  await expect(reset).toBeHidden();
+  await expect(reset).toBeVisible();
 
   await sort.selectOption("newest");
   await expect(page).toHaveURL(/\/directory\.html$/);
   await expectServiceOrder(page, records.toReversed());
+  await expect(reset).toBeHidden();
 });
 
 test("restores search, filters, and sort in a fresh tab from the shared link", async ({ context, page }) => {
@@ -82,8 +94,10 @@ test("restores search, filters, and sort in a fresh tab from the shared link", a
   await expectServiceOrder(recipient, expected);
 
   await recipient.getByRole("button", { name: "پاک کردن فیلترها" }).click();
-  await expect(recipient).toHaveURL(/#sort=oldest$/);
-  await expectServiceOrder(recipient, examples);
+  await expect(recipient).toHaveURL(/\/directory\.html$/);
+  await expect(recipient.getByLabel("مرتب‌سازی")).toHaveValue("newest");
+  await expectServiceOrder(recipient, examples.toReversed());
+  await expect(recipient.getByRole("button", { name: "پاک کردن فیلترها" })).toBeHidden();
 });
 
 test("supports keyboard navigation, retry, and clearing a search", async ({ page }) => {

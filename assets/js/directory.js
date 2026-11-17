@@ -138,12 +138,13 @@ function applyFilterParams(params) {
     select.value = params.get(key) ?? "all";
     if (select.selectedIndex === -1) select.value = "all";
   }
+  if (directorySort) {
+    directorySort.value = params.get("sort") === "oldest" ? "oldest" : "newest";
+  }
 }
 
 function restoreFilters() {
-  const params = new URLSearchParams(window.location.hash.slice(1));
-  applyFilterParams(params);
-  directorySort.value = params.get("sort") === "oldest" ? "oldest" : "newest";
+  applyFilterParams(new URLSearchParams(window.location.hash.slice(1)));
   filterData();
 }
 
@@ -155,7 +156,7 @@ function updateFilters() {
   for (const [key, select] of Object.entries(directoryFilters)) {
     if (select.value !== "all") params.set(key, select.value);
   }
-  if (directorySort.value === "oldest") params.set("sort", "oldest");
+  if (directorySort?.value === "oldest") params.set("sort", "oldest");
 
   const url = new URL(window.location.href);
   url.hash = params.toString();
@@ -168,8 +169,9 @@ function updateFilters() {
 function filterData() {
   const { category, priority, status } = directoryFilters;
   const query = normalizeSearchText(directorySearch.value);
+  const sortOldest = directorySort?.value === "oldest";
   const hasActiveFilters = Object.values(directoryFilters).some((select) => select.value !== "all");
-  directoryReset.hidden = !query && !hasActiveFilters;
+  directoryReset.hidden = !query && !hasActiveFilters && !sortOldest;
 
   if (!directoryItems) return;
 
@@ -184,7 +186,7 @@ function filterData() {
   );
 
   // Records are added to the end of data.json.
-  if (directorySort.value === "newest") items.reverse();
+  if (!sortOldest) items.reverse();
 
   directoryResults.textContent = "";
   for (const item of items) {
@@ -213,7 +215,7 @@ document.querySelector(".skip-link").addEventListener("click", (event) => {
 });
 
 directorySearch.addEventListener("input", updateFilters);
-directorySort.addEventListener("change", updateFilters);
+directorySort?.addEventListener("change", updateFilters);
 for (const select of Object.values(directoryFilters)) {
   select.addEventListener("change", updateFilters);
 }
