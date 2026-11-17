@@ -20,8 +20,20 @@ test.beforeEach(async ({ page, baseURL }) => {
   });
 });
 
-test("public directory API filters and next/previous links work over HTTP", async ({ request }) => {
-  const response = await request.get("/api/v1/directory/all/all/all/newest/1.json");
+test("requested API routes return JSON over HTTP and obsolete routes are gone", async ({ request }) => {
+  const health = await request.get("/api/v1/");
+  expect(health.status()).toBe(200);
+  const snapshot = await health.json();
+  expect(snapshot.status).toBe("ok");
+  const all = await (await request.get("/api/v1/services/")).json();
+  expect(all.data).toHaveLength(snapshot.total);
+  const service = await request.get("/api/v1/services/aparat.com");
+  expect(service.status()).toBe(200);
+  expect((await service.json()).data.domain).toBe("aparat.com");
+  for (const path of ["/api/v1/all.json", "/api/v1/client.js", "/api/v1/directory/all/all/all/newest/1.json"]) {
+    expect((await request.get(path)).status()).toBe(404);
+  }
+  const response = await request.get("/api/v1/services/category=all&priority=all&status=all&sort=newest");
   expect(response.status()).toBe(200);
   const first = await response.json();
   expect(first.data).toHaveLength(20);
@@ -31,10 +43,16 @@ test("public directory API filters and next/previous links work over HTTP", asyn
   expect(second.meta.page).toBe(2);
   expect(second.links.previous).toBe(first.links.self);
   expect(first.data.some(a => second.data.some(b => a.domain === b.domain))).toBe(false);
-  const filtered = await (await request.get("/api/v1/directory/provider/hard/3/oldest/1.json")).json();
+  const examplePath = "/api/v1/services/category=e-commerce&priority=2&status=medium-label&sort=oldest";
+  const example = await request.get(examplePath);
+  expect(example.status()).toBe(200);
+  const typed = await request.get(examplePath + ".json");
+  expect(typed.headers()["content-type"]).toContain("application/json");
+  expect(await typed.json()).toEqual(await example.json());
+  const filtered = await (await request.get("/api/v1/services/category=provider&priority=3&status=hard-label&sort=oldest")).json();
   expect(filtered.data.length).toBeGreaterThan(0);
-  expect(filtered.data.every(row => row.status === "hard" && row.category === "provider" && row.priority === 3)).toBe(true);
-  expect((await request.get("/api/v1/services/unregistered.example.json")).status()).toBe(404);
+  expect(filtered.data.every(row => row.status === "hard-label" && row.category === "provider" && row.priority === 3)).toBe(true);
+  expect((await request.get("/api/v1/services/unregistered.example")).status()).toBe(404);
 });
 
 test("API documentation supports URL lookup and paginated filtered requests", async ({ page }) => {
@@ -56,13 +74,13 @@ test("API documentation supports URL lookup and paginated filtered requests", as
   await expect(page.locator("#api-list-status")).toContainText("صفحهٔ ۱");
 
   await page.getByLabel("دسته‌بندی API").selectOption("provider");
-  await page.getByLabel("سختی حذف").selectOption("hard");
+  await page.getByLabel("سختی حذف").selectOption("hard-label");
   await page.getByLabel("ترتیب API").selectOption("oldest");
   await page.getByRole("button", { name: "دریافت فهرست" }).click();
-  await expect(page.locator("#api-list-url")).toHaveAttribute("href", /\/provider\/hard\/all\/oldest\/1.json$/);
+  await expect(page.locator("#api-list-url")).toHaveAttribute("href", /\/category=provider&priority=all&status=hard-label&sort=oldest$/);
   await expect(page.locator("#api-list-status")).toContainText("صفحهٔ ۱");
   const output = JSON.parse(await page.locator("#api-list-response").textContent());
-  expect(output.data.every(row => row.status === "hard" && row.category === "provider")).toBe(true);
+  expect(output.data.every(row => row.status === "hard-label" && row.category === "provider")).toBe(true);
 });
 
 test("documentation is linked from the site and usable on a narrow screen", async ({ page }) => {

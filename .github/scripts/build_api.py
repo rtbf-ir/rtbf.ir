@@ -13,7 +13,7 @@ from urllib.parse import urlsplit
 ROOT = Path(__file__).resolve().parents[2]
 PAGE_SIZE = 20
 BASE = "/api/v1"
-STATUSES = ["easy", "medium", "hard", "impossible"]
+STATUSES = ["easy-label", "medium-label", "hard-label", "impossible-label"]
 
 
 class PlainText(HTMLParser):
@@ -49,7 +49,7 @@ def services_from(source):
         if domain in seen:
             raise ValueError("Duplicate service domain: " + domain)
         seen.add(domain)
-        status = row["keytype"].removesuffix("-label")
+        status = row["keytype"]
         if status not in STATUSES:
             raise ValueError("Invalid status: " + row["keytype"])
         category = row["category"] or "uncategorized"
@@ -74,56 +74,46 @@ def services_from(source):
     return services
 
 
+def filter_route(category, priority, status, sort, page=1):
+    route = f"{BASE}/services/category={category}&priority={priority}&status={status}&sort={sort}"
+    return route if page == 1 else route + f"&page={page}"
+
+
 def build_documents(source):
     services = services_from(source)
     revision = hashlib.sha256(json.dumps(source, ensure_ascii=False, separators=(",", ":")).encode()).hexdigest()
     categories = sorted({service["category"] for service in services})
+    common = {"api_version": "1", "revision": revision}
     documents = {
         "index.json": {
-            "api_version": "1",
-            "revision": revision,
-            "total": len(services),
-            "page_size": PAGE_SIZE,
-            "defaults": {"category": "all", "status": "all", "priority": "all", "sort": "newest", "page": 1},
-            "filters": {"category": ["all", *categories], "status": ["all", *STATUSES], "priority": ["all", "1", "2", "3"], "sort": ["newest", "oldest"]},
-            "links": {
-                "all": BASE + "/all.json",
-                "directory": BASE + "/directory/all/all/all/newest/1.json",
-                "service_template": BASE + "/services/{domain}.json",
-                "directory_template": BASE + "/directory/{category}/{status}/{priority}/{sort}/{page}.json",
-                "documentation": "/api-docs",
-                "client": BASE + "/client.js",
-            },
+            **common, "status": "ok", "total": len(services), "page_size": PAGE_SIZE,
+            "filters": {"category": ["all", *categories], "priority": ["all", "1", "2", "3"],
+                        "status": ["all", *STATUSES], "sort": ["newest", "oldest"]},
+            "links": {"services": BASE + "/services/", "documentation": "/api-docs"},
         },
-        "all.json": {"api_version": "1", "revision": revision, "data": services},
+        "services/index.json": {**common, "data": list(reversed(services)), "meta": {"total": len(services)}},
     }
     for service in services:
-        documents["services/" + service["domain"] + ".json"] = {
-            "api_version": "1", "revision": revision, "data": service,
-        }
-    for category, status, priority, sort in product(
-        ["all", *categories], ["all", *STATUSES], ["all", "1", "2", "3"], ["newest", "oldest"],
+        documents["services/" + service["domain"] + ".json"] = {**common, "data": service}
+    for category, priority, status, sort in product(
+        ["all", *categories], ["all", "1", "2", "3"], ["all", *STATUSES], ["newest", "oldest"],
     ):
         selected = [service for service in services if
                     (category == "all" or service["category"] == category) and
-                    (status == "all" or service["status"] == status) and
-                    (priority == "all" or service["priority"] == int(priority))]
+                    (priority == "all" or service["priority"] == int(priority)) and
+                    (status == "all" or service["status"] == status)]
         if sort == "newest":
             selected.reverse()
         total_pages = max(1, (len(selected) + PAGE_SIZE - 1) // PAGE_SIZE)
-        prefix = f"directory/{category}/{status}/{priority}/{sort}/"
         for page in range(1, total_pages + 1):
             def link(number):
-                return f"{BASE}/{prefix}{number}.json"
-            documents[prefix + str(page) + ".json"] = {
-                "api_version": "1",
-                "revision": revision,
+                return filter_route(category, priority, status, sort, number)
+            documents[link(page).removeprefix(BASE + "/") + ".json"] = {
+                **common,
                 "data": selected[(page - 1) * PAGE_SIZE:page * PAGE_SIZE],
                 "meta": {
-                    "total": len(selected), "page": page, "page_size": PAGE_SIZE,
-                    "total_pages": total_pages,
-                    "filters": {"category": category, "status": status, "priority": priority},
-                    "sort": sort,
+                    "total": len(selected), "page": page, "page_size": PAGE_SIZE, "total_pages": total_pages,
+                    "filters": {"category": category, "priority": priority, "status": status}, "sort": sort,
                 },
                 "links": {
                     "self": link(page), "first": link(1), "last": link(total_pages),
@@ -134,28 +124,49 @@ def build_documents(source):
     return documents
 
 
+def route_alias(name):
+    # Directory entry points require index.html on Pages. Other routes are
+    # literal extensionless files, so & belongs to the path, not a query string.
+    return name[:-len("index.json")] + "index.html" if name.endswith("index.json") else name[:-len(".json")]
+
+
 def write_documents(output, documents):
-    """Write a complete API snapshot, removing responses absent from the source."""
-    output = Path(output)
-    expected = {name: (json.dumps(body, ensure_ascii=False, separators=(",", ":")) + "\n").encode()
-                for name, body in documents.items()}
-    for path in output.rglob("*.json"):
-        if path.relative_to(output).as_posix() not in expected:
+    """Replace the generated API, including obsolete JSON and route aliases."""
+    output = Path(output).resolve()
+    if output == ROOT or output in ROOT.parents:
+        raise ValueError("The API output must be separate from the source root")
+    expected = {}
+    for name, body in documents.items():
+        # Directory aliases are served as HTML by Pages. Escape markup so a
+        # service name or instruction can never become executable HTML.
+        content = json.dumps(body, ensure_ascii=False, separators=(",", ":"))
+        for char in "<>&":
+            content = content.replace(char, "\\u%04x" % ord(char))
+        encoded = (content + "\n").encode()
+        expected[name] = encoded
+        expected[route_alias(name)] = encoded
+    output.mkdir(parents=True, exist_ok=True)
+    for path in output.rglob("*"):
+        if path.is_file() and path.relative_to(output).as_posix() not in expected:
             path.unlink()
     for name, content in expected.items():
         destination = output / name
         destination.parent.mkdir(parents=True, exist_ok=True)
-        destination.write_bytes(content)
+        if not destination.exists() or destination.read_bytes() != content:
+            destination.write_bytes(content)
+    for path in sorted(output.rglob("*"), reverse=True):
+        if path.is_dir() and not any(path.iterdir()):
+            path.rmdir()
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=ROOT / "api/v1",
-                        help="Destination for generated responses (ignored by Git by default)")
+                        help="Destination reserved entirely for generated API responses")
     args = parser.parse_args()
     documents = build_documents(json.loads((ROOT / "data/data.json").read_text()))
     write_documents(args.output, documents)
-    print(f"Generated {len(documents)} API files in {args.output}.")
+    print(f"Generated {len(documents)} JSON responses and their route aliases in {args.output}.")
 
 
 if __name__ == "__main__":

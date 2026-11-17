@@ -22,30 +22,53 @@ Every changed record should be manually verified before merge, with its verifica
 
 ## Public API
 
-Edit **only `data/data.json`** to add, update, or remove a service. Keep new
-services at the end of the array. Generated API responses are not committed.
+Edit **only `data/data.json`** to add, update, or remove services. Append new
+records at the end. The `Generate API and publish website` workflow runs on
+every push to `main` and can also be started manually.
 
-On each push to `main`, the Pages workflow builds the site and all versioned API
-responses into `_site`, then publishes that artifact. Added services receive
-lookup responses automatically; removed services disappear, and filters,
-counts, pagination, and revisions are rebuilt from the same snapshot.
+It regenerates the complete `api/v1` directory, removes obsolete outputs, and
+commits and pushes the result as `github-actions[bot]` using the message
+`update generated api`. No commit is created when the output has not changed.
+The bot's `GITHUB_TOKEN` push does not trigger another workflow or Pages build,
+so the same workflow publishes explicitly after generation. It detects the
+existing Pages source: branch publishing requests a new Pages build after the
+bot push, and Actions publishing uploads and deploys the generated artifact.
 
-One-time repository setup: in **Settings → Pages → Build and deployment → Source**,
-select **GitHub Actions**. Keep the existing custom domain `rtbf.ir`. Until this
-is configured and the workflow is pushed, automatic API publication is not active.
+The existing Pages publishing source is preserved. Branch publishing must use
+`main` and the repository root (`/`). The repository must allow the workflow to
+write to `main`; branch protection may require allowing the bot. No additional
+token or secret is required for an unprotected branch. Keep the custom domain
+`rtbf.ir`.
 
-For a complete local preview, run:
+All files below `api/v1` are generated. Do not edit them by hand. The previous
+`all.json`, `directory/`, and JavaScript SDK paths have been removed.
+
+Local generation and preview:
 
 ```sh
-python3 .github/scripts/build_site.py
-python3 -m http.server 8000 --directory _site
+python3 .github/scripts/build_api.py
+python3 -m http.server 8000
 ```
 
-Re-run the build after editing source files. `_site/` and generated JSON files
-are ignored by Git. Browser tests build and serve this same publication output.
-CI validates the data, response format, and pagination without requiring generated
-files in a commit.
+Public routes:
 
-The API uses plain-text instructions, absolute website/deletion URLs, and
-paginated directory paths. See [the API documentation](https://rtbf.ir/api-docs)
-for the complete v1 response format and JavaScript client.
+- `/api/v1/`: generated health snapshot and available filter values.
+- `/api/v1/services/`: every service, newest first.
+- `/api/v1/services/aparat.com`: one canonical domain.
+- `/api/v1/services/category=e-commerce&priority=2&status=medium-label&sort=oldest`:
+  filtered services, in pages of 20 records.
+
+Filters must appear in this exact order: `category`, `priority`, `status`, `sort`.
+Use `all` for an unrestricted category, priority, or status. Status codes match
+`keytype` in the source, including `-label`. Sort is `newest` or `oldest`.
+Follow `links.next` and `links.previous` for pagination; page 2 and later append
+`&page=2` etc. The first page has no `page` segment. Invalid or obsolete paths
+and out-of-range pages return the host's HTTP 404 response.
+
+These are pre-generated paths, not query parameters. Do not add `?`, rearrange
+or omit filters. `&` must be quoted in shell commands. Each extensionless response
+also has a `.json` equivalent. For `/api/v1/` and `/services/`, use `index.json`
+for an `application/json` Content-Type: Pages serves their raw JSON directory
+entry points as `text/html`. All route aliases contain JSON bytes (no script or
+HTML redirect), so `curl` and `response.json()` read the response directly.
+See [the API documentation](https://rtbf.ir/api-docs).

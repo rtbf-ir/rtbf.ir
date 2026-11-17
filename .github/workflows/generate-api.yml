@@ -1,0 +1,74 @@
+name: Generate API and publish website
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+    outputs:
+      pages_mode: ${{ steps.pages.outputs.mode }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - name: Generate API from directory data
+        run: python3 .github/scripts/build_api.py
+      - name: Validate API and website
+        run: |
+          python3 -m unittest discover -s .github/tests -p 'test_*.py'
+          python3 .github/scripts/validate_site.py
+      - name: Commit updated API responses
+        run: |
+          git add --all -- api/v1
+          if git diff --cached --quiet; then
+            echo "API is already up to date."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'update generated api'
+          git push origin HEAD:main
+      - name: Read Pages publishing mode
+        id: pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api "repos/${GITHUB_REPOSITORY}/pages" --jq '"mode=" + (.build_type // "legacy")' >> "$GITHUB_OUTPUT"
+      - name: Rebuild branch-based Pages after the generated commit
+        if: steps.pages.outputs.mode == 'legacy'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.pages.outputs.mode == 'workflow'
+        with:
+          path: .
+
+  deploy:
+    needs: generate
+    if: needs.generate.outputs.pages_mode == 'workflow'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - name: Publish generated API and website
+        id: deployment
+        uses: actions/deploy-pages@v5

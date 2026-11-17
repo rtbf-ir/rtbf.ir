@@ -16,7 +16,7 @@ jobs:
         run: python3 .github/scripts/validate_site.py
       - name: Check API generation and pagination
         run: |
-          python3 .github/scripts/build_site.py
+          python3 .github/scripts/build_api.py
           python3 -m unittest discover -s .github/tests -p 'test_*.py'
 
   directory-browser:
@@ -34,8 +34,6 @@ jobs:
           node-version: 24
       - run: npm ci
       - name: Build website and API
-        run: python3 ../scripts/build_site.py
-      - name: Check API JavaScript client
-        run: node --test ../tests/api-client.test.mjs
+        run: python3 ../scripts/build_api.py
       - run: npx playwright install --with-deps chromium
       - run: npm test

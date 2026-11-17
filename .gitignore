@@ -1,8 +1,6 @@
 .DS_Store
 .idea
 
-# Generated API responses and deployable site
-/api/v1/**/*.json
-/_site/
+# Generated API files are committed automatically by GitHub Actions.
 __pycache__/
 *.pyc
