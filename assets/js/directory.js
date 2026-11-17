@@ -20,19 +20,10 @@ function toPersianNumber(number) {
 document.getElementById("copyrightyear").innerHTML =
   toPersianNumber(new Date().getFullYear()) + " - ۲۰۲۱";
 
-async function fetchData() {
-  const DATA_URL = "https://rtbf.ir/data/data.json";
-
-  try {
-    const response = await fetch(DATA_URL);
-    const result = await response.json();
-    document.getElementById("jsondata").value = JSON.stringify(result);
-    return await result;
-  } catch (error) {
-    console.error("There has been a problem with fetch websites data:", error);
-    return null;
-  }
-}
+const directoryResults = document.querySelector(".directoryData");
+const directoryStatus = document.getElementById("directory-status");
+const directoryRetry = document.getElementById("directory-retry");
+let directoryItems;
 
 function appendCard(website) {
   const deleteAccountButton = `<a target="_blank" rel="nofollow noreferrer noopener" href="https://${website.deleteurl}" class="btn label-remove">
@@ -77,20 +68,40 @@ function appendCard(website) {
             </div>
           </div>`;
 
-  document
-    .getElementsByClassName("directoryData")[0]
-    .insertAdjacentHTML("afterbegin", websiteCard);
+  directoryResults.insertAdjacentHTML("afterbegin", websiteCard);
 }
 
-async function appendToDOMAll() {
-  const items = await fetchData();
-  document.getElementsByClassName("directoryData")[0].innerHTML = "";
-  for (const item of items) {
-    appendCard(item);
+async function loadDirectory() {
+  directoryStatus.textContent = "در حال بارگذاری فهرست سرویس‌ها…";
+  directoryRetry.hidden = true;
+  directoryRetry.disabled = true;
+
+  try {
+    const response = await fetch("./data/data.json");
+    if (!response.ok) {
+      throw new Error("Directory request failed with HTTP " + response.status);
+    }
+
+    const items = await response.json();
+    if (!Array.isArray(items) || !items.every(
+      (item) => typeof item?.name === "string" && typeof item?.website === "string"
+    )) {
+      throw new Error("Invalid directory data");
+    }
+    directoryItems = items;
+  } catch (error) {
+    console.error("Could not load directory data:", error);
+    directoryStatus.textContent = "بارگذاری فهرست سرویس‌ها ناموفق بود.";
+    directoryRetry.hidden = false;
+    directoryRetry.disabled = false;
+    return;
   }
+
+  filterData();
 }
 
-appendToDOMAll();
+directoryRetry.addEventListener("click", loadDirectory);
+loadDirectory();
 
 // Close menu in mobile size on click outside
 document.addEventListener("click", (event) => {
@@ -103,89 +114,37 @@ document.addEventListener("click", (event) => {
   }
 });
 
-function filterData() {
-  var categoryDom = document.getElementById("category");
-  var priorityDom = document.getElementById("priority");
-  var statusDom = document.getElementById("status");
-  var serviceNameDom = document.getElementById("servicename");
-  try {
-    changeData(
-      categoryDom.value.toLowerCase(),
-      priorityDom.value.toLowerCase(),
-      statusDom.value.toLowerCase(),
-      serviceNameDom.value.toLowerCase()
-    );
-  } catch (err) {
-    appendToDOMAll();
-  }
+function normalizeSearchText(value) {
+  return value
+    .toLowerCase()
+    .replace(/ي/g, "ی")
+    .replace(/ك/g, "ک")
+    .replace(/[\s\u200c]+/g, " ")
+    .trim();
 }
 
-async function changeData(category, priority, status, service_name) {
-  var items = "";
+function filterData() {
+  if (!directoryItems) return;
 
-  try {
-    jsondata = document.getElementById("jsondata").value;
-    var items = JSON.parse(jsondata);
-    if (items.length < 1) {
-      items = await fetchData();
-    }
-  } catch (err) {
-    items = await fetchData();
-  }
+  const category = document.getElementById("category").value.toLowerCase();
+  const priority = document.getElementById("priority").value.toLowerCase();
+  const status = document.getElementById("status").value.toLowerCase();
+  const query = normalizeSearchText(document.getElementById("servicename").value);
 
-  var filtered = [];
+  const items = directoryItems.filter(
+    (item) =>
+      (category === "all" || item.category === category) &&
+      (priority === "all" || item.priority === priority) &&
+      (status === "all" || item.keytype === status) &&
+      (!query ||
+        normalizeSearchText(item.name).includes(query) ||
+        normalizeSearchText(item.website).includes(query))
+  );
 
-  if (category != "all") {
-    for (let index = 0; index < items.length; index++) {
-      const element = items[index];
-      if (element["category"] == category) {
-        filtered.push(element);
-      }
-    }
-    items = filtered;
-    filtered = [];
-  }
-
-  if (priority != "all") {
-    for (let index = 0; index < items.length; index++) {
-      const element = items[index];
-      if (element["priority"] == priority) {
-        filtered.push(element);
-      }
-    }
-    items = filtered;
-    filtered = [];
-  }
-
-  if (status != "all") {
-    for (let index = 0; index < items.length; index++) {
-      const element = items[index];
-      if (element["keytype"] == status) {
-        filtered.push(element);
-      }
-    }
-    items = filtered;
-    filtered = [];
-  }
-
-  service_name = service_name;
-  if (service_name != "") {
-    for (let index = 0; index < items.length; index++) {
-      const element = items[index];
-      if (
-        element["name"].search(service_name) != -1 ||
-        element["website"].search(service_name) != -1
-      ) {
-        filtered.push(element);
-      }
-    }
-    items = filtered;
-    filtered = [];
-  }
-
-  document.getElementsByClassName("directoryData")[0].innerHTML = "";
-
+  directoryResults.textContent = "";
   for (const item of items) {
     appendCard(item);
   }
+
+  directoryStatus.textContent = items.length ? "" : "سرویسی پیدا نشد.";
 }

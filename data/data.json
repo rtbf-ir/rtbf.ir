@@ -332,7 +332,7 @@
   {
     "name": "کارزار",
     "website": "karzar.net",
-    "deleteurl": "https://karzar.net/panel/tickets/create",
+    "deleteurl": "karzar.net/panel/tickets/create",
     "info": "درخواست خود را از طریق همان ایمیل یا شماره موبایلی که امضای خود را ثبت کرده‌اید مبنی بر حذف امضاها برای تیم پشتیبانی از طریق تیکت ارسال کنید.<br>اطلاعات بیشتر:<br><a href=\"https://karzar.net/privacy-policy\" target=\"_blank\" rel=\"nofollow noreferrer noopener\">صفحه حریم شخصی</a>",
     "difficulty": "سخت",
     "keytype": "hard-label",
@@ -1612,8 +1612,8 @@
   {
     "name": "نقشه و مسیریاب بلد",
     "website": "balad.ir",
-    "deleteurl": "help.balad.io/fa/post/61b715a9c34059457b293dcb/%D8%AD%D8%B0%D9%81-%D8%AD%D8%B3%D8%A7%D8%A8-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%DB%8C-%D8%AF%D8%B1-%D8%A8%D9%84%D8%AF",
-    "info": "در صورتی که می‌خواهید حساب‌کاربری بلد را حذف کنید کافی‌ست متن مورد نظر را به آدرس ایمیل پشتیبانی بلد و یا واتساپ بلد ارسال کنید.",
+    "deleteurl": "#",
+    "info": "برای درخواست حذف حساب کاربری، به نشانی support@balad.ir ایمیل بزنید.",
     "difficulty": "سخت",
     "keytype": "hard-label",
     "priority": "1",
@@ -1932,7 +1932,7 @@
   {
     "name": "استیم کلاب",
     "website": "steamclub.ir/",
-    "deleteurl": "https://steamclub.ir/my-account/wpf-delete-account/",
+    "deleteurl": "steamclub.ir/my-account/wpf-delete-account/",
     "info": "از طریق بخش حذف حساب در پنل کاربری میتوانید حساب کاربری خود را حذف کنید.",
     "difficulty": "ساده",
     "keytype": "easy-label",
@@ -1941,7 +1941,7 @@
   },
   {
     "name": "بازی زولا",
-    "website": "https://zula.ir/",
+    "website": "zula.ir",
     "deleteurl": "#",
     "info": "حساب شما تا زمانی که دوباره وارد بازی شوید غیر فعال باقی می‌ماند و امکان حذف آن برای همیشه از سیستم وجود ندارد.",
     "difficulty": "غیرممکن",
@@ -1951,7 +1951,7 @@
   },
   {
     "name": "پروفایل‌سنتر",
-    "website": "https://profile.center",
+    "website": "profile.center",
     "deleteurl": "#",
     "info": "تصویر کارت ملی خود را از طریق واتساپ به شماره‌ی ۰۹۳۶۸۸۲۰۸۸۳ ارسال کنید.",
     "difficulty": "سخت",
@@ -2962,7 +2962,7 @@
   {
     "name": "اپیونی",
     "website": "apeuni.com",
-    "deleteurl": "https://www.apeuni.com/pte/user_center?type=user",
+    "deleteurl": "www.apeuni.com/pte/user_center?type=user",
     "info": "ابتدا به بخش Settings بروید و سپس در بخش Account Delete روی گزینه‌ی Delete Account کلیک کنید و مراحل را دنبال کنید.",
     "difficulty": "ساده",
     "keytype": "easy-label",

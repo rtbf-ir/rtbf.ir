@@ -316,7 +316,7 @@
                     </p>
                     <p>
                       <input
-                        onkeyup="filterData()"
+                        oninput="filterData()"
                         name="servicename"
                         id="servicename"
                         class="form-control"
@@ -426,6 +426,15 @@
           </div>
         </div>
         <div class="container">
+          <div class="text-center">
+            <p id="directory-status" class="mb-0" role="status"></p>
+            <button
+              id="directory-retry"
+              type="button"
+              class="btn btn-outline-secondary mt-2 mb-3"
+              hidden
+            >تلاش دوباره</button>
+          </div>
           <div class="row">
             <div class="myitems justify-content-center">
               <div class="directoryData"></div>
@@ -668,6 +677,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/js/directory.js"></script>
-    <input type="hidden" id="jsondata" value="">
   </body>
 </html>
