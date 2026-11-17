@@ -1,0 +1,1 @@
+{"api_version":"1","revision":"4c4204cf3a7be6ba2580997619e6829c4c1329aa20f8624f7d972fa59dc46416","data":{"domain":"yarketab.com","name":"یار کتاب","website_url":"https://yarketab.com","delete_url":null,"info":"درخواست خود را از بخش پشتیبانی ثبت کنید.","references":[],"difficulty":"سخت","status":"hard-label","priority":3,"category":"event"}}

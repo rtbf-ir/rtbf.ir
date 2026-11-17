@@ -1,0 +1,1 @@
+{"api_version":"1","revision":"4c4204cf3a7be6ba2580997619e6829c4c1329aa20f8624f7d972fa59dc46416","data":{"domain":"appchar.com","name":"اپچار","website_url":"https://appchar.com","delete_url":null,"info":"با پشتیبانی تماس بگیرید. info@appchar.com","references":[],"difficulty":"سخت","status":"hard-label","priority":3,"category":"software-as-a-service"}}

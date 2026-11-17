@@ -1,0 +1,1 @@
+{"api_version":"1","revision":"4c4204cf3a7be6ba2580997619e6829c4c1329aa20f8624f7d972fa59dc46416","data":{"domain":"parsvds.com","name":"پارس وی‌دی‌اس","website_url":"https://parsvds.com","delete_url":null,"info":"برای حذف حساب‌کاربری از طریق تیکت درخواست خود را ثبت کنید.","references":[],"difficulty":"سخت","status":"hard-label","priority":3,"category":"provider"}}

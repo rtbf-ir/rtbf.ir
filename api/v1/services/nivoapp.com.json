@@ -1,0 +1,1 @@
+{"api_version":"1","revision":"4c4204cf3a7be6ba2580997619e6829c4c1329aa20f8624f7d972fa59dc46416","data":{"domain":"nivoapp.com","name":"نیوُ","website_url":"https://nivoapp.com","delete_url":null,"info":"با پشتیبانی تماس بگیرید.","references":[],"difficulty":"سخت","status":"hard-label","priority":3,"category":"finance"}}

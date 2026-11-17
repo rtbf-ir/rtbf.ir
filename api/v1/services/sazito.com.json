@@ -1,0 +1,1 @@
+{"api_version":"1","revision":"4c4204cf3a7be6ba2580997619e6829c4c1329aa20f8624f7d972fa59dc46416","data":{"domain":"sazito.com","name":"سازیتو","website_url":"https://sazito.com","delete_url":null,"info":"از طریق ارسال تیکت درخواست خود را ارسال کنید.","references":[],"difficulty":"سخت","status":"hard-label","priority":2,"category":"software-as-a-service"}}

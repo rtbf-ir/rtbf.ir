@@ -1,0 +1,1 @@
+{"api_version":"1","revision":"4c4204cf3a7be6ba2580997619e6829c4c1329aa20f8624f7d972fa59dc46416","data":{"domain":"iranserver.com","name":"ایران سرور","website_url":"https://iranserver.com","delete_url":null,"info":"وارد سیستم پشتیبانی شوید و موضوع حذف حساب کاربری را انتخاب کنید.","references":[],"difficulty":"سخت","status":"hard-label","priority":2,"category":"provider"}}

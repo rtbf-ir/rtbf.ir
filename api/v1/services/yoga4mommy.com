@@ -1,0 +1,1 @@
+{"api_version":"1","revision":"4c4204cf3a7be6ba2580997619e6829c4c1329aa20f8624f7d972fa59dc46416","data":{"domain":"yoga4mommy.com","name":"یوگای بارداری","website_url":"https://yoga4mommy.com","delete_url":null,"info":"امکان حذف وجود ندارد.","references":[],"difficulty":"غیرممکن","status":"impossible-label","priority":3,"category":"healthcare"}}
