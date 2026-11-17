@@ -1,0 +1,72 @@
+.api-docs {
+  max-width: 64rem;
+}
+
+.api-docs h1 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.api-docs h2 {
+  font-size: 1.3rem;
+  margin-block: 2.5rem 1rem;
+}
+
+.api-docs pre {
+  direction: ltr;
+  text-align: left;
+  unicode-bidi: isolate;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: #f4f6f5;
+  border: 1px solid #d6ded9;
+  border-radius: 0.4rem;
+  padding: 1rem;
+}
+
+.api-docs :is(code, .api-url) {
+  direction: ltr;
+  unicode-bidi: isolate;
+  overflow-wrap: anywhere;
+}
+
+.api-docs code {
+  color: #173b67;
+}
+
+.api-docs a {
+  text-decoration: underline !important;
+}
+
+.api-docs a.btn {
+  text-decoration: none !important;
+}
+
+.api-docs td, .api-docs th {
+  padding: 0.6rem;
+  border-bottom: 1px solid #d6ded9;
+  vertical-align: top;
+}
+
+.api-docs table {
+  width: 100%;
+}
+
+.api-docs summary {
+  cursor: pointer;
+  padding-block: 0.75rem;
+}
+
+#api-list-response, #api-lookup-response {
+  max-height: 25rem;
+  overflow: auto;
+}
+
+.api-docs .api-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.api-docs .api-control input, .api-docs .api-control select {
+  min-height: 2.5rem;
+}

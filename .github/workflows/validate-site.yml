@@ -14,6 +14,10 @@ jobs:
           persist-credentials: false
       - name: Check JSON-LD and sitemap
         run: python3 .github/scripts/validate_site.py
+      - name: Check API generation and pagination
+        run: |
+          python3 .github/scripts/build_site.py
+          python3 -m unittest discover -s .github/tests -p 'test_*.py'
 
   directory-browser:
     name: Check directory in Chromium
@@ -29,5 +33,9 @@ jobs:
         with:
           node-version: 24
       - run: npm ci
+      - name: Build website and API
+        run: python3 ../scripts/build_site.py
+      - name: Check API JavaScript client
+        run: node --test ../tests/api-client.test.mjs
       - run: npx playwright install --with-deps chromium
       - run: npm test

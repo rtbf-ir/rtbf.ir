@@ -11,7 +11,7 @@ export default defineConfig({
     launchOptions: { executablePath: process.env.RTBF_CHROMIUM_EXECUTABLE },
   },
   webServer: {
-    command: "python3 -m http.server 4173 --bind 127.0.0.1",
+    command: "python3 .github/scripts/build_site.py && python3 -m http.server 4173 --bind 127.0.0.1 --directory _site",
     cwd: fileURLToPath(new URL("../../", import.meta.url)),
     url: baseURL + "/directory.html",
     reuseExistingServer: false,

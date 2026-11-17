@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>مستندات API عمومی | حق فراموش شدن</title>
+    <meta name="description" content="دریافت اطلاعات حذف حساب سرویس‌ها از API عمومی حق فراموش شدن، همراه با فیلتر، صفحه‌بندی و نمونهٔ JavaScript.">
+    <link rel="canonical" href="https://rtbf.ir/api-docs">
+    <meta property="og:title" content="مستندات API عمومی | حق فراموش شدن">
+    <meta property="og:description" content="دریافت اطلاعات حذف حساب سرویس‌ها از API عمومی حق فراموش شدن، همراه با فیلتر، صفحه‌بندی و نمونهٔ JavaScript.">
+    <meta property="og:url" content="https://rtbf.ir/api-docs">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://rtbf.ir/assets/img/og-image.png">
+    <link rel="icon" href="assets/img/favicon.png" sizes="32x32">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/api-docs.css">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "مستندات API عمومی | حق فراموش شدن", "description": "دریافت اطلاعات حذف حساب سرویس‌ها از API عمومی حق فراموش شدن، همراه با فیلتر، صفحه‌بندی و نمونهٔ JavaScript.", "url": "https://rtbf.ir/api-docs", "inLanguage": "fa"}</script>
+  </head>
+  <body dir="rtl">
+    <a class="skip-link" href="#main-content">رفتن به محتوای اصلی</a>
+    <header>
+      <div class="container menu">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <nav
+              class="navbar navbar-expand-lg navbar-light bg-blur fixed-top main-menu"
+              aria-label="منوی اصلی"
+            >
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav m-auto text-center">
+                    <li class="nav-item">
+                      <a
+                        href="index"
+                        title="صفحه‌اصلی"
+                        class="nav-link active text-dark"
+                        ><span class="fas fa-1x fa-home"></span> صفحه‌اصلی</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="directory"
+                        title="دایرکتوری سرویس‌ها"
+                        class="nav-link text-dark"
+                        ><span class="fas fa-1x fa-list"></span> دایرکتوری
+                        سرویس‌ها</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="collabrator"
+                        title="مشارکت‌کنندگان"
+                        class="nav-link text-dark"
+                        ><span class="fas fa-1x fa-network-wired"></span>
+                        مشارکت‌کنندگان</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="banners" title="بنرها" class="nav-link text-dark"
+                        ><span class="fas fa-1x fa-scroll"></span> بنرها</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="blog" title="وبلاگ" class="nav-link text-dark"
+                        ><span class="fas fa-1x fa-newspaper"></span> وبلاگ</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="donate"
+                        title="حمایت مالی"
+                        class="nav-link text-dark"
+                        ><span class="fas fa-1x fa-donate"></span> حمایت مالی</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="faq"
+                        title="سوالات متداول"
+                        class="nav-link text-dark"
+                        ><span class="fas fa-1x fa-question"></span> سوالات
+                        متداول</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="api-docs" class="nav-link text-dark">مستندات API</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="header-wall">
+        <div class="container heading">
+          <div class="row">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-light"
+              dir="ltr"
+            >
+              <p class="links">
+                <a
+                  target="_blank"
+                  class="btn btn-info text-light share-twitter"
+                  href="https://x.com/intent/tweet?text=اگر شما هم حذف حساب‌کاربری را دغدغه‌ی خود می‌دانید از این سرویس استفاده کنید : rtbf.ir - @rtbf_ir"
+                  rel="nofollow noreferrer noopener"
+                  title="توییت کنید"
+                  >توییت کنید <span class="fab fa-1x fa-x-twitter"></span>
+                </a>
+                <a
+                  target="_blank"
+                  class="btn btn-warning text-light contribute-github"
+                  rel="nofollow noreferrer noopener"
+                  href="https://github.com/rtbf-ir/rtbf.ir/issues/new/choose"
+                  title="شما هم مشارکت کنید"
+                  >شما هم مشارکت کنید <span class="fab fa-1x fa-github"></span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="breadcrumb">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <nav class="navbar" aria-label="مسیر صفحه">
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index">حق فراموش شدن</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="api-docs" aria-current="page">مستندات API</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <div class="container api-docs my-5">
+        <h1>مستندات API حق فراموش شدن</h1>
+        <p>اطلاعات حذف حساب سرویس‌ها را به برنامه، وب‌سایت یا افزونهٔ خود اضافه کنید.
+          API عمومی با درخواست <code>GET</code> و بدون کلید قابل‌استفاده است.</p>
+        <nav aria-label="بخش‌های مستندات" class="d-flex flex-wrap gap-3 my-4">
+          <a href="#api-start">شروع سریع</a>
+          <a href="#api-directory">فیلتر و صفحه‌بندی</a>
+          <a href="#api-fields">ساختار پاسخ</a>
+          <a href="#api-client">جست‌وجوی URL</a>
+          <a href="#api-playground">آزمایش API</a>
+        </nav>
+
+        <h2 id="api-start">شروع سریع</h2>
+        <p>فهرست امکانات و مقدارهای معتبر را از <a href="api/v1/index.json">index.json</a>
+          بگیرید. برای اطلاعات یک سرویس، دامنه را در مسیر زیر قرار دهید.</p>
+        <pre><code>curl https://rtbf.ir/api/v1/services/aparat.com.json</code></pre>
+        <p><a href="api/v1/all.json">دریافت همهٔ سرویس‌ها</a> و
+          <a href="api/v1/directory/all/all/all/newest/1.json">صفحهٔ اول دایرکتوری</a>
+          هم در دسترس‌اند. خروجی JSON با UTF-8 است.</p>
+
+        <h2 id="api-directory">فیلترها و صفحه‌بندی</h2>
+        <p>برای فیلتر کردن، مقدارها را به ترتیب در مسیر قرار دهید. مقدار <code>all</code>
+          همهٔ موارد را انتخاب می‌کند. هر صفحه حداکثر ۲۰ سرویس دارد.</p>
+        <pre><code>GET /api/v1/directory/{category}/{status}/{priority}/{sort}/{page}.json
+
+# سرویس‌دهنده‌های زیرساخت با حذف سخت، همهٔ اولویت‌ها، جدیدترین، صفحهٔ اول
+GET /api/v1/directory/provider/hard/all/newest/1.json</code></pre>
+        <table>
+          <caption>پارامترهای مسیر دایرکتوری</caption>
+          <thead><tr><th scope="col">پارامتر</th><th scope="col">مقدار</th></tr></thead>
+          <tbody>
+            <tr><th scope="row"><code>category</code></th><td><code>all</code> یا یکی از مقدارهای
+              <code>filters.category</code> در <a href="api/v1/index.json">فهرست امکانات</a>.
+              دستهٔ خالی با <code>uncategorized</code> مشخص می‌شود.</td></tr>
+            <tr><th scope="row"><code>status</code></th><td><code>all</code>، <code>easy</code> (ساده)،
+              <code>medium</code> (متوسط)، <code>hard</code> (سخت)، <code>impossible</code> (غیرممکن)</td></tr>
+            <tr><th scope="row"><code>priority</code></th><td><code>all</code>، <code>1</code>، <code>2</code> یا <code>3</code></td></tr>
+            <tr><th scope="row"><code>sort</code></th><td><code>newest</code> یا <code>oldest</code>.
+              ترتیب از جای رکورد در فایل داده می‌آید. رکوردهای انتهای فایل جدیدترند.</td></tr>
+            <tr><th scope="row"><code>page</code></th><td>عدد صحیح از <code>1</code> تا <code>meta.total_pages</code></td></tr>
+          </tbody>
+        </table>
+        <p>با دنبال کردن <code>links.next</code> یا <code>links.previous</code> صفحه را عوض کنید.
+          این مسیرها از ریشهٔ همان میزبان هستند. نبودن صفحهٔ بعد یا قبل با <code>null</code> مشخص می‌شود.</p>
+        <pre><code>const response = await fetch("https://rtbf.ir/api/v1/directory/all/all/all/newest/1.json");
+if (!response.ok) throw new Error("HTTP " + response.status);
+const result = await response.json();
+if (result.links.next) {
+  const nextURL = new URL(result.links.next, "https://rtbf.ir");
+  const nextPage = await fetch(nextURL).then(response => response.json());
+}</code></pre>
+        <p>این مسیرها فایل‌های JSON آماده روی GitHub Pages هستند. فیلترها در خود مسیر تعریف می‌شوند.
+          تغییر پارامترهایی مثل <code>?page=2</code> یا <code>?url=...</code> پاسخ فایل را تغییر نمی‌دهد.
+          جست‌وجوی متنی و پردازش URL کامل از طریق کلاینت JavaScript پایین صفحه انجام می‌شود.</p>
+
+        <h2 id="api-fields">ساختار پاسخ و خطاها</h2>
+        <p>همهٔ پاسخ‌ها <code>api_version</code> و <code>revision</code> دارند.
+          <code>revision</code> اثر انگشت دادهٔ منبع است و با تغییر داده‌ها عوض می‌شود.
+          پاسخ یک سرویس، همان رکورد را در <code>data</code> برمی‌گرداند.</p>
+        <table>
+          <caption>فیلدهای هر سرویس در نسخهٔ ۱</caption>
+          <thead><tr><th scope="col">فیلد</th><th scope="col">توضیح</th></tr></thead>
+          <tbody>
+            <tr><th scope="row"><code>domain</code></th><td>دامنهٔ یکتای سرویس بدون پروتکل و مسیر</td></tr>
+            <tr><th scope="row"><code>name</code></th><td>نام نمایشی سرویس</td></tr>
+            <tr><th scope="row"><code>website_url</code></th><td>آدرس کامل وب‌سایت</td></tr>
+            <tr><th scope="row"><code>delete_url</code></th><td>آدرس کامل حذف حساب یا <code>null</code>.
+              مقدار خالی به معنی نبود لینک مستقیم ثبت‌شده است.</td></tr>
+            <tr><th scope="row"><code>info</code></th><td>راهنمای حذف به صورت متن ساده. برای نمایش در صفحه از <code>textContent</code> استفاده کنید.</td></tr>
+            <tr><th scope="row"><code>references</code></th><td>پیوندهای HTTP(S) موجود در راهنمای منبع یا آرایهٔ خالی</td></tr>
+            <tr><th scope="row"><code>difficulty</code>، <code>status</code></th><td>شرح فارسی و کد میزان سختی حذف</td></tr>
+            <tr><th scope="row"><code>priority</code>، <code>category</code></th><td>اولویت عددی و دسته‌بندی سرویس</td></tr>
+          </tbody>
+        </table>
+        <ul class="mt-3">
+          <li>ترکیب معتبر بدون نتیجه، صفحهٔ اول با <code>data: []</code> و <code>meta.total: 0</code> دارد.</li>
+          <li>دامنهٔ ثبت‌نشده، مقدار فیلتر نامعتبر و شمارهٔ صفحهٔ خارج از محدوده، HTTP 404 برمی‌گردانند.
+            پاسخ خطای GitHub Pages ممکن است HTML باشد. پیش از خواندن JSON، <code>response.ok</code> را بررسی کنید.</li>
+          <li>مسیر اصلی <a href="data/data.json">data/data.json</a> با قالب قبلی برای افزونه‌ها در دسترس است.</li>
+          <li>API فقط خواندنی است. برای اصلاح اطلاعات از <a href="issue">ثبت گزارش</a> استفاده کنید.</li>
+        </ul>
+
+        <h2 id="api-client">دریافت URL و جست‌وجوی متنی با JavaScript</h2>
+        <p>کلاینت <a href="api/v1/client.js">client.js</a> را به صورت ES module وارد کنید.
+          URL یا دامنه را به <code>lookup</code> بدهید. مسیر و پارامترهای URL کنار گذاشته می‌شوند
+          و دقیق‌ترین دامنهٔ ثبت‌شده تطبیق داده می‌شود. زیر‌دامنه‌ها هم با دامنهٔ سرویس تطبیق داده می‌شوند.
+          آدرس ورودی برای پردازش به سرور ارسال نمی‌شود.</p>
+        <pre><code>import { createClient } from "https://rtbf.ir/api/v1/client.js";
+const api = createClient();
+
+const service = await api.lookup("https://www.aparat.com/example?ref=my-app");
+// service.data برای سرویس ثبت‌نشده null است.
+
+const page = await api.list({
+  q: "ابر", category: "provider", status: "all", priority: "all",
+  sort: "newest", page: 1, pageSize: 20
+});</code></pre>
+        <p>کلاینت در اولین درخواست، همهٔ داده‌ها را دریافت و تا عمر همان نمونه در حافظه نگه می‌دارد.
+          جست‌وجو و صفحه‌بندی بعدی محلی انجام می‌شود. جست‌وجو متنی است و تفاوت «ی/ي»، «ک/ك»،
+          فاصله‌های اضافه و بزرگی حروف انگلیسی را نادیده می‌گیرد.
+          <code>pageSize</code> از ۱ تا ۱۰۰ است و مقدار پیش‌فرض ۲۰ دارد.
+          برای تازه کردن داده‌ها یک نمونهٔ جدید از کلاینت بسازید.</p>
+        <p>ورودی URL نامعتبر یا فیلتر نامعتبر خطا می‌دهد.
+          در کلاینت، صفحهٔ خارج از محدوده <code>RangeError</code> و شکست درخواست
+          <code>RtbfApiError</code> با فیلد <code>status</code> برمی‌گرداند.</p>
+
+        <h2 id="api-playground">آزمایش API</h2>
+        <form id="api-lookup" class="my-3">
+          <label for="api-input-url">URL یا دامنهٔ سرویس</label>
+          <div class="d-flex flex-wrap gap-2 my-2">
+            <input id="api-input-url" class="form-control api-url" name="url" value="https://www.aparat.com/" required>
+            <button class="btn btn-success" type="submit">بررسی سرویس</button>
+          </div>
+        </form>
+        <p id="api-lookup-status" role="status"></p>
+        <pre id="api-lookup-response" tabindex="0" aria-label="پاسخ بررسی سرویس">برای نمایش پاسخ، نشانی را بررسی کنید.</pre>
+
+        <form id="api-list" class="my-4">
+          <div class="row g-3">
+            <div class="col-12 col-md-6 api-control">
+              <label for="api-category">دسته‌بندی API</label>
+              <select id="api-category" name="category" class="form-select"><option value="all">همهٔ دسته‌بندی‌ها</option></select>
+            </div>
+            <div class="col-12 col-md-6 api-control">
+              <label for="api-status">سختی حذف</label>
+              <select id="api-status" name="status" class="form-select">
+                <option value="all">همه</option><option value="easy">ساده</option>
+                <option value="medium">متوسط</option><option value="hard">سخت</option><option value="impossible">غیرممکن</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-6 api-control">
+              <label for="api-priority">اولویت API</label>
+              <select id="api-priority" name="priority" class="form-select">
+                <option value="all">همه</option><option value="1">۱</option><option value="2">۲</option><option value="3">۳</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-6 api-control">
+              <label for="api-sort">ترتیب API</label>
+              <select id="api-sort" name="sort" class="form-select"><option value="newest">جدیدترین</option><option value="oldest">قدیمی‌ترین</option></select>
+            </div>
+          </div>
+          <button class="btn btn-success mt-3" type="submit">دریافت فهرست</button>
+        </form>
+        <a id="api-list-url" class="api-url" hidden></a>
+        <p id="api-list-status" role="status"></p>
+        <div class="d-flex gap-3 my-3" role="group" aria-label="صفحه‌بندی پاسخ API">
+          <button type="button" id="api-previous" class="btn btn-outline-secondary" disabled>صفحهٔ قبل</button>
+          <button type="button" id="api-next" class="btn btn-outline-secondary" disabled>صفحهٔ بعد</button>
+        </div>
+        <pre id="api-list-response" tabindex="0" aria-label="پاسخ فهرست سرویس‌ها">برای نمایش پاسخ، فیلترها را انتخاب و فهرست را دریافت کنید.</pre>
+        <noscript><p>برای آزمایش تعاملی JavaScript را فعال کنید. لینک‌های JSON و نمونه‌های درخواست بالای صفحه در دسترس‌اند.</p></noscript>
+
+        <h2>انتشار و استفاده</h2>
+        <p>منبع داده‌ها فایل <code>data/data.json</code> است. خروجی‌های API هنگام انتشار به‌صورت خودکار از همین فایل ساخته می‌شوند.
+          افزودن، ویرایش یا حذف سرویس فقط در فایل منبع انجام می‌شود.
+          داده‌ها با انتشار نسخهٔ جدید سایت به‌روز می‌شوند. کش مرورگر و CDN ممکن است دریافت تغییرات را به تأخیر بیندازد.
+          دسترسی مرورگر از دامنه‌های دیگر تابع هدر CORS میزبان است. تنظیم فعلی فایل‌های دادهٔ rtbf.ir اجازهٔ خواندن عمومی می‌دهد.</p>
+        <p>محتوا با مشارکت کاربران تهیه می‌شود. پیش از اقدام به حذف حساب، راهنمای رسمی سرویس را هم بررسی کنید.
+          هنگام بازنشر، منبع <a href="https://rtbf.ir">rtbf.ir</a> و
+          <a href="https://github.com/rtbf-ir/rtbf.ir/blob/main/LICENSE">مجوز Apache-2.0</a> را ذکر کنید.</p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-sidebar">
+          <div class="container">
+            <div class="row">
+              <div
+                class="footer-sidebar-section service-detail col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 text-light text-center"
+              >
+                <a href="index" title="حق فراموش شدن"
+                  ><img
+                    class="img-fluid"
+                    src="assets/img/footer-logo.png"
+                    title="حق فراموش شدن"
+                    alt="حق فراموش شدن"
+                    loading="lazy"
+               ></a>
+                <nav class="navbar m-auto text-center">
+                  <ul class="nav m-auto text-center">
+                    <li class="nav-item">
+                      <a
+                        title="به کامیونیتی ما بپویندید"
+                        href="https://t.me/+51BIjll9ZFFhY2Y8"
+                        class="btn btn-light nav-link"
+                        rel="nofollow noreferrer noopener"
+                        target="_blank"
+                        ><span class="fas fa-1x fa-users"></span
+                      ></a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        title="ما را در تلگرام دنبال کنید"
+                        href="https://t.me/rtbf_ir"
+                        class="btn btn-light nav-link"
+                        rel="nofollow noreferrer noopener"
+                        target="_blank"
+                        ><span class="fab fa-1x fa-telegram"></span
+                      ></a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        title="ما را در توییتر دنبال کنید"
+                        href="https://x.com/rtbf_ir"
+                        class="btn btn-light nav-link"
+                        rel="nofollow noreferrer noopener"
+                        target="_blank"
+                        ><span class="fab fa-1x fa-x-twitter"></span
+                      ></a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        title="ما را در اینستاگرام دنبال کنید"
+                        href="https://www.instagram.com/rtbf_ir/"
+                        class="btn btn-light nav-link"
+                        rel="nofollow noreferrer noopener"
+                        target="_blank"
+                        ><span class="fab fa-1x fa-instagram"></span
+                      ></a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        title="صفحه‌ی پروژه در گیت هاب را مشاهده کنید"
+                        href="https://github.com/rtbf-ir/rtbf.ir"
+                        class="btn btn-light nav-link"
+                        rel="nofollow noreferrer noopener"
+                        target="_blank"
+                      >
+                        <span class="fab fa-1x fa-github"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div
+                class="footer-sidebar-section col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 text-light"
+              >
+                <h4>این سرویس چگونه کار می‌کند؟</h4>
+                <p>
+                  بسیاری از سرویس‌های اینترنتی این‌گونه عمل می‌کنند که امکان حذف
+                  حساب‌کاربری را به شما نمی‌دهند و از نظر ما کاربران این موضوع
+                  نقض حریم شخصی است. با توجه به حق فراموش شدن یا Right to be
+                  forgotten این یک تضاد می‌باشد.
+                </p>
+                <p>
+                  ایده‌ی اولیه‌ی این سرویس از
+                  <strong
+                    ><a
+                      target="_blank"
+                      href="https://backgroundchecks.org/justdeleteme/"
+                      rel="nofollow noreferrer noopener"
+                      title="justdeleteme"
+                      >justdeleteme</a
+                    ></strong
+                  >
+                  گرفته شده است و بعد از
+                  <strong
+                    ><a
+                      target="_blank"
+                      rel="nofollow noreferrer noopener"
+                      href="https://x.com/nima/status/1398335801042386947"
+                      >این توییت</a
+                    ></strong
+                  >
+                  تصمیم به راه‌اندازی آن گرفتم.
+                </p>
+                <p>
+                  اگر قصد مشارکت دارید
+                  <strong
+                    ><a
+                      target="_blank"
+                      href="https://github.com/rtbf-ir/rtbf.ir"
+                      rel="nofollow noreferrer noopener"
+                      title="rtbf.ir Source"
+                      >از گیت هاب این کار را انجام دهید</a
+                    ></strong
+                  >.
+                </p>
+              </div>
+              <div
+                class="footer-sidebar-section col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 text-light"
+              >
+                <h4>راهنمای استفاده</h4>
+                <p>
+                  برچسب‌های رنگی زیر مقدار سختی حذف حساب‌کاربری وب‌سایت/سرویس را
+                  نمایش می‌دهد:
+                </p>
+                <p class="label-buttom">
+                  <span class="btn easy-label text-white">ساده</span> - فرآیند
+                  آسان
+                </p>
+                <p class="label-buttom">
+                  <span class="btn medium-label text-white">متوسط</span> - به
+                  صورت چندمرحله‌ای
+                </p>
+                <p class="label-buttom">
+                  <span class="btn hard-label text-white">سخت</span> - نیاز به
+                  ارسال پیام/تیکت به پشتیبانی
+                </p>
+                <p class="label-buttom">
+                  <span class="btn impossible-label text-white">غیرممکن</span>
+                  - غیرقابل حذف
+                </p>
+                <p>
+                  برای افزودن سرویس جدید
+                  <strong
+                    ><a
+                      target="_blank"
+                      href="https://rtbf.ir/issue"
+                      title="rtbf.ir Issues"
+                      >از اینجا</a
+                    ></strong
+                  >
+                  شروع کنید.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="float-right">
+                  <p>
+                    &copy; <span id="copyrightyear"></span> | این سرویس به صورت
+                    <strong
+                      ><a
+                        class="text-dark"
+                        target="_blank"
+                        href="https://github.com/rtbf-ir/rtbf.ir"
+                        rel="nofollow noreferrer noopener"
+                        title="rtbf.ir Source"
+                        >متن باز</a
+                      ></strong
+                    >
+                    و با لایسنس
+                    <strong
+                      ><a
+                        class="text-dark"
+                        target="_blank"
+                        href="https://www.apache.org/licenses/LICENSE-2.0"
+                        rel="nofollow noreferrer noopener"
+                        title="Apache-2.0 License"
+                        >Apache-2.0 License</a
+                      ></strong
+                    >
+                    منتشر شده است. |
+                    <strong
+                      ><small
+                        ><a
+                          href="https://rtbf.ir/tos"
+                          title="rtbf.ir Terms of service"
+                          class="text-dark"
+                          >قوانین سرویس</a
+                        ></small
+                      ></strong
+                    >
+                  </p>
+                </div>
+                <div class="float-left">
+                  <p>
+                    <span class="text-danger fas fa-1x fa-heart"></span>
+                    <span class="text-brown fas fa-1x fa-coffee"></span>
+                  </p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="assets/js/api-docs.js"></script>
+    <script src="assets/js/copyright.js"></script>
+  </body>
+</html>
