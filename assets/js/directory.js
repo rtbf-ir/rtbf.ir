@@ -23,6 +23,13 @@ document.getElementById("copyrightyear").innerHTML =
 const directoryResults = document.querySelector(".directoryData");
 const directoryStatus = document.getElementById("directory-status");
 const directoryRetry = document.getElementById("directory-retry");
+const directoryReset = document.getElementById("directory-reset");
+const directorySearch = document.getElementById("servicename");
+const directoryFilters = {
+  category: document.getElementById("category"),
+  priority: document.getElementById("priority"),
+  status: document.getElementById("status"),
+};
 let directoryItems;
 
 function appendCard(website) {
@@ -72,6 +79,7 @@ function appendCard(website) {
 }
 
 async function loadDirectory() {
+  const retryHadFocus = document.activeElement === directoryRetry;
   directoryStatus.textContent = "در حال بارگذاری فهرست سرویس‌ها…";
   directoryRetry.hidden = true;
   directoryRetry.disabled = true;
@@ -94,14 +102,17 @@ async function loadDirectory() {
     directoryStatus.textContent = "بارگذاری فهرست سرویس‌ها ناموفق بود.";
     directoryRetry.hidden = false;
     directoryRetry.disabled = false;
+    if (retryHadFocus && document.activeElement === document.body) {
+      directoryRetry.focus();
+    }
     return;
   }
 
   filterData();
+  if (retryHadFocus && document.activeElement === document.body) {
+    directoryStatus.focus();
+  }
 }
-
-directoryRetry.addEventListener("click", loadDirectory);
-loadDirectory();
 
 // Close menu in mobile size on click outside
 document.addEventListener("click", (event) => {
@@ -123,19 +134,47 @@ function normalizeSearchText(value) {
     .trim();
 }
 
+function applyFilterParams(params) {
+  directorySearch.value = params.get("q") ?? "";
+  for (const [key, select] of Object.entries(directoryFilters)) {
+    select.value = params.get(key) ?? "all";
+    if (select.selectedIndex === -1) select.value = "all";
+  }
+}
+
+function restoreFilters() {
+  applyFilterParams(new URLSearchParams(window.location.hash.slice(1)));
+  filterData();
+}
+
+function updateFilters() {
+  const params = new URLSearchParams();
+  if (normalizeSearchText(directorySearch.value)) {
+    params.set("q", directorySearch.value);
+  }
+  for (const [key, select] of Object.entries(directoryFilters)) {
+    if (select.value !== "all") params.set(key, select.value);
+  }
+
+  const url = new URL(window.location.href);
+  url.hash = params.toString();
+  if (url.href !== window.location.href) {
+    window.history.replaceState(window.history.state, "", url.href);
+  }
+  filterData();
+}
+
 function filterData() {
   if (!directoryItems) return;
 
-  const category = document.getElementById("category").value.toLowerCase();
-  const priority = document.getElementById("priority").value.toLowerCase();
-  const status = document.getElementById("status").value.toLowerCase();
-  const query = normalizeSearchText(document.getElementById("servicename").value);
+  const { category, priority, status } = directoryFilters;
+  const query = normalizeSearchText(directorySearch.value);
 
   const items = directoryItems.filter(
     (item) =>
-      (category === "all" || item.category === category) &&
-      (priority === "all" || item.priority === priority) &&
-      (status === "all" || item.keytype === status) &&
+      (category.value === "all" || item.category === category.value) &&
+      (priority.value === "all" || item.priority === priority.value) &&
+      (status.value === "all" || item.keytype === status.value) &&
       (!query ||
         normalizeSearchText(item.name).includes(query) ||
         normalizeSearchText(item.website).includes(query))
@@ -146,5 +185,21 @@ function filterData() {
     appendCard(item);
   }
 
-  directoryStatus.textContent = items.length ? "" : "سرویسی پیدا نشد.";
+  directoryStatus.textContent = items.length
+    ? toPersianNumber(items.length) + " نتیجه"
+    : "سرویسی پیدا نشد (۰ نتیجه).";
 }
+
+directorySearch.addEventListener("input", updateFilters);
+for (const select of Object.values(directoryFilters)) {
+  select.addEventListener("change", updateFilters);
+}
+directoryReset.addEventListener("click", () => {
+  applyFilterParams(new URLSearchParams());
+  updateFilters();
+});
+directoryRetry.addEventListener("click", loadDirectory);
+window.addEventListener("hashchange", restoreFilters);
+
+restoreFilters();
+loadDirectory();

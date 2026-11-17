@@ -596,7 +596,7 @@
     "info": "برای حذف حساب‌کاربری به آدرس ایمیل support@taskulu.com پیام ارسال کنید.",
     "difficulty": "سخت",
     "keytype": "hard-label",
-    "priority": "3",
+    "priority": "2",
     "category": "software-as-a-service"
   },
   {
@@ -1540,26 +1540,6 @@
     "category": "insurance"
   },
   {
-    "name": "میزبان‌سام",
-    "website": "mizbansam.com",
-    "deleteurl": "#",
-    "info": "امکان حذف وجود ندارد.",
-    "difficulty": "غیرممکن",
-    "keytype": "impossible-label",
-    "priority": "3",
-    "category": "provider"
-  },
-  {
-    "name": "IranTalent | ایران‌تلنت",
-    "website": "irantalent.com",
-    "deleteurl": "#",
-    "info": "امکان حذف وجود ندارد.",
-    "difficulty": "غیرممکن",
-    "keytype": "impossible-label",
-    "priority": "2",
-    "category": "job"
-  },
-  {
     "name": "سرویس ابری لیارا",
     "website": "liara.ir",
     "deleteurl": "#",
@@ -1638,16 +1618,6 @@
     "keytype": "hard-label",
     "priority": "3",
     "category": "e-commerce"
-  },
-  {
-    "name": "گنجه هاست",
-    "website": "ganje.host",
-    "deleteurl": "#",
-    "info": "امکان حذف وجود ندارد.",
-    "difficulty": "غیرممکن",
-    "keytype": "impossible-label",
-    "priority": "2",
-    "category": "provider"
   },
   {
     "name": "گنجه هاست",
@@ -1828,16 +1798,6 @@
     "keytype": "impossible-label",
     "priority": "3",
     "category": "entertainment"
-  },
-  {
-    "name": "تسکولو",
-    "website": "taskulu.com/fa",
-    "deleteurl": "#",
-    "info": "درخواست خود را به ایمیل زیر ارسال کنید:<br>Support@taskulu.com",
-    "difficulty": "سخت",
-    "keytype": "hard-label",
-    "priority": "2",
-    "category": "software-as-a-service"
   },
   {
     "name": "تیمچه",
@@ -2248,16 +2208,6 @@
     "keytype": "impossible-label",
     "priority": "2",
     "category": "event"
-  },
-  {
-    "name": "شاواز",
-    "website": "shavaz.com",
-    "deleteurl": "#",
-    "info": "امکان حذف وجود ندارد.",
-    "difficulty": "غیرممکن",
-    "keytype": "impossible-label",
-    "priority": "3",
-    "category": "e-commerce"
   },
   {
     "name": "صرافی پینگی",

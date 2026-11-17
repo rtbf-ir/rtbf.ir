@@ -308,12 +308,11 @@
                   <div class="col-xl-12 col-lg-12 col-md12 col-sm-12 col-12">
                     <p>
                       <label class="text-muted" for="servicename"
-                        ><i class="fa fa-1x fa-globe"></i> نام سرویس</label
+                        ><i class="fa fa-1x fa-globe" aria-hidden="true"></i> نام سرویس</label
                       >
                     </p>
                     <p>
                       <input
-                        oninput="filterData()"
                         name="servicename"
                         id="servicename"
                         class="form-control"
@@ -327,13 +326,12 @@
                     class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 float-right"
                   >
                     <p>
-                      <label class="text-muted"
-                        ><i class="fa fa-1x fa-tag"></i> وضعیت سرویس‌ها</label
+                      <label class="text-muted" for="status"
+                        ><i class="fa fa-1x fa-tag" aria-hidden="true"></i> وضعیت سرویس‌ها</label
                       >
                     </p>
                     <p>
                       <select
-                        onchange="filterData()"
                         id="status"
                         name="status"
                         class="w-100 form-select"
@@ -350,14 +348,13 @@
                     class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 float-right"
                   >
                     <p>
-                      <label class="text-muted"
-                        ><i class="fa fa-1x fa-sitemap"></i> دسته‌بندی
+                      <label class="text-muted" for="category"
+                        ><i class="fa fa-1x fa-sitemap" aria-hidden="true"></i> دسته‌بندی
                         سرویس‌ها</label
                       >
                     </p>
                     <p>
                       <select
-                        onchange="filterData()"
                         id="category"
                         name="category"
                         class="w-100 form-select"
@@ -395,10 +392,9 @@
                   <div
                     class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 float-right"
                   >
-                    <p><label class="text-muted">اولویت سرویس‌ها</label></p>
+                    <p><label class="text-muted" for="priority">اولویت سرویس‌ها</label></p>
                     <p>
                       <select
-                        onchange="filterData()"
                         id="priority"
                         name="priority"
                         class="w-100 form-select"
@@ -416,15 +412,18 @@
                   </div>
                   <div class="clearfix"></div>
                 </div>
+                <div class="text-center mt-2 mb-4">
+                  <button id="directory-reset" type="button" class="btn btn-outline-secondary">
+                    پاک کردن فیلترها
+                  </button>
+                </div>
               </div>
-
-              <p>&nbsp;</p>
             </div>
           </div>
         </div>
         <div class="container">
           <div class="text-center">
-            <p id="directory-status" class="mb-0" role="status"></p>
+            <p id="directory-status" class="mb-0" role="status" tabindex="-1"></p>
             <button
               id="directory-retry"
               type="button"
