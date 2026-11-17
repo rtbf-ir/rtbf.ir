@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>مستندات API عمومی | حق فراموش شدن</title>
-    <meta name="description" content="دریافت اطلاعات حذف حساب سرویس‌ها از API عمومی حق فراموش شدن، همراه با فیلتر، صفحه‌بندی و نمونهٔ JavaScript.">
+    <meta name="description" content="دریافت اطلاعات حذف حساب سرویس‌ها از API عمومی حق فراموش شدن، همراه با فیلتر، صفحه‌بندی و نمونهٔ درخواست.">
     <link rel="canonical" href="https://rtbf.ir/api-docs">
     <meta property="og:title" content="مستندات API عمومی | حق فراموش شدن">
-    <meta property="og:description" content="دریافت اطلاعات حذف حساب سرویس‌ها از API عمومی حق فراموش شدن، همراه با فیلتر، صفحه‌بندی و نمونهٔ JavaScript.">
+    <meta property="og:description" content="دریافت اطلاعات حذف حساب سرویس‌ها از API عمومی حق فراموش شدن، همراه با فیلتر، صفحه‌بندی و نمونهٔ درخواست.">
     <meta property="og:url" content="https://rtbf.ir/api-docs">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://rtbf.ir/assets/img/og-image.png">
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/api-docs.css">
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "مستندات API عمومی | حق فراموش شدن", "description": "دریافت اطلاعات حذف حساب سرویس‌ها از API عمومی حق فراموش شدن، همراه با فیلتر، صفحه‌بندی و نمونهٔ JavaScript.", "url": "https://rtbf.ir/api-docs", "inLanguage": "fa"}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "مستندات API عمومی | حق فراموش شدن", "description": "دریافت اطلاعات حذف حساب سرویس‌ها از API عمومی حق فراموش شدن، همراه با فیلتر، صفحه‌بندی و نمونهٔ درخواست.", "url": "https://rtbf.ir/api-docs", "inLanguage": "fa"}</script>
   </head>
   <body dir="rtl">
     <a class="skip-link" href="#main-content">رفتن به محتوای اصلی</a>
@@ -103,7 +103,7 @@
                       >
                     </li>
                     <li class="nav-item">
-                      <a href="api-docs" class="nav-link text-dark">مستندات API</a>
+                      <a href="api-docs" class="nav-link text-dark"><span class="fas fa-1x fa-book" aria-hidden="true"></span> مستندات API</a>
                     </li>
                   </ul>
                 </div>
@@ -164,90 +164,47 @@
     <main id="main-content" tabindex="-1">
       <div class="container api-docs my-5">
         <h1>مستندات API حق فراموش شدن</h1>
-        <p>اطلاعات حذف حساب سرویس‌ها را به برنامه، وب‌سایت یا افزونهٔ خود اضافه کنید.
-          API عمومی با درخواست <code>GET</code> و بدون کلید قابل‌استفاده است.</p>
-        <nav aria-label="بخش‌های مستندات" class="d-flex flex-wrap gap-3 my-4">
-          <a href="#api-start">شروع سریع</a>
-          <a href="#api-directory">فیلتر و صفحه‌بندی</a>
-          <a href="#api-fields">ساختار پاسخ</a>
-          <a href="#api-playground">آزمایش API</a>
-        </nav>
+        <p>درخواست‌ها <code>GET</code> هستند، کلید نمی‌خواهند و پاسخ JSON می‌دهند.</p>
 
-        <h2 id="api-start">شروع سریع</h2>
-        <p>وضعیت خروجی و مقدارهای معتبر فیلترها را از <a href="api/v1/">مسیر بررسی سلامت</a>
-          بخوانید. پاسخ <code>status: "ok"</code> یعنی خروجی داده‌ها ساخته شده است.</p>
-        <pre><code># بررسی سلامت خروجی
+        <h2 id="api-start">مسیرها</h2>
+        <pre><code># بررسی سلامت
 curl -fSsL 'https://rtbf.ir/api/v1/'
 
-# همهٔ سرویس‌ها، از جدیدترین به قدیمی‌ترین
+# همهٔ سرویس‌ها
 curl -fSsL 'https://rtbf.ir/api/v1/services/'
 
-# اطلاعات یک سرویس با دامنهٔ ثبت‌شده
-curl -fSsL 'https://rtbf.ir/api/v1/services/aparat.com'</code></pre>
-        <p>مسیر تک‌سرویس، دامنهٔ دقیق ثبت‌شده را می‌گیرد. برای مثال، از URL کامل آپارات،
-          فقط <code>aparat.com</code> را در مسیر بگذارید. دامنهٔ ثبت‌نشده HTTP 404 می‌دهد.</p>
+# یک سرویس با دامنهٔ ثبت‌شده
+curl -fSsL 'https://rtbf.ir/api/v1/services/aparat.com'
+
+# فیلتر
+curl -fSsL 'https://rtbf.ir/api/v1/services/category=e-commerce&amp;priority=2&amp;status=medium-label&amp;sort=oldest'</code></pre>
 
         <h2 id="api-directory">فیلترها و صفحه‌بندی</h2>
-        <p>چهار فیلتر را دقیقاً با ترتیب <code>category</code>، <code>priority</code>،
-          <code>status</code> و <code>sort</code> در مسیر بنویسید. برای برداشتن محدودیت
-          دسته‌بندی، اولویت یا وضعیت از <code>all</code> استفاده کنید.</p>
-        <pre><code>curl -fSsL 'https://rtbf.ir/api/v1/services/category=e-commerce&amp;priority=2&amp;status=medium-label&amp;sort=oldest'
-
-curl -fSsL 'https://rtbf.ir/api/v1/services/category=all&amp;priority=all&amp;status=all&amp;sort=newest'</code></pre>
-        <p>این مقدارها بخشی از مسیرند. <code>?</code> اضافه نکنید و ترتیب یا نام فیلترها را تغییر ندهید.
-          در ترمینال، آدرس را داخل کوتیشن بگذارید تا <code>&amp;</code> درست ارسال شود.</p>
+        <p>ترتیب فیلترها را مثل نمونه نگه دارید؛ <code>?</code> اضافه نکنید.
+          مقدار <code>all</code> محدودیت دسته‌بندی، اولویت یا وضعیت را برمی‌دارد.</p>
         <table>
           <caption>مقدارهای فیلترها</caption>
           <thead><tr><th scope="col">فیلتر</th><th scope="col">مقدار</th></tr></thead>
           <tbody>
-            <tr><th scope="row"><code>category</code></th><td><code>all</code> یا یکی از مقدارهای
-              <code>filters.category</code> در پاسخ بررسی سلامت.
-              دستهٔ خالی با <code>uncategorized</code> مشخص می‌شود.</td></tr>
+            <tr><th scope="row"><code>category</code></th><td><code>all</code> یا دسته‌های
+              <code>filters.category</code> در <a href="api/v1/">پاسخ سلامت</a></td></tr>
             <tr><th scope="row"><code>priority</code></th><td><code>all</code>، <code>1</code>، <code>2</code> یا <code>3</code></td></tr>
             <tr><th scope="row"><code>status</code></th><td><code>all</code>، <code>easy-label</code>،
               <code>medium-label</code>، <code>hard-label</code> یا <code>impossible-label</code></td></tr>
-            <tr><th scope="row"><code>sort</code></th><td><code>newest</code> یا <code>oldest</code>.
-              رکوردهای انتهای فایل منبع جدیدترند.</td></tr>
+            <tr><th scope="row"><code>sort</code></th><td><code>newest</code> یا <code>oldest</code></td></tr>
           </tbody>
         </table>
-        <p>مسیر <code>/services/</code> همهٔ سرویس‌ها را می‌دهد. پاسخ فیلترشده حداکثر ۲۰ سرویس در هر صفحه دارد.
-          برای صفحهٔ بعد و قبل، آدرس‌های <code>links.next</code> و <code>links.previous</code> را دنبال کنید.
-          از صفحهٔ دوم، شمارهٔ صفحه به انتهای مسیر اضافه می‌شود. مسیر صفحهٔ اول شماره ندارد.</p>
-        <pre><code>curl -fSsL 'https://rtbf.ir/api/v1/services/category=all&amp;priority=all&amp;status=all&amp;sort=newest&amp;page=2'</code></pre>
-        <p>ترکیب معتبر بدون نتیجه، <code>data: []</code> و <code>meta.total: 0</code> می‌دهد.
-          فیلتر نامعتبر، ترتیب متفاوت پارامترها و صفحهٔ خارج از محدوده HTTP 404 می‌دهند.</p>
+        <p>نتیجه در <code>data</code> و تعداد کل در <code>meta.total</code> است.
+          فهرست فیلترشده در صفحه‌های ۲۰تایی می‌آید؛ <code>links.next</code> و
+          <code>links.previous</code> مسیر صفحهٔ بعد و قبل هستند.</p>
+        <pre><code># صفحهٔ دوم
+curl -fSsL 'https://rtbf.ir/api/v1/services/category=all&amp;priority=all&amp;status=all&amp;sort=newest&amp;page=2'</code></pre>
+        <p>نتیجهٔ خالی <code>data: []</code> می‌دهد؛ مسیر نامعتبر یا دامنهٔ ثبت‌نشده، خطای <code>404</code>.
+          برای هدر <code>application/json</code>، در دو مسیر اول <code>index.json</code>
+          و در مسیرهای دیگر <code>.json</code> اضافه کنید.</p>
 
-        <h2 id="api-fields">ساختار پاسخ</h2>
-        <p>پاسخ‌ها <code>api_version</code> و <code>revision</code> دارند.
-          اثر انگشت <code>revision</code> با تغییر فایل منبع عوض می‌شود.
-          <code>data</code> در تک‌سرویس یک شیء و در فهرست یک آرایه است.
-          <code>meta.total</code> تعداد کل نتایج را نشان می‌دهد.</p>
-        <table>
-          <caption>فیلدهای هر سرویس</caption>
-          <thead><tr><th scope="col">فیلد</th><th scope="col">توضیح</th></tr></thead>
-          <tbody>
-            <tr><th scope="row"><code>domain</code>، <code>name</code></th><td>دامنهٔ ثبت‌شده و نام سرویس</td></tr>
-            <tr><th scope="row"><code>website_url</code></th><td>آدرس کامل وب‌سایت</td></tr>
-            <tr><th scope="row"><code>delete_url</code></th><td>آدرس کامل حذف حساب یا <code>null</code> در نبود لینک مستقیم</td></tr>
-            <tr><th scope="row"><code>info</code>، <code>references</code></th><td>راهنمای حذف به‌صورت متن ساده و آرایهٔ پیوندهای مرجع</td></tr>
-            <tr><th scope="row"><code>difficulty</code>، <code>status</code></th><td>شرح فارسی سختی حذف و کد آن با پسوند <code>-label</code></td></tr>
-            <tr><th scope="row"><code>priority</code>، <code>category</code></th><td>اولویت عددی و دسته‌بندی سرویس</td></tr>
-          </tbody>
-        </table>
-        <p>خروجی با UTF-8 و بدنهٔ JSON است. برای خواندن از JavaScript می‌توانید از
-          <code>fetch(url).then(response =&gt; response.json())</code> استفاده کنید؛ پیش از آن
-          <code>response.ok</code> را بررسی کنید، چون پاسخ خطای میزبان ممکن است HTML باشد.
-          راهنمای سرویس را با <code>textContent</code> نمایش دهید.</p>
-        <p>GitHub Pages برای مسیرهای دایرکتوری <code>/api/v1/</code> و <code>/services/</code>
-          هدر <code>text/html</code> می‌فرستد، هرچند بدنه JSON است.
-          اگر برنامهٔ شما هدر <code>application/json</code> می‌خواهد، از
-          <a href="api/v1/index.json">/api/v1/index.json</a> و
-          <a href="api/v1/services/index.json">/api/v1/services/index.json</a> استفاده کنید.
-          مسیر تک‌سرویس و فیلترها هم نسخهٔ معادل با پسوند <code>.json</code> دارند.</p>
-        <p>API فقط خواندنی است. برای اصلاح داده‌ها از <a href="issue">ثبت گزارش</a> استفاده کنید.
-          فایل <a href="data/data.json">data/data.json</a> با ساختار قبلی برای افزونه‌ها در دسترس است.</p>
-
-        <h2 id="api-playground">آزمایش API</h2>
+        <details class="my-4" id="api-playground">
+          <summary>آزمایش آنلاین API</summary>
         <form id="api-lookup" class="my-3">
           <label for="api-input-url">URL یا دامنهٔ سرویس</label>
           <div class="d-flex flex-wrap gap-2 my-2">
@@ -293,14 +250,7 @@ curl -fSsL 'https://rtbf.ir/api/v1/services/category=all&amp;priority=all&amp;st
         <pre id="api-list-response" tabindex="0" aria-label="پاسخ فهرست سرویس‌ها">برای نمایش پاسخ، فیلترها را انتخاب و فهرست را دریافت کنید.</pre>
         <noscript><p>برای آزمایش تعاملی JavaScript را فعال کنید. لینک‌های JSON و نمونه‌های درخواست بالای صفحه در دسترس‌اند.</p></noscript>
 
-        <h2>انتشار و استفاده</h2>
-        <p>با هر پوش به شاخهٔ اصلی، GitHub Actions خروجی‌ها را از <code>data/data.json</code> می‌سازد،
-          تغییرات تولیدی را خودکار کامیت و پوش می‌کند و سپس سایت را منتشر می‌کند.
-          افزودن، ویرایش یا حذف سرویس فقط در فایل منبع انجام می‌شود.
-          خروجی‌ها هنگام انتشار به‌روز می‌شوند؛ کش مرورگر و CDN ممکن است دریافت تغییرات را به تأخیر بیندازد.</p>
-        <p>محتوا با مشارکت کاربران تهیه می‌شود. پیش از اقدام به حذف حساب، راهنمای رسمی سرویس را هم بررسی کنید.
-          هنگام بازنشر، منبع <a href="https://rtbf.ir">rtbf.ir</a> و
-          <a href="https://github.com/rtbf-ir/rtbf.ir/blob/main/LICENSE">مجوز Apache-2.0</a> را ذکر کنید.</p>
+        </details>
       </div>
     </main>
 

@@ -57,6 +57,7 @@ test("requested API routes return JSON over HTTP and obsolete routes are gone", 
 
 test("API documentation supports URL lookup and paginated filtered requests", async ({ page }) => {
   await page.goto("/api-docs.html");
+  await page.getByText("آزمایش آنلاین API", { exact: true }).click();
   await expect(page.getByRole("heading", { name: "مستندات API حق فراموش شدن" })).toBeVisible();
   await page.getByRole("button", { name: "بررسی سرویس" }).click();
   await expect(page.locator("#api-lookup-status")).toHaveText("سرویس پیدا شد.");
@@ -87,6 +88,8 @@ test("documentation is linked from the site and usable on a narrow screen", asyn
   await page.goto("/directory.html");
   await expect(page.getByRole("navigation", { name: "منوی اصلی", exact: true })
     .getByRole("link", { name: "مستندات API" })).toHaveAttribute("href", "api-docs");
+  await expect(page.getByRole("navigation", { name: "منوی اصلی", exact: true })
+    .getByRole("link", { name: "مستندات API" }).locator(".fa-book")).toHaveAttribute("aria-hidden", "true");
   await page.setViewportSize({ width: 390, height: 700 });
   await page.goto("/api-docs.html");
   await page.keyboard.press("Tab");
