@@ -1,0 +1,11 @@
+{
+  "name": "rtbf-directory-browser-tests",
+  "private": true,
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "bootstrap": "5.0.1"
+  }
+}

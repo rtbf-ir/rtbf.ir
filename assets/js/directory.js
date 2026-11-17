@@ -25,6 +25,7 @@ const directoryStatus = document.getElementById("directory-status");
 const directoryRetry = document.getElementById("directory-retry");
 const directoryReset = document.getElementById("directory-reset");
 const directorySearch = document.getElementById("servicename");
+const directorySort = document.getElementById("directory-sort");
 const directoryFilters = {
   category: document.getElementById("category"),
   priority: document.getElementById("priority"),
@@ -72,7 +73,7 @@ function appendCard(website) {
             </div>
           </div>`;
 
-  directoryResults.insertAdjacentHTML("afterbegin", websiteCard);
+  directoryResults.insertAdjacentHTML("beforeend", websiteCard);
 }
 
 async function loadDirectory() {
@@ -140,7 +141,9 @@ function applyFilterParams(params) {
 }
 
 function restoreFilters() {
-  applyFilterParams(new URLSearchParams(window.location.hash.slice(1)));
+  const params = new URLSearchParams(window.location.hash.slice(1));
+  applyFilterParams(params);
+  directorySort.value = params.get("sort") === "oldest" ? "oldest" : "newest";
   filterData();
 }
 
@@ -152,6 +155,7 @@ function updateFilters() {
   for (const [key, select] of Object.entries(directoryFilters)) {
     if (select.value !== "all") params.set(key, select.value);
   }
+  if (directorySort.value === "oldest") params.set("sort", "oldest");
 
   const url = new URL(window.location.href);
   url.hash = params.toString();
@@ -162,10 +166,12 @@ function updateFilters() {
 }
 
 function filterData() {
-  if (!directoryItems) return;
-
   const { category, priority, status } = directoryFilters;
   const query = normalizeSearchText(directorySearch.value);
+  const hasActiveFilters = Object.values(directoryFilters).some((select) => select.value !== "all");
+  directoryReset.hidden = !query && !hasActiveFilters;
+
+  if (!directoryItems) return;
 
   const items = directoryItems.filter(
     (item) =>
@@ -176,6 +182,9 @@ function filterData() {
         normalizeSearchText(item.name).includes(query) ||
         normalizeSearchText(item.website).includes(query))
   );
+
+  // Records are added to the end of data.json.
+  if (directorySort.value === "newest") items.reverse();
 
   directoryResults.textContent = "";
   for (const item of items) {
@@ -204,11 +213,13 @@ document.querySelector(".skip-link").addEventListener("click", (event) => {
 });
 
 directorySearch.addEventListener("input", updateFilters);
+directorySort.addEventListener("change", updateFilters);
 for (const select of Object.values(directoryFilters)) {
   select.addEventListener("change", updateFilters);
 }
-directoryReset.addEventListener("click", () => {
+directoryReset.addEventListener("click", (event) => {
   applyFilterParams(new URLSearchParams());
+  if (event.detail === 0) directorySearch.focus();
   updateFilters();
 });
 directoryRetry.addEventListener("click", loadDirectory);

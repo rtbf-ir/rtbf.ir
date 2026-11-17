@@ -2,6 +2,11 @@
 
 `data.json` is the public directory consumed by rtbf.ir and the browser extensions.
 
+Records are ordered by when they were added. The first record is the oldest and
+the last is the newest. Append new services to the end of the array and keep
+existing records in place when editing them. The directory shows the array in
+reverse for “newest first” and in file order for “oldest first.”
+
 Each record must include:
 
 - `name`: service name.

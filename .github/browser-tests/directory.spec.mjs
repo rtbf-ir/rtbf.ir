@@ -1,0 +1,133 @@
+import { readFileSync } from "node:fs";
+import { createRequire } from "node:module";
+import { test, expect } from "@playwright/test";
+
+const require = createRequire(import.meta.url);
+const bootstrapAssets = new Map([
+  ["https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css", {
+    path: require.resolve("bootstrap/dist/css/bootstrap.min.css"),
+    contentType: "text/css",
+  }],
+  ["https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js", {
+    path: require.resolve("bootstrap/dist/js/bootstrap.bundle.min.js"),
+    contentType: "application/javascript",
+  }],
+]);
+const records = JSON.parse(readFileSync(new URL("../../data/data.json", import.meta.url), "utf-8"));
+const examples = [
+  { name: "سرویس قدیمی", website: "older.example.test", keytype: "hard-label", difficulty: "سخت" },
+  { name: "سرویس ساده", website: "easy.example.test", keytype: "easy-label", difficulty: "ساده" },
+  { name: "سرویس جدید", website: "newer.example.test", keytype: "hard-label", difficulty: "سخت" },
+].map(record => ({
+  category: "provider",
+  priority: "3",
+  deleteurl: "#",
+  info: "درخواست را به پشتیبانی بفرستید.",
+  ...record,
+}));
+
+test.beforeEach(async ({ context, baseURL }) => {
+  const origin = new URL(baseURL).origin;
+  await context.route(url => url.origin !== origin, async route => {
+    const asset = bootstrapAssets.get(route.request().url());
+    if (!asset) {
+      await route.abort();
+      return;
+    }
+    await route.fulfill({ ...asset, headers: { "Access-Control-Allow-Origin": "*" } });
+  });
+});
+
+async function expectServiceOrder(page, expected) {
+  const cards = page.locator(".directoryData .card-title > a:first-child");
+  await expect.poll(() => cards.evaluateAll(links => links.map(link => link.getAttribute("href"))))
+    .toEqual(expected.map(service => "https://" + service.website));
+}
+
+test("sorts services by their position in the data file", async ({ page }) => {
+  await page.goto("/directory.html");
+  const sort = page.getByLabel("مرتب‌سازی");
+  const reset = page.getByRole("button", { name: "پاک کردن فیلترها" });
+  await expect(sort).toHaveValue("newest");
+  await expectServiceOrder(page, records.toReversed());
+
+  await sort.selectOption("oldest");
+  await expect(page).toHaveURL(/#sort=oldest$/);
+  await expectServiceOrder(page, records);
+  await expect(reset).toBeHidden();
+
+  await sort.selectOption("newest");
+  await expect(page).toHaveURL(/\/directory\.html$/);
+  await expectServiceOrder(page, records.toReversed());
+});
+
+test("restores search, filters, and sort in a fresh tab from the shared link", async ({ context, page }) => {
+  await context.route("**/data/data.json", route => route.fulfill({ json: examples }));
+  await page.goto("/directory.html");
+  await page.getByLabel("نام سرویس").fill("example.test");
+  await page.getByLabel("وضعیت سرویس‌ها").selectOption("hard-label");
+  await page.getByLabel("دسته‌بندی سرویس‌ها").selectOption("provider");
+  await page.getByLabel("اولویت سرویس‌ها").selectOption("3");
+  await page.getByLabel("مرتب‌سازی").selectOption("oldest");
+  const expected = [examples[0], examples[2]];
+  await expectServiceOrder(page, expected);
+
+  const recipient = await context.newPage();
+  await recipient.goto(page.url());
+  await expect(recipient.getByLabel("نام سرویس")).toHaveValue("example.test");
+  await expect(recipient.getByLabel("وضعیت سرویس‌ها")).toHaveValue("hard-label");
+  await expect(recipient.getByLabel("دسته‌بندی سرویس‌ها")).toHaveValue("provider");
+  await expect(recipient.getByLabel("اولویت سرویس‌ها")).toHaveValue("3");
+  await expect(recipient.getByLabel("مرتب‌سازی")).toHaveValue("oldest");
+  await expectServiceOrder(recipient, expected);
+
+  await recipient.getByRole("button", { name: "پاک کردن فیلترها" }).click();
+  await expect(recipient).toHaveURL(/#sort=oldest$/);
+  await expectServiceOrder(recipient, examples);
+});
+
+test("supports keyboard navigation, retry, and clearing a search", async ({ page }) => {
+  let requests = 0;
+  await page.route("**/data/data.json", route => {
+    requests += 1;
+    return requests === 1 ? route.fulfill({ status: 503 }) : route.fulfill({ json: examples });
+  });
+  await page.goto("/directory.html");
+  const retry = page.getByRole("button", { name: "تلاش دوباره" });
+  await expect(retry).toBeVisible();
+
+  await page.keyboard.press("Tab");
+  await expect(page.getByRole("link", { name: "رفتن به محتوای اصلی" })).toBeFocused();
+  await page.keyboard.press("Enter");
+  await expect(page.getByRole("main")).toBeFocused();
+  await page.keyboard.press("Tab");
+  await expect(page.getByRole("main").getByRole("link", { name: "ثبت سرویس/سایت جدید به لیست" })).toBeFocused();
+  await page.keyboard.press("Tab");
+  const search = page.getByLabel("نام سرویس");
+  await expect(search).toBeFocused();
+  await page.keyboard.type("older");
+
+  const reset = page.getByRole("button", { name: "پاک کردن فیلترها" });
+  for (const control of [
+    page.getByLabel("وضعیت سرویس‌ها"),
+    page.getByLabel("دسته‌بندی سرویس‌ها"),
+    page.getByLabel("اولویت سرویس‌ها"),
+    page.getByLabel("مرتب‌سازی"),
+    reset,
+    retry,
+  ]) {
+    await page.keyboard.press("Tab");
+    await expect(control).toBeFocused();
+  }
+  await page.keyboard.press("Enter");
+  await expect(page.getByRole("status")).toBeFocused();
+  await expectServiceOrder(page, [examples[0]]);
+  expect(requests).toBe(2);
+
+  await page.keyboard.press("Shift+Tab");
+  await expect(reset).toBeFocused();
+  await page.keyboard.press("Enter");
+  await expect(search).toBeFocused();
+  await expect(reset).toBeHidden();
+  await expectServiceOrder(page, examples.toReversed());
+});

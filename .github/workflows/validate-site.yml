@@ -14,3 +14,20 @@ jobs:
           persist-credentials: false
       - name: Check JSON-LD and sitemap
         run: python3 .github/scripts/validate_site.py
+
+  directory-browser:
+    name: Check directory in Chromium
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .github/browser-tests
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm test
