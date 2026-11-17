@@ -1,0 +1,16 @@
+name: Validate site metadata
+
+on: pull_request
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Check JSON-LD and sitemap
+        run: python3 .github/scripts/validate_site.py
