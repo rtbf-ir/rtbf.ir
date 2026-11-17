@@ -33,43 +33,40 @@ const directoryFilters = {
 let directoryItems;
 
 function appendCard(website) {
-  const deleteAccountButton = `<a target="_blank" rel="nofollow noreferrer noopener" href="https://${website.deleteurl}" class="btn label-remove">
-        <span class="fa fa-1x fa-trash"></span>
-        <span>حذف حساب‌کاربری</span>
+  const serviceName = website.name
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+  const deleteLabel = "حذف حساب‌کاربری";
+  const deleteAccountButton = `<a target="_blank" rel="nofollow noreferrer noopener" href="https://${website.deleteurl}" class="btn label-remove" aria-label="${deleteLabel} ${serviceName}">
+        <span class="fa fa-1x fa-trash" aria-hidden="true"></span>
+        <span>${deleteLabel}</span>
     </a>`;
 
   const websiteCard = `<div class="float-right test-mohammad">
             <div class="card">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h5 class="card-title">
-                        <a target="_blank" class="text-dark" rel="nofollow noreferrer noopener" title="سایت ${
-                          website.name
-                        }" href="https://${website.website}">
-                            ${website.name}
+                        <a target="_blank" class="text-dark" rel="nofollow noreferrer noopener" title="سایت ${serviceName}" href="https://${website.website}">
+                            ${serviceName}
                         </a>
                         <a href="https://github.com/rtbf-ir/rtbf.ir/issues/new/choose"
                             style="font-size:12px;"
-                            class="text-warning" title="اطلاعات این بخش اشتباه است قصد اصلاح دارم">
-                                <small>
-                                    <span class="fas fa-1x fa-bolt"></span>
-                                تصحیح<small>
+                            class="text-warning" title="اطلاعات این بخش اشتباه است قصد اصلاح دارم"
+                            aria-label="تصحیح اطلاعات ${serviceName}">
+                            <small>
+                                <span class="fas fa-1x fa-bolt" aria-hidden="true"></span>
+                                تصحیح
+                            </small>
                         </a>
                     </h5>
 
                     <p class="card-text"><small>${website.info}</small></p>
 
-                    <div>
-                        <p class="card-opt">
-                            <a class="btn text-light ${website.keytype}">${
-    website.difficulty
-  }</a>
-                            
-                            ${
-                              website.deleteurl !== "#"
-                                ? deleteAccountButton
-                                : ""
-                            }
-                        </p>
+                    <div class="card-opt mt-auto">
+                        <span class="btn text-light ${website.keytype}">${website.difficulty}</span>
+                        ${website.deleteurl === "#" ? "" : deleteAccountButton}
                     </div>
                 </div>
             </div>
@@ -189,6 +186,22 @@ function filterData() {
     ? toPersianNumber(items.length) + " نتیجه"
     : "سرویسی پیدا نشد (۰ نتیجه).";
 }
+
+document.querySelector(".skip-link").addEventListener("click", (event) => {
+  const hash = window.location.hash;
+  if (
+    !hash || hash === event.currentTarget.hash ||
+    event.ctrlKey || event.metaKey || event.shiftKey || event.altKey
+  ) {
+    return;
+  }
+
+  // Keep the shareable filter fragment when jumping to the content.
+  event.preventDefault();
+  const main = document.getElementById("main-content");
+  main.focus({ preventScroll: true });
+  main.scrollIntoView();
+});
 
 directorySearch.addEventListener("input", updateFilters);
 for (const select of Object.values(directoryFilters)) {

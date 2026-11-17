@@ -198,12 +198,14 @@
   </head>
 
   <body dir="rtl">
+    <a class="skip-link" href="#main-content">رفتن به محتوای اصلی</a>
     <header>
       <div class="container menu">
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <nav
               class="navbar navbar-expand-lg navbar-light bg-blur fixed-top main-menu"
+              aria-label="منوی اصلی"
             >
               <div class="container-fluid">
                 <button
@@ -319,7 +321,7 @@
         <div class="container">
           <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-              <nav class="navbar">
+              <nav class="navbar" aria-label="مسیر صفحه">
                 <ul class="nav">
                   <li class="nav-item">
                     <a class="nav-link" href="index">حق فراموش شدن</a>
@@ -334,7 +336,7 @@
         </div>
       </div>
     </header>
-    <section>
+    <main id="main-content" tabindex="-1">
       <div class="homepage-content">
         <div class="container">
           <div class="row">
@@ -352,26 +354,28 @@
               <p>&nbsp;</p>
               <div>
                 <div class="float-right blog-box-right">
-                  <div class="accordion" id="accordionExample">
+                  <div class="accordion" id="faq-accordion">
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
+                      <h2 class="accordion-header">
                         <button
+                          id="faq-question-recover-deleted-gmail"
                           class="accordion-button"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#collapseOne"
+                          data-bs-target="#faq-answer-recover-deleted-gmail"
                           aria-expanded="true"
-                          aria-controls="collapseOne"
+                          aria-controls="faq-answer-recover-deleted-gmail"
                         >
                           اگر از حذف جیمیل پشیمان شدیم چه کنیم؟ آیا راهی برای
                           بازگرداندن ایمیل‌ها وجود دارد؟ &nbsp;
                         </button>
                       </h2>
                       <div
-                        id="collapseOne"
+                        id="faq-answer-recover-deleted-gmail"
                         class="accordion-collapse collapse show"
-                        aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample"
+                        role="region"
+                        aria-labelledby="faq-question-recover-deleted-gmail"
+                        data-bs-parent="#faq-accordion"
                       >
                         <div class="accordion-body">
                           <p>
@@ -388,24 +392,26 @@
                       </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
+                      <h2 class="accordion-header">
                         <button
+                          id="faq-question-remove-personal-data-from-internet"
                           class="accordion-button collapsed"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#collapseTwo"
+                          data-bs-target="#faq-answer-remove-personal-data-from-internet"
                           aria-expanded="false"
-                          aria-controls="collapseTwo"
+                          aria-controls="faq-answer-remove-personal-data-from-internet"
                         >
                           چگونه تمام اطلاعات و حساب‌های کاربری خود را از اینترنت
                           حذف کنیم؟ آیا این کار امکان پذیر است؟ &nbsp;
                         </button>
                       </h2>
                       <div
-                        id="collapseTwo"
+                        id="faq-answer-remove-personal-data-from-internet"
                         class="accordion-collapse collapse"
-                        aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample"
+                        role="region"
+                        aria-labelledby="faq-question-remove-personal-data-from-internet"
+                        data-bs-parent="#faq-accordion"
                       >
                         <div class="accordion-body">
                           <p>
@@ -424,23 +430,25 @@
                       </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
+                      <h2 class="accordion-header">
                         <button
+                          id="faq-question-online-privacy-rights"
                           class="accordion-button collapsed"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#collapseThree"
+                          data-bs-target="#faq-answer-online-privacy-rights"
                           aria-expanded="false"
-                          aria-controls="collapseThree"
+                          aria-controls="faq-answer-online-privacy-rights"
                         >
                           حق و حقوق ما در دنیای مجازی شامل چه مواردی است؟ &nbsp;
                         </button>
                       </h2>
                       <div
-                        id="collapseThree"
+                        id="faq-answer-online-privacy-rights"
                         class="accordion-collapse collapse"
-                        aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample"
+                        role="region"
+                        aria-labelledby="faq-question-online-privacy-rights"
+                        data-bs-parent="#faq-accordion"
                       >
                         <div class="accordion-body">
                           <p>
@@ -460,24 +468,26 @@
                       </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
+                      <h2 class="accordion-header">
                         <button
+                          id="faq-question-delete-facebook-account"
                           class="accordion-button collapsed"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#collapseFour"
+                          data-bs-target="#faq-answer-delete-facebook-account"
                           aria-expanded="false"
-                          aria-controls="collapseFour"
+                          aria-controls="faq-answer-delete-facebook-account"
                         >
                           چگونه حساب‌کاربری فیسبوک خود را به طور کامل حذف کنیم؟
                           &nbsp;
                         </button>
                       </h2>
                       <div
-                        id="collapseFour"
+                        id="faq-answer-delete-facebook-account"
                         class="accordion-collapse collapse"
-                        aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample"
+                        role="region"
+                        aria-labelledby="faq-question-delete-facebook-account"
+                        data-bs-parent="#faq-accordion"
                       >
                         <div class="accordion-body">
                           <p>
@@ -514,24 +524,26 @@
                       </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
+                      <h2 class="accordion-header">
                         <button
+                          id="faq-question-tor-benefits"
                           class="accordion-button collapsed"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#collapseFive"
+                          data-bs-target="#faq-answer-tor-benefits"
                           aria-expanded="false"
-                          aria-controls="collapseFive"
+                          aria-controls="faq-answer-tor-benefits"
                         >
                           تور یا Tor چه فایده‌ای برای کاربران اینترنت دارد؟
                           &nbsp;
                         </button>
                       </h2>
                       <div
-                        id="collapseFive"
+                        id="faq-answer-tor-benefits"
                         class="accordion-collapse collapse"
-                        aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample"
+                        role="region"
+                        aria-labelledby="faq-question-tor-benefits"
+                        data-bs-parent="#faq-accordion"
                       >
                         <div class="accordion-body">
                           <p>
@@ -544,23 +556,25 @@
                       </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
+                      <h2 class="accordion-header">
                         <button
+                          id="faq-question-delete-instagram-account"
                           class="accordion-button collapsed"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#collapseSix"
+                          data-bs-target="#faq-answer-delete-instagram-account"
                           aria-expanded="false"
-                          aria-controls="collapseSix"
+                          aria-controls="faq-answer-delete-instagram-account"
                         >
                           چگونه اکانت اینستاگرام خود را حذف کنیم؟ &nbsp;
                         </button>
                       </h2>
                       <div
-                        id="collapseSix"
+                        id="faq-answer-delete-instagram-account"
                         class="accordion-collapse collapse"
-                        aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample"
+                        role="region"
+                        aria-labelledby="faq-question-delete-instagram-account"
+                        data-bs-parent="#faq-accordion"
                       >
                         <div class="accordion-body">
                           <p>
@@ -604,24 +618,26 @@
                       </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
+                      <h2 class="accordion-header">
                         <button
+                          id="faq-question-tor-security-levels"
                           class="accordion-button collapsed"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#collapseSeven"
+                          data-bs-target="#faq-answer-tor-security-levels"
                           aria-expanded="false"
-                          aria-controls="collapseSeven"
+                          aria-controls="faq-answer-tor-security-levels"
                         >
                           سطوح امنیتی مختلف Tor چه هستند و چه امکاناتی دارند؟
                           &nbsp;
                         </button>
                       </h2>
                       <div
-                        id="collapseSeven"
+                        id="faq-answer-tor-security-levels"
                         class="accordion-collapse collapse"
-                        aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample"
+                        role="region"
+                        aria-labelledby="faq-question-tor-security-levels"
+                        data-bs-parent="#faq-accordion"
                       >
                         <div class="accordion-body">
                           <p>
@@ -665,23 +681,25 @@
                       </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
+                      <h2 class="accordion-header">
                         <button
+                          id="faq-question-right-to-be-forgotten"
                           class="accordion-button collapsed"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#collapsEight"
+                          data-bs-target="#faq-answer-right-to-be-forgotten"
                           aria-expanded="false"
-                          aria-controls="collapsEight"
+                          aria-controls="faq-answer-right-to-be-forgotten"
                         >
                           حق فراموش شدن در اینترنت چیست؟ &nbsp;
                         </button>
                       </h2>
                       <div
-                        id="collapsEight"
+                        id="faq-answer-right-to-be-forgotten"
                         class="accordion-collapse collapse"
-                        aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample"
+                        role="region"
+                        aria-labelledby="faq-question-right-to-be-forgotten"
+                        data-bs-parent="#faq-accordion"
                       >
                         <div class="accordion-body">
                           <p>
@@ -698,24 +716,26 @@
                       </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
+                      <h2 class="accordion-header">
                         <button
+                          id="faq-question-right-to-be-forgotten-enforcement"
                           class="accordion-button collapsed"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#collapseNine"
+                          data-bs-target="#faq-answer-right-to-be-forgotten-enforcement"
                           aria-expanded="false"
-                          aria-controls="collapseNine"
+                          aria-controls="faq-answer-right-to-be-forgotten-enforcement"
                         >
                           آیا حق فراموش شدن واقعا عملی، قابل اجرا و رعایت شدن
                           است؟ &nbsp;
                         </button>
                       </h2>
                       <div
-                        id="collapseNine"
+                        id="faq-answer-right-to-be-forgotten-enforcement"
                         class="accordion-collapse collapse"
-                        aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample"
+                        role="region"
+                        aria-labelledby="faq-question-right-to-be-forgotten-enforcement"
+                        data-bs-parent="#faq-accordion"
                       >
                         <div class="accordion-body">
                           <p>
@@ -733,24 +753,26 @@
                       </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
+                      <h2 class="accordion-header">
                         <button
+                          id="faq-question-tor-browser-security"
                           class="accordion-button collapsed"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#collapseTen"
+                          data-bs-target="#faq-answer-tor-browser-security"
                           aria-expanded="false"
-                          aria-controls="collapseTen"
+                          aria-controls="faq-answer-tor-browser-security"
                         >
                           آیا مرورگر تور قابل هک و دسترسی (توسط دیگران) است؟
                           &nbsp;
                         </button>
                       </h2>
                       <div
-                        id="collapseTen"
+                        id="faq-answer-tor-browser-security"
                         class="accordion-collapse collapse"
-                        aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample"
+                        role="region"
+                        aria-labelledby="faq-question-tor-browser-security"
+                        data-bs-parent="#faq-accordion"
                       >
                         <div class="accordion-body">
                           <p>
@@ -805,7 +827,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </main>
     <footer>
       <div class="footer">
         <div class="footer-sidebar">

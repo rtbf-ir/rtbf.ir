@@ -141,12 +141,14 @@
   </head>
 
   <body dir="rtl">
+    <a class="skip-link" href="#main-content">رفتن به محتوای اصلی</a>
     <header>
       <div class="container menu">
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <nav
               class="navbar navbar-expand-lg navbar-light bg-blur fixed-top main-menu"
+              aria-label="منوی اصلی"
             >
               <div class="container-fluid">
                 <button
@@ -259,7 +261,7 @@
         <div class="container">
           <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-              <nav class="navbar">
+              <nav class="navbar" aria-label="مسیر صفحه">
                 <ul class="nav">
                   <li class="nav-item">
                     <a class="nav-link" href="index">حق فراموش شدن</a>
@@ -275,7 +277,7 @@
       </div>
     </header>
 
-    <section>
+    <main id="main-content" tabindex="-1">
       <div class="homepage-content">
         <div class="container">
           <div class="row">
@@ -443,9 +445,10 @@
                 >
                   <div class="card bg-success text-light text-center">
                     <div
-                      class="card-body d-flex justify-content-center align-items-center"
+                      class="card-body d-flex flex-column justify-content-center align-items-center"
                     >
-                      <span class="fas fa-1x fa-plus plus-service"></span>
+                      <span class="fas fa-1x fa-plus plus-service mb-2" aria-hidden="true"></span>
+                      <span>افزودن سرویس</span>
                     </div>
                   </div>
                 </a>
@@ -454,7 +457,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </main>
 
     <footer>
       <div class="footer">

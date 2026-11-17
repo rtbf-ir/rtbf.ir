@@ -7,6 +7,11 @@
   src: url(../font/vazir.ttf);
 }
 
+:root {
+  --menu-clearance: 6rem;
+  scroll-padding-block: var(--menu-clearance) 0.5rem;
+}
+
 html,
 body {
   margin: 0;
@@ -97,12 +102,9 @@ p {
 }
 
 .myitems .card .card-opt {
-  position: absolute;
-  bottom: 0;
-}
-
-.myitems .card .card-opt a {
-  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .plus-service {
@@ -207,7 +209,7 @@ p {
 }
 
 .medium-label {
-  background: #ffa800;
+  background: #965100;
   color: #fff;
 }
 
@@ -217,7 +219,13 @@ p {
 }
 
 .label-remove {
-  background: #ff1f4f;
+  background: #b51e43;
+  color: #fff;
+}
+
+.label-remove:hover,
+.label-remove:active {
+  background: #911735;
   color: #fff;
 }
 
@@ -320,9 +328,25 @@ p {
   color: #058c15;
 }
 
-:focus {
-  outline: 0 !important;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+.skip-link {
+  position: fixed;
+  z-index: 1040;
+  inset-block-start: 0.5rem;
+  inset-inline-start: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  background: #fff;
+  color: #173b67;
+}
+
+.skip-link:not(:focus) {
+  clip-path: inset(50%);
+}
+
+:root :focus-visible {
+  outline: 2px solid #173b67;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #fff;
 }
 
 .searchtext {
@@ -484,16 +508,21 @@ p {
 }
 
 @media screen and (max-width: 991.98px) {
+  :root {
+    --menu-clearance: 4rem;
+    --expanded-menu-height: min(65vh, 30rem);
+  }
+
+  :root:has(.main-menu .navbar-toggler[aria-expanded="true"]) {
+    --menu-clearance: calc(var(--expanded-menu-height) + 0.5rem);
+  }
+
   .bg-blur {
     backdrop-filter: none;
   }
 
   .myitems .float-right {
     width: 50%;
-  }
-
-  .myitems .card .card-opt {
-    font-size: 9px !important;
   }
 
   .header-wall {
@@ -561,5 +590,7 @@ p {
 
   .main-menu {
     direction: ltr;
+    max-block-size: var(--expanded-menu-height);
+    overflow-y: auto;
   }
 }
