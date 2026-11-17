@@ -23,7 +23,7 @@
   padding: 1rem;
 }
 
-.api-docs :is(code, .api-url) {
+.api-docs code {
   direction: ltr;
   unicode-bidi: isolate;
   overflow-wrap: anywhere;
@@ -37,10 +37,6 @@
   text-decoration: underline !important;
 }
 
-.api-docs a.btn {
-  text-decoration: none !important;
-}
-
 .api-docs td, .api-docs th {
   padding: 0.6rem;
   border-bottom: 1px solid #d6ded9;
@@ -49,24 +45,4 @@
 
 .api-docs table {
   width: 100%;
-}
-
-.api-docs summary {
-  cursor: pointer;
-  padding-block: 0.75rem;
-}
-
-#api-list-response, #api-lookup-response {
-  max-height: 25rem;
-  overflow: auto;
-}
-
-.api-docs .api-control {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.api-docs .api-control input, .api-docs .api-control select {
-  min-height: 2.5rem;
 }

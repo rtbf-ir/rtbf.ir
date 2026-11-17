@@ -55,35 +55,6 @@ test("requested API routes return JSON over HTTP and obsolete routes are gone", 
   expect((await request.get("/api/v1/services/unregistered.example")).status()).toBe(404);
 });
 
-test("API documentation supports URL lookup and paginated filtered requests", async ({ page }) => {
-  await page.goto("/api-docs.html");
-  await page.getByText("آزمایش آنلاین API", { exact: true }).click();
-  await expect(page.getByRole("heading", { name: "مستندات API حق فراموش شدن" })).toBeVisible();
-  await page.getByRole("button", { name: "بررسی سرویس" }).click();
-  await expect(page.locator("#api-lookup-status")).toHaveText("سرویس پیدا شد.");
-  expect(JSON.parse(await page.locator("#api-lookup-response").textContent()).data.domain).toBe("aparat.com");
-  await page.getByLabel("URL یا دامنهٔ سرویس").fill("https://unregistered.example/path");
-  await page.getByRole("button", { name: "بررسی سرویس" }).click();
-  await expect(page.locator("#api-lookup-status")).toHaveText("این دامنه در دایرکتوری ثبت نشده است.");
-
-  await expect(page.getByLabel("دسته‌بندی API").locator('option[value="provider"]')).toBeAttached();
-  await page.getByRole("button", { name: "دریافت فهرست" }).click();
-  await expect(page.locator("#api-list-status")).toContainText("صفحهٔ ۱");
-  await page.getByRole("button", { name: "صفحهٔ بعد", exact: true }).click();
-  await expect(page.locator("#api-list-status")).toContainText("صفحهٔ ۲");
-  await page.getByRole("button", { name: "صفحهٔ قبل", exact: true }).click();
-  await expect(page.locator("#api-list-status")).toContainText("صفحهٔ ۱");
-
-  await page.getByLabel("دسته‌بندی API").selectOption("provider");
-  await page.getByLabel("سختی حذف").selectOption("hard-label");
-  await page.getByLabel("ترتیب API").selectOption("oldest");
-  await page.getByRole("button", { name: "دریافت فهرست" }).click();
-  await expect(page.locator("#api-list-url")).toHaveAttribute("href", /\/category=provider&priority=all&status=hard-label&sort=oldest$/);
-  await expect(page.locator("#api-list-status")).toContainText("صفحهٔ ۱");
-  const output = JSON.parse(await page.locator("#api-list-response").textContent());
-  expect(output.data.every(row => row.status === "hard-label" && row.category === "provider")).toBe(true);
-});
-
 test("documentation is linked from the site and usable on a narrow screen", async ({ page }) => {
   await page.goto("/directory.html");
   await expect(page.getByRole("navigation", { name: "منوی اصلی", exact: true })

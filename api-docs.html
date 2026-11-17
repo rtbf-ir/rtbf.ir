@@ -203,54 +203,6 @@ curl -fSsL 'https://rtbf.ir/api/v1/services/category=all&amp;priority=all&amp;st
           برای هدر <code>application/json</code>، در دو مسیر اول <code>index.json</code>
           و در مسیرهای دیگر <code>.json</code> اضافه کنید.</p>
 
-        <details class="my-4" id="api-playground">
-          <summary>آزمایش آنلاین API</summary>
-        <form id="api-lookup" class="my-3">
-          <label for="api-input-url">URL یا دامنهٔ سرویس</label>
-          <div class="d-flex flex-wrap gap-2 my-2">
-            <input id="api-input-url" class="form-control api-url" name="url" value="https://www.aparat.com/" required>
-            <button class="btn btn-success" type="submit">بررسی سرویس</button>
-          </div>
-        </form>
-        <p id="api-lookup-status" role="status"></p>
-        <pre id="api-lookup-response" tabindex="0" aria-label="پاسخ بررسی سرویس">برای نمایش پاسخ، نشانی را بررسی کنید.</pre>
-
-        <form id="api-list" class="my-4">
-          <div class="row g-3">
-            <div class="col-12 col-md-6 api-control">
-              <label for="api-category">دسته‌بندی API</label>
-              <select id="api-category" name="category" class="form-select"><option value="all">همهٔ دسته‌بندی‌ها</option></select>
-            </div>
-            <div class="col-12 col-md-6 api-control">
-              <label for="api-status">سختی حذف</label>
-              <select id="api-status" name="status" class="form-select">
-                <option value="all">همه</option><option value="easy-label">ساده</option>
-                <option value="medium-label">متوسط</option><option value="hard-label">سخت</option><option value="impossible-label">غیرممکن</option>
-              </select>
-            </div>
-            <div class="col-12 col-md-6 api-control">
-              <label for="api-priority">اولویت API</label>
-              <select id="api-priority" name="priority" class="form-select">
-                <option value="all">همه</option><option value="1">۱</option><option value="2">۲</option><option value="3">۳</option>
-              </select>
-            </div>
-            <div class="col-12 col-md-6 api-control">
-              <label for="api-sort">ترتیب API</label>
-              <select id="api-sort" name="sort" class="form-select"><option value="newest">جدیدترین</option><option value="oldest">قدیمی‌ترین</option></select>
-            </div>
-          </div>
-          <button class="btn btn-success mt-3" type="submit">دریافت فهرست</button>
-        </form>
-        <a id="api-list-url" class="api-url" hidden></a>
-        <p id="api-list-status" role="status"></p>
-        <div class="d-flex gap-3 my-3" role="group" aria-label="صفحه‌بندی پاسخ API">
-          <button type="button" id="api-previous" class="btn btn-outline-secondary" disabled>صفحهٔ قبل</button>
-          <button type="button" id="api-next" class="btn btn-outline-secondary" disabled>صفحهٔ بعد</button>
-        </div>
-        <pre id="api-list-response" tabindex="0" aria-label="پاسخ فهرست سرویس‌ها">برای نمایش پاسخ، فیلترها را انتخاب و فهرست را دریافت کنید.</pre>
-        <noscript><p>برای آزمایش تعاملی JavaScript را فعال کنید. لینک‌های JSON و نمونه‌های درخواست بالای صفحه در دسترس‌اند.</p></noscript>
-
-        </details>
       </div>
     </main>
 
@@ -470,7 +422,6 @@ curl -fSsL 'https://rtbf.ir/api/v1/services/category=all&amp;priority=all&amp;st
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="assets/js/api-docs.js"></script>
     <script src="assets/js/copyright.js"></script>
   </body>
 </html>
