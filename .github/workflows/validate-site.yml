@@ -12,9 +12,14 @@ jobs:
       - uses: actions/checkout@v6
         with:
           persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - name: Install favicon test dependencies
+        run: python3 -m pip install -r .github/scripts/requirements-icons.txt
       - name: Check JSON-LD and sitemap
         run: python3 .github/scripts/validate_site.py
-      - name: Check API generation and pagination
+      - name: Check API generation, pagination and favicon downloads
         run: |
           python3 .github/scripts/build_api.py
           python3 -m unittest discover -s .github/tests -p 'test_*.py'

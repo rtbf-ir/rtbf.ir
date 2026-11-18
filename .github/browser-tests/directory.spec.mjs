@@ -145,3 +145,46 @@ test("supports keyboard navigation, retry, and clearing a search", async ({ page
   await expect(reset).toBeHidden();
   await expectServiceOrder(page, examples.toReversed());
 });
+
+
+test("shows local favicons to the right of service names and hides broken images", async ({ page }) => {
+  await page.route("**/data/data.json", route => route.fulfill({ json: examples }));
+  await page.route("**/assets/img/icons/index.json", route => route.fulfill({ json: {
+    "older.example.test": "older.example.png", "newer.example.test": "newer.example.png",
+  } }));
+  await page.route("**/assets/img/icons/older.example.png", route => route.fulfill({
+    contentType: "image/png", body: Buffer.from("iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAANElEQVR4nO3QQQ0AAAgDMcC/RqxAUMGnM3BLczomHlefcQcIECBAgAABAgQIECBAgACBE1gruQMcSeP50QAAAABJRU5ErkJggg==", "base64"),
+  }));
+  await page.route("**/assets/img/icons/newer.example.png", route => route.fulfill({ status: 404 }));
+  await page.goto("/directory.html");
+  const service = page.getByRole("link", { name: "سرویس قدیمی", exact: true });
+  await service.scrollIntoViewIfNeeded();
+  const icon = service.locator("img");
+  await expect(icon).toHaveAttribute("alt", "");
+  await expect(icon).toHaveAttribute("width", "20");
+  await expect.poll(() => icon.evaluate(image => image.naturalWidth)).toBeGreaterThan(0);
+  for (const width of [1280, 390]) {
+    await page.setViewportSize({ width, height: 800 });
+    await service.scrollIntoViewIfNeeded();
+    const imageBox = await icon.boundingBox();
+    const nameBox = await service.locator("span").boundingBox();
+    expect(imageBox.x).toBeGreaterThanOrEqual(nameBox.x + nameBox.width);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  }
+
+  await page.getByLabel("نام سرویس").fill("newer");
+  await expectServiceOrder(page, [examples[2]]);
+  await expect(page.locator(".directoryData img.service-icon")).toHaveCount(0);
+  await page.getByLabel("نام سرویس").fill("older");
+  await expect(page.locator(".directoryData img.service-icon")).toHaveCount(1);
+});
+
+test("keeps the directory usable when the icon manifest is unavailable", async ({ page }) => {
+  await page.route("**/data/data.json", route => route.fulfill({ json: examples }));
+  await page.route("**/assets/img/icons/index.json", route => route.fulfill({ status: 503 }));
+  await page.goto("/directory.html");
+  await expectServiceOrder(page, examples.toReversed());
+  await expect(page.locator(".directoryData img.service-icon")).toHaveCount(0);
+  await page.getByLabel("نام سرویس").fill("older");
+  await expectServiceOrder(page, [examples[0]]);
+});

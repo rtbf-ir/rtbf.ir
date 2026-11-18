@@ -101,6 +101,26 @@ p {
   font-size: 13px;
 }
 
+.myitems .service-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.myitems .service-name > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.myitems .service-icon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  object-fit: contain;
+}
+
 .myitems .card .card-opt {
   display: flex;
   flex-wrap: wrap;

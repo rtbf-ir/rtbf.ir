@@ -23,12 +23,12 @@ Every changed record should be manually verified before merge, with its verifica
 ## Public API
 
 Edit **only `data/data.json`** to add, update, or remove services. Append new
-records at the end. The `Generate API and publish website` workflow runs on
+records at the end. The `Generate API and icons` workflow runs on
 every push to `main` and can also be started manually.
 
 It regenerates the complete `api/v1` directory, removes obsolete outputs, and
 commits and pushes the result as `github-actions[bot]` using the message
-`update generated api`. No commit is created when the output has not changed.
+`update generated api and icons`. No commit is created when the output has not changed.
 The bot's `GITHUB_TOKEN` push does not trigger another workflow or Pages build,
 so the same workflow publishes explicitly after generation. It detects the
 existing Pages source: branch publishing requests a new Pages build after the
@@ -72,3 +72,28 @@ for an `application/json` Content-Type: Pages serves their raw JSON directory
 entry points as `text/html`. All route aliases contain JSON bytes (no script or
 HTML redirect), so `curl` and `response.json()` read the response directly.
 See [the API documentation](https://rtbf.ir/api-docs).
+
+## Service favicons
+
+After every push to `main`, the publication workflow downloads only missing
+favicons into `assets/img/icons` and commits them alongside the generated API.
+Each service has a hard 10-second deadline; up to 8 services run concurrently.
+Missing or unreachable favicons do not stop publication and are retried on the
+next push. Existing PNG files are never requested again or overwritten.
+
+Favicons come from `/favicon.ico` or the site's declared icon links and are
+validated and converted to PNG, at most 64 pixels across. SVG-only icons are
+skipped unless the site provides a supported raster alternative.
+Filenames omit the final domain suffix: `aparat.com` → `aparat.png`,
+`about.tipoul.com` → `about.tipoul.png`. If two domains share a filename,
+the older record keeps it and the other gets a short deterministic hash suffix.
+`assets/img/icons/index.json` maps domains to available files. The directory
+loads this local manifest and shows a decorative 20-pixel icon before each name.
+Missing icons or a failed manifest request leave the directory usable.
+
+To fetch missing icons locally:
+
+```sh
+python3 -m pip install -r .github/scripts/requirements-icons.txt
+python3 .github/scripts/download_icons.py --timeout 10 --workers 8
+```

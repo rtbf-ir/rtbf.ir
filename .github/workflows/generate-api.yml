@@ -1,4 +1,4 @@
-name: Generate API and publish website
+name: Generate API and icons
 
 on:
   push:
@@ -16,6 +16,7 @@ jobs:
   generate:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions:
       contents: write
       pages: write
@@ -25,22 +26,29 @@ jobs:
       - uses: actions/checkout@v6
         with:
           ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - name: Install favicon image support
+        run: python3 -m pip install -r .github/scripts/requirements-icons.txt
+      - name: Download missing service favicons
+        run: python3 .github/scripts/download_icons.py --timeout 10 --workers 8
       - name: Generate API from directory data
         run: python3 .github/scripts/build_api.py
       - name: Validate API and website
         run: |
           python3 -m unittest discover -s .github/tests -p 'test_*.py'
           python3 .github/scripts/validate_site.py
-      - name: Commit updated API responses
+      - name: Commit generated API and icons
         run: |
-          git add --all -- api/v1
+          git add --all -- api/v1 assets/img/icons
           if git diff --cached --quiet; then
-            echo "API is already up to date."
+            echo "Generated files are already up to date."
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'update generated api'
+          git commit -m 'update generated api and icons'
           git push origin HEAD:main
       - name: Read Pages publishing mode
         id: pages

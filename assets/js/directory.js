@@ -32,6 +32,39 @@ const directoryFilters = {
   status: document.getElementById("status"),
 };
 let directoryItems;
+let directoryIcons = {};
+
+async function loadDirectoryIcons() {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 2000);
+  try {
+    const response = await fetch("./assets/img/icons/index.json", { signal: controller.signal });
+    if (!response.ok) return {};
+    const icons = await response.json();
+    return icons && typeof icons === "object" && !Array.isArray(icons) ? icons : {};
+  } catch {
+    return {};
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+const directoryIconsReady = loadDirectoryIcons();
+
+directoryResults.addEventListener("error", event => {
+  if (event.target.matches("img.service-icon")) event.target.remove();
+}, true);
+
+function serviceIcon(website) {
+  try {
+    const domain = new URL("https://" + website).hostname.toLowerCase().replace(/\.$/, "");
+    const filename = directoryIcons[domain];
+    if (typeof filename !== "string" || !/^[a-z0-9][a-z0-9._-]*\.png$/.test(filename)) return "";
+    return `<img class="service-icon" src="./assets/img/icons/${filename}" alt="" width="20" height="20" loading="lazy" decoding="async">`;
+  } catch {
+    return "";
+  }
+}
 
 function appendCard(website) {
   const serviceName = website.name
@@ -49,8 +82,8 @@ function appendCard(website) {
             <div class="card">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">
-                        <a target="_blank" class="text-dark" rel="nofollow noreferrer noopener" title="سایت ${serviceName}" href="https://${website.website}">
-                            ${serviceName}
+                        <a target="_blank" class="text-dark service-name" rel="nofollow noreferrer noopener" title="سایت ${serviceName}" href="https://${website.website}">
+                            ${serviceIcon(website.website)}<span>${serviceName}</span>
                         </a>
                         <a href="https://github.com/rtbf-ir/rtbf.ir/issues/new/choose"
                             style="font-size:12px;"
@@ -83,7 +116,11 @@ async function loadDirectory() {
   directoryRetry.disabled = true;
 
   try {
-    const response = await fetch("./data/data.json");
+    const [response, icons] = await Promise.all([
+      fetch("./data/data.json"),
+      directoryIconsReady,
+    ]);
+    directoryIcons = icons;
     if (!response.ok) {
       throw new Error("Directory request failed with HTTP " + response.status);
     }
