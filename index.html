@@ -17,6 +17,7 @@
    >
     <link rel="icon" href="assets/img/favicon.png" sizes="32x32">
     <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/blog-covers.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <meta
@@ -637,161 +638,78 @@
               <div class="clearfix"></div>
             </div>
 
-            <div
-              class="homepage-section-row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"
-            >
-              <div
-                class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-12 float-left"
-              >
-                <img
-                  src="assets/img/blog.png"
-                  class="img-fluid"
-                  title="آخرین نوشته‌های حق فراموش شدن"
-                  alt="آخرین نوشته‌های حق فراموش شدن"
-                  loading="lazy"
-               >
+            <section class="col-12 latest-posts" aria-labelledby="latest-posts-title">
+              <div class="latest-posts-heading">
+                <h2 id="latest-posts-title">آخرین نوشته‌های حق فراموش شدن</h2>
+                <div class="latest-posts-controls" hidden>
+                  <button type="button" class="btn btn-outline-dark" data-posts-step="-1" aria-controls="latest-posts-track">قبلی</button>
+                  <button type="button" class="btn btn-outline-dark" data-posts-step="1" aria-controls="latest-posts-track">بعدی</button>
+                </div>
               </div>
-              <div
-                class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-12 float-right"
-              >
-                <h5>
-                  <span class="fas fa-1x fa-code"></span> آخرین نوشته‌های حق
-                  فراموش شدن
-                </h5>
-                <ul class="blog-list">
-                  <!-- <li><a href="post/" class="text-dark" title=""></a></li> -->
-                  
-                  <li>
-                    <a
-                      href="post/dora"
-                      class="text-dark"
-                      title="DORA چیست و چرا برای داده‌های کاربران مهم است؟"
-                      >DORA چیست و چرا برای داده‌های کاربران مهم است؟</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="post/meta-fined-100-million-for-gdpr-violation"
-                      class="text-dark"
-                      title="جریمه صد میلیون دلاری متا؛ باز هم نقض GDPR!"
-                      >جریمه صد میلیون دلاری متا؛ باز هم نقض GDPR!</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="post/digital-health"
-                      class="text-dark"
-                      title="غرق در دریای دیجیتال: غوطه‌وری در سلامت دیجیتال برای رهایی از امواج مزاحم"
-                      >غرق در دریای دیجیتال: غوطه‌وری در سلامت دیجیتال برای
-                      رهایی از امواج مزاحم</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="post/is-gdpr-cumbersome-for-companies"
-                      class="text-dark"
-                      title="آیا قانون GDPR برای شرکت‌ها دست و پا گیر است؟"
-                      >آیا قانون GDPR برای شرکت‌ها دست و پا گیر است؟</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="post/information-leak-law-in-iran"
-                      class="text-dark"
-                      title="قانون نشت اطلاعات در ایران: بررسی چارچوب قانونی و چالش‌ها"
-                      >قانون نشت اطلاعات در ایران: بررسی چارچوب قانونی و
-                      چالش‌ها</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="post/kidfluencers"
-                      class="text-dark"
-                      title="کیدفلوئنسری، استفاده از کودکان به عنوان اینفلوئنسر در شبکه‌های اجتماعی!"
-                      >کیدفلوئنسری، استفاده از کودکان به عنوان اینفلوئنسر در
-                      شبکه‌های اجتماعی!</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="post/what-is-the-function-of-my-information-on-the-internet-for-commercial-companies"
-                      class="text-dark"
-                      title="اطلاعات من در اینترنت برای شرکت‌های تجاری چه کارکردی دارد؟"
-                      >اطلاعات من در اینترنت برای شرکت‌های تجاری چه کارکردی
-                      دارد؟</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="post/the-impact-of-privacy-on-peoples-future"
-                      class="text-dark"
-                      title="تاثیر حریم شخصی بر آینده‌ی افراد"
-                      >تاثیر حریم شخصی بر آینده‌ی افراد</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="post/the-impact-of-privacy-in-the-lives-of-our-children-and-the-internet"
-                      class="text-dark"
-                      title="تاثیر حریم شخصی در زندگی فرزندان ما و اینترنت"
-                      >تاثیر حریم شخصی در زندگی فرزندان ما و اینترنت</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="post/soc"
-                      class="text-dark"
-                      title="SOC چیست؟"
-                      >SOC چیست؟</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="post/data-leak"
-                      class="text-dark"
-                      title="لیک اطلاعات چیست؟"
-                      >لیک اطلاعات چیست؟</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="post/bug-bounty"
-                      class="text-dark"
-                      title="باگ بانتی (Bug Bounty)چیست؟"
-                      >باگ بانتی (Bug Bounty)چیست؟</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="post/advantages-and-disadvantages-of-sharing-personal-information-on-the-internet"
-                      class="text-dark"
-                      title="مزایا و معایب به اشتراک گذاشتن اطلاعات شخصی در اینترنت"
-                      >مزایا و معایب به اشتراک گذاشتن اطلاعات شخصی در اینترنت</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="post/different-techniques-for-protecting-privacy-on-the-internet"
-                      class="text-dark"
-                      title="تکنیک‌های مختلف برای حفاظت از حریم شخصی در اینترنت"
-                      >تکنیک‌های مختلف برای حفاظت از حریم شخصی در اینترنت</a
-                    >
-                  </li>
-                </ul>
-                <p>
-                  <a
-                    rel="nofollow noreferrer noopener"
-                    target="_blank"
-                    class="btn btn-warning"
-                    href="https://github.com/rtbf-ir/rtbf.ir/issues/new/choose"
-                    title="نوشتن محتوای جدید در وبلاگ حق فراموش شدن"
-                    ><span class="fas fa-1x fa-plus"></span> نوشتن محتوای جدید
-                    در وبلاگ حق فراموش شدن</a
-                  >
-                </p>
+              <ul id="latest-posts-track" class="latest-posts-track">
+                <li><a href="post/dora" class="blog-card">
+                  <img src="/assets/img/blog-covers/eu-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="">
+                  <span>DORA چیست و چرا برای داده‌های کاربران مهم است؟</span>
+                </a></li>
+                <li><a href="post/meta-fined-100-million-for-gdpr-violation" class="blog-card">
+                  <img src="/assets/img/blog-covers/meta-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="">
+                  <span>جریمه صد میلیون دلاری متا؛ باز هم نقض GDPR!</span>
+                </a></li>
+                <li><a href="post/digital-health" class="blog-card">
+                  <img src="/assets/img/blog-covers/devices-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="">
+                  <span>غرق در دریای دیجیتال: غوطه‌وری در سلامت دیجیتال برای رهایی از امواج مزاحم</span>
+                </a></li>
+                <li><a href="post/is-gdpr-cumbersome-for-companies" class="blog-card">
+                  <img src="/assets/img/blog-covers/eu-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="">
+                  <span>آیا قانون GDPR برای شرکت‌ها دست و پا گیر است؟</span>
+                </a></li>
+                <li><a href="post/information-leak-law-in-iran" class="blog-card">
+                  <img src="/assets/img/blog-covers/law-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="">
+                  <span>قانون نشت اطلاعات در ایران: بررسی چارچوب قانونی و چالش‌ها</span>
+                </a></li>
+                <li><a href="post/kidfluencers" class="blog-card">
+                  <img src="/assets/img/blog-covers/books-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="">
+                  <span>کیدفلوئنسری، استفاده از کودکان به عنوان اینفلوئنسر در شبکه‌های اجتماعی!</span>
+                </a></li>
+                <li><a href="post/what-is-the-function-of-my-information-on-the-internet-for-commercial-companies" class="blog-card">
+                  <img src="/assets/img/blog-covers/laptop-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="">
+                  <span>اطلاعات من در اینترنت برای شرکت‌های تجاری چه کارکردی دارد؟</span>
+                </a></li>
+                <li><a href="post/the-impact-of-privacy-on-peoples-future" class="blog-card">
+                  <img src="/assets/img/blog-covers/laptop-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="">
+                  <span>تاثیر حریم شخصی بر آینده‌ی افراد</span>
+                </a></li>
+                <li><a href="post/the-impact-of-privacy-in-the-lives-of-our-children-and-the-internet" class="blog-card">
+                  <img src="/assets/img/blog-covers/books-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="">
+                  <span>تاثیر حریم شخصی در زندگی فرزندان ما و اینترنت</span>
+                </a></li>
+                <li><a href="post/soc" class="blog-card">
+                  <img src="/assets/img/blog-covers/code-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="">
+                  <span>SOC چیست؟</span>
+                </a></li>
+                <li><a href="post/data-leak" class="blog-card">
+                  <img src="/assets/img/blog-covers/code-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="">
+                  <span>لیک اطلاعات چیست؟</span>
+                </a></li>
+                <li><a href="post/bug-bounty" class="blog-card">
+                  <img src="/assets/img/blog-covers/code-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="">
+                  <span>باگ بانتی (Bug Bounty)چیست؟</span>
+                </a></li>
+                <li><a href="post/advantages-and-disadvantages-of-sharing-personal-information-on-the-internet" class="blog-card">
+                  <img src="/assets/img/blog-covers/laptop-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="">
+                  <span>مزایا و معایب به اشتراک گذاشتن اطلاعات شخصی در اینترنت</span>
+                </a></li>
+                <li><a href="post/different-techniques-for-protecting-privacy-on-the-internet" class="blog-card">
+                  <img src="/assets/img/blog-covers/lock-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="">
+                  <span>تکنیک‌های مختلف برای حفاظت از حریم شخصی در اینترنت</span>
+                </a></li>
+              </ul>
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <a class="btn btn-warning" href="blog">همهٔ نوشته‌ها</a>
+                <a class="btn btn-outline-dark" href="https://github.com/rtbf-ir/rtbf.ir/issues/new/choose"
+                   target="_blank" rel="nofollow noopener noreferrer">نوشتن محتوای جدید</a>
               </div>
-              <div class="clearfix"></div>
-            </div>
+            </section>
           </div>
         </div>
       </div>
@@ -1038,5 +956,6 @@
     >
       <div id="stickylink">ورود به دایرکتوری سرویس‌ها</div>
     </a>
+      <script src="assets/js/latest-posts.js" defer></script>
   </body>
 </html>
