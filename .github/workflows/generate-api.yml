@@ -16,7 +16,7 @@ jobs:
   generate:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     permissions:
       contents: write
       pages: write
@@ -31,25 +31,47 @@ jobs:
           python-version: '3.13'
       - name: Install favicon image support
         run: python3 -m pip install -r .github/scripts/requirements-icons.txt
-      - name: Download missing service favicons
-        run: python3 .github/scripts/download_icons.py --timeout 10 --workers 8
-      - name: Generate API from directory data
-        run: python3 .github/scripts/build_api.py
-      - name: Validate API and website
+      - name: Generate, validate and push API and icons
         run: |
-          python3 -m unittest discover -s .github/tests -p 'test_*.py'
-          python3 .github/scripts/validate_site.py
-      - name: Commit generated API and icons
-        run: |
-          git add --all -- api/v1 assets/img/icons
-          if git diff --cached --quiet; then
-            echo "Generated files are already up to date."
-            exit 0
-          fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'update generated api and icons'
-          git push origin HEAD:main
+
+          for attempt in 1 2 3; do
+            git fetch --no-tags origin main
+            base=$(git rev-parse FETCH_HEAD)
+            # This checkout contains only CI output. Rebuild from the latest
+            # sources so an older API snapshot cannot overwrite newer data.
+            git reset --hard "$base"
+
+            python3 .github/scripts/download_icons.py --timeout 10 --workers 8
+            python3 .github/scripts/build_api.py
+            python3 -m unittest discover -s .github/tests -p 'test_*.py'
+            python3 .github/scripts/validate_site.py
+
+            git add --all -- api/v1 assets/img/icons
+            if git diff --cached --quiet; then
+              git fetch --no-tags origin main
+              if [ "$(git rev-parse FETCH_HEAD)" = "$base" ]; then
+                echo "Generated files are already up to date."
+                exit 0
+              fi
+            else
+              git commit -m 'update generated api and icons'
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              git fetch --no-tags origin main
+              if [ "$(git rev-parse FETCH_HEAD)" = "$base" ]; then
+                echo "::error::Could not push generated files even though main did not advance."
+                exit 1
+              fi
+            fi
+
+            echo "main advanced during generation (attempt $attempt of 3)."
+          done
+
+          echo "::error::main advanced during all three generation attempts."
+          exit 1
       - name: Read Pages publishing mode
         id: pages
         env:
