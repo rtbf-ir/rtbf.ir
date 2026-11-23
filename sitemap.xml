@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
@@ -51,39 +52,66 @@
   </url>
   <url>
     <loc>https://rtbf.ir/post/rtbf-iran-petition</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/law.webp</image:loc>
+    </image:image>
     <lastmod>2025-11-10</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/cjeu</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/cjeu.webp</image:loc>
+    </image:image>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/cnil</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/law.webp</image:loc>
+    </image:image>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/i-forget-you-note</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/8-challenging-data-privacy-issues</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/12-things-can-do-extra-online-security</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/privacy-heroes</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/ethical-and-privacy-concerns</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/gdpr-right-to-be-forgotten</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/eu.webp</image:loc>
+    </image:image>
     <priority>0.80</priority>
   </url>
   <url>
@@ -92,356 +120,617 @@
   </url>
   <url>
     <loc>https://rtbf.ir/post/what-women-know-about-the-internet</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/is-it-possible-to-clear-all-information-from-the-internet</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/womens-rights-in-internet</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/protect-yourself-in-internet</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/five-technical-commands-for-safer-digital-life</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/code.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/why-is-data-protection-so-important</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/secure-your-digital-life-in-2022</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/devices.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/online-privacy-is-you-human-right</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/the-difference-between-privacy-and-security</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/healthy-presence-in-cyberspace</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/privacy-for-women-needs-fundamental-change</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/privacy-protection-in-different-countries</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/live-your-digital-life-safely</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/101-tips-for-data-care-part1</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/101-tips-for-data-care-part2</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/101-tips-for-data-care-part3</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/101-tips-for-data-care-part4</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/101-tips-for-data-care-part5</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/101-tips-for-data-care-part6</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/101-tips-for-data-care-part7</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/101-tips-for-data-care-part8</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/101-tips-for-data-care-part9</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/101-tips-for-data-care-part10</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/101-tips-for-data-care-part11</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/101-tips-for-data-care-part12</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/top-5-privacy-books</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/books.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/donate-sfd1400</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/family-privacy</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/books.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/protect-your-online-privacy-in-2021</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/protect-your-internet-privacy</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/protect-personal-information-in-cyberspace</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/are-you-familiar-with-the-dangers-of-fake-technical-support</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/how-to-prevent-the-dangers-of-online-trackers</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/remove-personal-information-from-the-internet</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/detail-of-right-to-be-forgotten</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/law.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/how-to-protect-your-digital-privacy</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/10-truths-about-online-privacy</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/problems-and-important-issues-of-Internet-privacy</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/rtbf-in-internet</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <lastmod>2026-09-30</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/one-should-be-very-careful-and-concerned-about-the-privacy-of-the-internet</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/protect-the-privacy-of-your-information-online</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/privacy-in-cyberspace-dream-or-reality</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/rtbf-fandogh-cloud</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/why-is-online-privacy-important</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/how-is-your-personal-information-protected-online</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/rtbf-in-twitter</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/devices.webp</image:loc>
+    </image:image>
     <lastmod>2025-09-15</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/right-to-be-forgotten</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/law.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/anonymity-in-internet</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/information-privacy</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/how-to-delete-all-social-media-content</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/code.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/how-to-delete-all-your-data-from-internet</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/gdpr</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/eu.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/national-data-protection-authority</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/law.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/privacy-court-in-india</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/india.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/gdpr-meta-facebook</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/meta.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/story-of-information-theft</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/safer-virtual-activity</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/rtbf-and-unsaid-for-companies</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/security-of-the-elderly-to-cognitive-problems-in-cyberspace</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/books.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/3-ways-to-protect-your-data-from-chat-gpt</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/code.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/privacy-dos-and-donts-for-businesses-and-consumers</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/the-most-up-to-date-ways-to-stay-safe-from-hackers</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/code.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/history-and-important-points-of-the-right-to-be-forgotten</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/law.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/why-is-the-right-to-be-forgotten-an-essential-right</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/law.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/google-fined-for-violating-the-gdpr-law</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/google.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/how-does-the-right-to-be-forgotten-protect-your-data</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/law.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/is-the-right-to-be-forgotten-good-or-bad</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/law.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/right-to-be-forgotten-or-limited-access-to-information</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/law.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/guide-for-teenagers-dont-get-into-trouble-in-cyberspace</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/devices.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/everything-you-need-to-know-about-the-right-to-be-forgotten</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/law.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/what-is-a-hack</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/code.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/artificial-intelligence-and-the-right-to-be-forgotten</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/law.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/the-impact-of-technology-on-privacy-benefits-and-challenges</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/different-techniques-for-protecting-privacy-on-the-internet</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/lock.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/advantages-and-disadvantages-of-sharing-personal-information-on-the-internet</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/bug-bounty</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/code.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/data-leak</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/code.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/soc</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/code.webp</image:loc>
+    </image:image>
     <lastmod>2024-01-07</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/what-is-the-function-of-my-information-on-the-internet-for-commercial-companies</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <lastmod>2024-02-07</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/the-impact-of-privacy-on-peoples-future</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/laptop.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/the-impact-of-privacy-in-the-lives-of-our-children-and-the-internet</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/books.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/kidfluencers</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/books.webp</image:loc>
+    </image:image>
     <lastmod>2024-02-13</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/information-leak-law-in-iran</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/law.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/is-gdpr-cumbersome-for-companies</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/eu.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/digital-health</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/devices.webp</image:loc>
+    </image:image>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/meta-fined-100-million-for-gdpr-violation</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/meta.webp</image:loc>
+    </image:image>
     <lastmod>2024-10-04</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://rtbf.ir/post/dora</loc>
+    <image:image>
+      <image:loc>https://rtbf.ir/assets/img/blog-covers/eu.webp</image:loc>
+    </image:image>
     <lastmod>2025-02-02</lastmod>
     <priority>0.64</priority>
   </url>

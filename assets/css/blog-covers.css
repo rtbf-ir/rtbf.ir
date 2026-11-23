@@ -1,0 +1,50 @@
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-card {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  color: #262626;
+  background: #fff;
+}
+
+.blog-card:hover {
+  color: #262626;
+  border-color: #965100;
+}
+
+.blog-card img,
+.blog-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+
+.blog-card span {
+  display: block;
+  padding: 0.9rem 1rem;
+}
+
+.blog-cover {
+  margin: 1rem auto 2rem;
+  border-radius: 10px;
+}
+
+.blog-cover figcaption {
+  padding-block: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.blog-cover figcaption a {
+  color: #173b67;
+  text-decoration: underline !important;
+}
