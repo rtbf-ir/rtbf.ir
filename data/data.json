@@ -2933,9 +2933,9 @@
     "name": "پاستاکلود",
     "website": "paasta.cloud",
     "deleteurl": "#",
-    "info": "امکان حذف وجود ندارد.",
-    "difficulty": "غیرممکن",
-    "keytype": "impossible-label",
+    "info": "در پنل کاربری تیکت بزنید. حساب پس از بررسی و در صورت نداشتن بدهی و رعایت شرایط سرویس حذف می‌شود.",
+    "difficulty": "سخت",
+    "keytype": "hard-label",
     "priority": "3",
     "category": "provider"
   }
