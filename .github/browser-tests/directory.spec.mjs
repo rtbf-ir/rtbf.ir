@@ -15,18 +15,6 @@ const bootstrapAssets = new Map([
   }],
 ]);
 const records = JSON.parse(readFileSync(new URL("../../data/data.json", import.meta.url), "utf-8"));
-const examples = [
-  { name: "سرویس قدیمی", website: "older.example.test", keytype: "hard-label", difficulty: "سخت" },
-  { name: "سرویس ساده", website: "easy.example.test", keytype: "easy-label", difficulty: "ساده" },
-  { name: "سرویس جدید", website: "newer.example.test", keytype: "hard-label", difficulty: "سخت" },
-].map(record => ({
-  category: "provider",
-  priority: "3",
-  deleteurl: "#",
-  info: "درخواست را به پشتیبانی بفرستید.",
-  ...record,
-}));
-
 test.beforeEach(async ({ context, baseURL }) => {
   const origin = new URL(baseURL).origin;
   await context.route(url => url.origin !== origin, async route => {
@@ -40,7 +28,7 @@ test.beforeEach(async ({ context, baseURL }) => {
 });
 
 async function expectServiceOrder(page, expected) {
-  const cards = page.locator(".directoryData .card-title > a:first-child");
+  const cards = page.locator(".directoryData > :not([hidden]) .card-title > a:first-child");
   await expect.poll(() => cards.evaluateAll(links => links.map(link => link.getAttribute("href"))))
     .toEqual(expected.map(service => "https://" + service.website));
 }
@@ -74,19 +62,20 @@ test("sorts services by their position in the data file", async ({ page }) => {
 });
 
 test("restores search, filters, and sort in a fresh tab from the shared link", async ({ context, page }) => {
-  await context.route("**/data/data.json", route => route.fulfill({ json: examples }));
   await page.goto("/directory.html");
-  await page.getByLabel("نام سرویس").fill("example.test");
+  await page.getByLabel("نام سرویس").fill(".");
   await page.getByLabel("وضعیت سرویس‌ها").selectOption("hard-label");
   await page.getByLabel("دسته‌بندی سرویس‌ها").selectOption("provider");
   await page.getByLabel("اولویت سرویس‌ها").selectOption("3");
   await page.getByLabel("مرتب‌سازی").selectOption("oldest");
-  const expected = [examples[0], examples[2]];
+  const expected = records.filter(service => service.website.includes(".") &&
+    service.category === "provider" && service.keytype === "hard-label" && service.priority === "3");
+  expect(expected.length).toBeGreaterThan(0);
   await expectServiceOrder(page, expected);
 
   const recipient = await context.newPage();
   await recipient.goto(page.url());
-  await expect(recipient.getByLabel("نام سرویس")).toHaveValue("example.test");
+  await expect(recipient.getByLabel("نام سرویس")).toHaveValue(".");
   await expect(recipient.getByLabel("وضعیت سرویس‌ها")).toHaveValue("hard-label");
   await expect(recipient.getByLabel("دسته‌بندی سرویس‌ها")).toHaveValue("provider");
   await expect(recipient.getByLabel("اولویت سرویس‌ها")).toHaveValue("3");
@@ -96,20 +85,12 @@ test("restores search, filters, and sort in a fresh tab from the shared link", a
   await recipient.getByRole("button", { name: "پاک کردن فیلترها" }).click();
   await expect(recipient).toHaveURL(/\/directory\.html$/);
   await expect(recipient.getByLabel("مرتب‌سازی")).toHaveValue("newest");
-  await expectServiceOrder(recipient, examples.toReversed());
+  await expectServiceOrder(recipient, records.toReversed());
   await expect(recipient.getByRole("button", { name: "پاک کردن فیلترها" })).toBeHidden();
 });
 
-test("supports keyboard navigation, retry, and clearing a search", async ({ page }) => {
-  let requests = 0;
-  await page.route("**/data/data.json", route => {
-    requests += 1;
-    return requests === 1 ? route.fulfill({ status: 503 }) : route.fulfill({ json: examples });
-  });
+test("supports keyboard navigation and clearing a search", async ({ page }) => {
   await page.goto("/directory.html");
-  const retry = page.getByRole("button", { name: "تلاش دوباره" });
-  await expect(retry).toBeVisible();
-
   await page.keyboard.press("Tab");
   await expect(page.getByRole("link", { name: "رفتن به محتوای اصلی" })).toBeFocused();
   await page.keyboard.press("Enter");
@@ -119,7 +100,7 @@ test("supports keyboard navigation, retry, and clearing a search", async ({ page
   await page.keyboard.press("Tab");
   const search = page.getByLabel("نام سرویس");
   await expect(search).toBeFocused();
-  await page.keyboard.type("older");
+  await page.keyboard.type("aparat");
 
   const reset = page.getByRole("button", { name: "پاک کردن فیلترها" });
   for (const control of [
@@ -128,36 +109,23 @@ test("supports keyboard navigation, retry, and clearing a search", async ({ page
     page.getByLabel("اولویت سرویس‌ها"),
     page.getByLabel("مرتب‌سازی"),
     reset,
-    retry,
   ]) {
     await page.keyboard.press("Tab");
     await expect(control).toBeFocused();
   }
-  await page.keyboard.press("Enter");
-  await expect(page.getByRole("status")).toBeFocused();
-  await expectServiceOrder(page, [examples[0]]);
-  expect(requests).toBe(2);
-
-  await page.keyboard.press("Shift+Tab");
-  await expect(reset).toBeFocused();
+  await expectServiceOrder(page, records.filter(service => service.website.includes("aparat")).toReversed());
   await page.keyboard.press("Enter");
   await expect(search).toBeFocused();
   await expect(reset).toBeHidden();
-  await expectServiceOrder(page, examples.toReversed());
+  await expectServiceOrder(page, records.toReversed());
 });
 
 
 test("shows local favicons to the right of service names and hides broken images", async ({ page }) => {
-  await page.route("**/data/data.json", route => route.fulfill({ json: examples }));
-  await page.route("**/assets/img/icons/index.json", route => route.fulfill({ json: {
-    "older.example.test": "older.example.png", "newer.example.test": "newer.example.png",
-  } }));
-  await page.route("**/assets/img/icons/older.example.png", route => route.fulfill({
-    contentType: "image/png", body: Buffer.from("iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAANElEQVR4nO3QQQ0AAAgDMcC/RqxAUMGnM3BLczomHlefcQcIECBAgAABAgQIECBAgACBE1gruQMcSeP50QAAAABJRU5ErkJggg==", "base64"),
-  }));
-  await page.route("**/assets/img/icons/newer.example.png", route => route.fulfill({ status: 404 }));
+  await page.route("**/assets/img/icons/torob.png", route => route.fulfill({ status: 404 }));
   await page.goto("/directory.html");
-  const service = page.getByRole("link", { name: "سرویس قدیمی", exact: true });
+  await page.getByLabel("نام سرویس").fill("aparat.com");
+  const service = page.locator('.directoryData a.service-name[href="https://aparat.com"]');
   await service.scrollIntoViewIfNeeded();
   const icon = service.locator("img");
   await expect(icon).toHaveAttribute("alt", "");
@@ -172,19 +140,30 @@ test("shows local favicons to the right of service names and hides broken images
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   }
 
-  await page.getByLabel("نام سرویس").fill("newer");
-  await expectServiceOrder(page, [examples[2]]);
-  await expect(page.locator(".directoryData img.service-icon")).toHaveCount(0);
-  await page.getByLabel("نام سرویس").fill("older");
-  await expect(page.locator(".directoryData img.service-icon")).toHaveCount(1);
+  await page.getByLabel("نام سرویس").fill("torob.com");
+  const torob = page.locator('.directoryData a.service-name[href="https://torob.com"]');
+  await torob.scrollIntoViewIfNeeded();
+  await expect(torob.locator("img")).toHaveCount(0);
 });
 
-test("keeps the directory usable when the icon manifest is unavailable", async ({ page }) => {
-  await page.route("**/data/data.json", route => route.fulfill({ json: examples }));
-  await page.route("**/assets/img/icons/index.json", route => route.fulfill({ status: 503 }));
+test("renders service cards without JavaScript and never requests directory JSON", async ({ browser, baseURL, page }) => {
+  const noScript = await browser.newContext({ javaScriptEnabled: false, baseURL });
+  await noScript.route(url => url.origin !== new URL(baseURL).origin, route => route.abort());
+  try {
+    const staticPage = await noScript.newPage();
+    await staticPage.goto("/directory.html");
+    await expectServiceOrder(staticPage, records.toReversed());
+    await expect(staticPage.getByLabel("نام سرویس")).toBeHidden();
+  } finally {
+    await noScript.close();
+  }
+  const requests = [];
+  await page.route(/\/(?:data\/data|assets\/img\/icons\/index)\.json$/, route => {
+    requests.push(route.request().url());
+    return route.abort();
+  });
   await page.goto("/directory.html");
-  await expectServiceOrder(page, examples.toReversed());
-  await expect(page.locator(".directoryData img.service-icon")).toHaveCount(0);
-  await page.getByLabel("نام سرویس").fill("older");
-  await expectServiceOrder(page, [examples[0]]);
+  await page.getByLabel("نام سرویس").fill("aparat.com");
+  await expectServiceOrder(page, records.filter(service => service.website.includes("aparat.com")).toReversed());
+  expect(requests).toEqual([]);
 });

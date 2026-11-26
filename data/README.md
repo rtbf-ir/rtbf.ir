@@ -97,3 +97,5 @@ To fetch missing icons locally:
 python3 -m pip install -r .github/scripts/requirements-icons.txt
 python3 .github/scripts/download_icons.py --timeout 10 --workers 8
 ```
+
+The publishing workflow runs `python3 .github/scripts/build_directory.py` after downloading icons. It renders the cards in `directory.html` from `data/data.json` and the local icon manifest. Regenerate the page with the same command after editing directory data; do not edit the generated card block directly.

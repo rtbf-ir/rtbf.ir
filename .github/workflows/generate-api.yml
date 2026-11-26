@@ -45,10 +45,11 @@ jobs:
 
             python3 .github/scripts/download_icons.py --timeout 10 --workers 8
             python3 .github/scripts/build_api.py
+            python3 .github/scripts/build_directory.py
             python3 -m unittest discover -s .github/tests -p 'test_*.py'
             python3 .github/scripts/validate_site.py
 
-            git add --all -- api/v1 assets/img/icons
+            git add --all -- api/v1 assets/img/icons directory.html
             if git diff --cached --quiet; then
               git fetch --no-tags origin main
               if [ "$(git rev-parse FETCH_HEAD)" = "$base" ]; then

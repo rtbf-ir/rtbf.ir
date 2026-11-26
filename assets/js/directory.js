@@ -22,7 +22,6 @@ document.getElementById("copyrightyear").innerHTML =
 
 const directoryResults = document.querySelector(".directoryData");
 const directoryStatus = document.getElementById("directory-status");
-const directoryRetry = document.getElementById("directory-retry");
 const directoryReset = document.getElementById("directory-reset");
 const directorySearch = document.getElementById("servicename");
 const directorySort = document.getElementById("directory-sort");
@@ -31,122 +30,23 @@ const directoryFilters = {
   priority: document.getElementById("priority"),
   status: document.getElementById("status"),
 };
-let directoryItems;
-let directoryIcons = {};
+const directoryItems = [...directoryResults.children].map(card => {
+  const service = card.querySelector(".service-name");
+  return {
+    card,
+    ...card.dataset,
+    search: normalizeSearchText(service.textContent + " " + service.getAttribute("href")),
+  };
+});
+let showingOldest = false;
 
-async function loadDirectoryIcons() {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 2000);
-  try {
-    const response = await fetch("./assets/img/icons/index.json", { signal: controller.signal });
-    if (!response.ok) return {};
-    const icons = await response.json();
-    return icons && typeof icons === "object" && !Array.isArray(icons) ? icons : {};
-  } catch {
-    return {};
-  } finally {
-    clearTimeout(timeout);
-  }
+function removeBrokenIcon(image) {
+  if (image.matches("img.service-icon")) image.remove();
 }
 
-const directoryIconsReady = loadDirectoryIcons();
-
-directoryResults.addEventListener("error", event => {
-  if (event.target.matches("img.service-icon")) event.target.remove();
-}, true);
-
-function serviceIcon(website) {
-  try {
-    const domain = new URL("https://" + website).hostname.toLowerCase().replace(/\.$/, "");
-    const filename = directoryIcons[domain];
-    if (typeof filename !== "string" || !/^[a-z0-9][a-z0-9._-]*\.png$/.test(filename)) return "";
-    return `<img class="service-icon" src="./assets/img/icons/${filename}" alt="" width="20" height="20" loading="lazy" decoding="async">`;
-  } catch {
-    return "";
-  }
-}
-
-function appendCard(website) {
-  const serviceName = website.name
-    .replace(/&/g, "&amp;")
-    .replace(/"/g, "&quot;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;");
-  const deleteLabel = "حذف حساب‌کاربری";
-  const deleteAccountButton = `<a target="_blank" rel="nofollow noreferrer noopener" href="https://${website.deleteurl}" class="btn label-remove" aria-label="${deleteLabel} ${serviceName}">
-        <span class="fa fa-1x fa-trash" aria-hidden="true"></span>
-        <span>${deleteLabel}</span>
-    </a>`;
-
-  const websiteCard = `<div class="float-right test-mohammad">
-            <div class="card">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">
-                        <a target="_blank" class="text-dark service-name" rel="nofollow noreferrer noopener" title="سایت ${serviceName}" href="https://${website.website}">
-                            ${serviceIcon(website.website)}<span>${serviceName}</span>
-                        </a>
-                        <a href="https://github.com/rtbf-ir/rtbf.ir/issues/new/choose"
-                            style="font-size:12px;"
-                            class="text-warning" title="اطلاعات این بخش اشتباه است قصد اصلاح دارم"
-                            aria-label="تصحیح اطلاعات ${serviceName}">
-                            <small>
-                                <span class="fas fa-1x fa-bolt" aria-hidden="true"></span>
-                                تصحیح
-                            </small>
-                        </a>
-                    </h5>
-
-                    <p class="card-text"><small>${website.info}</small></p>
-
-                    <div class="card-opt mt-auto">
-                        <span class="btn text-light ${website.keytype}">${website.difficulty}</span>
-                        ${website.deleteurl === "#" ? "" : deleteAccountButton}
-                    </div>
-                </div>
-            </div>
-          </div>`;
-
-  directoryResults.insertAdjacentHTML("beforeend", websiteCard);
-}
-
-async function loadDirectory() {
-  const retryHadFocus = document.activeElement === directoryRetry;
-  directoryStatus.textContent = "در حال بارگذاری فهرست سرویس‌ها…";
-  directoryRetry.hidden = true;
-  directoryRetry.disabled = true;
-
-  try {
-    const [response, icons] = await Promise.all([
-      fetch("./data/data.json"),
-      directoryIconsReady,
-    ]);
-    directoryIcons = icons;
-    if (!response.ok) {
-      throw new Error("Directory request failed with HTTP " + response.status);
-    }
-
-    const items = await response.json();
-    if (!Array.isArray(items) || !items.every(
-      (item) => typeof item?.name === "string" && typeof item?.website === "string"
-    )) {
-      throw new Error("Invalid directory data");
-    }
-    directoryItems = items;
-  } catch (error) {
-    console.error("Could not load directory data:", error);
-    directoryStatus.textContent = "بارگذاری فهرست سرویس‌ها ناموفق بود.";
-    directoryRetry.hidden = false;
-    directoryRetry.disabled = false;
-    if (retryHadFocus && document.activeElement === document.body) {
-      directoryRetry.focus();
-    }
-    return;
-  }
-
-  filterData();
-  if (retryHadFocus && document.activeElement === document.body) {
-    directoryStatus.focus();
-  }
+directoryResults.addEventListener("error", event => removeBrokenIcon(event.target), true);
+for (const image of directoryResults.querySelectorAll("img.service-icon")) {
+  if (image.complete && !image.naturalWidth) removeBrokenIcon(image);
 }
 
 // Close menu in mobile size on click outside
@@ -210,28 +110,25 @@ function filterData() {
   const hasActiveFilters = Object.values(directoryFilters).some((select) => select.value !== "all");
   directoryReset.hidden = !query && !hasActiveFilters && !sortOldest;
 
-  if (!directoryItems) return;
-
-  const items = directoryItems.filter(
-    (item) =>
-      (category.value === "all" || item.category === category.value) &&
+  let count = 0;
+  for (const item of directoryItems) {
+    const matches = (category.value === "all" || item.category === category.value) &&
       (priority.value === "all" || item.priority === priority.value) &&
-      (status.value === "all" || item.keytype === status.value) &&
-      (!query ||
-        normalizeSearchText(item.name).includes(query) ||
-        normalizeSearchText(item.website).includes(query))
-  );
-
-  // Records are added to the end of data.json.
-  if (!sortOldest) items.reverse();
-
-  directoryResults.textContent = "";
-  for (const item of items) {
-    appendCard(item);
+      (status.value === "all" || item.status === status.value) &&
+      (!query || item.search.includes(query));
+    item.card.hidden = !matches;
+    if (matches) count++;
   }
 
-  directoryStatus.textContent = items.length
-    ? toPersianNumber(items.length) + " نتیجه"
+  // The generated HTML starts in newest-first order.
+  if (sortOldest !== showingOldest) {
+    const ordered = sortOldest ? [...directoryItems].reverse() : directoryItems;
+    directoryResults.append(...ordered.map(item => item.card));
+    showingOldest = sortOldest;
+  }
+
+  directoryStatus.textContent = count
+    ? toPersianNumber(count) + " نتیجه"
     : "سرویسی پیدا نشد (۰ نتیجه).";
 }
 
@@ -261,8 +158,7 @@ directoryReset.addEventListener("click", (event) => {
   if (event.detail === 0) directorySearch.focus();
   updateFilters();
 });
-directoryRetry.addEventListener("click", loadDirectory);
 window.addEventListener("hashchange", restoreFilters);
 
 restoreFilters();
-loadDirectory();
+document.getElementById("directory-controls").hidden = false;
