@@ -124,3 +124,30 @@ small > span.fa-user {
   opacity: 0.55;
   cursor: default;
 }
+
+.post-faq {
+  margin-block: 2rem;
+}
+
+.post-faq h2 {
+  font-size: 1.3rem;
+  margin-block-end: 1rem;
+}
+
+.post-faq details {
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  margin-block: 0.5rem;
+}
+
+.post-faq summary {
+  padding: 0.75rem 1rem;
+  font-weight: bold;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+.blog-post-content .post-faq p {
+  padding: 0 1rem 0.75rem;
+  line-height: 1.8;
+}
