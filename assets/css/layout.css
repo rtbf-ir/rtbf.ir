@@ -4,7 +4,8 @@
   font-family: vazir;
   font-style: normal;
   font-weight: 400;
-  src: url(../font/vazir.ttf);
+  font-display: swap;
+  src: url(../font/vazir.woff2) format("woff2");
 }
 
 :root {
@@ -37,7 +38,7 @@ p {
 }
 
 .header-wall {
-  background: url(../img/header.png) center no-repeat;
+  background: url(../img/header-optimized.webp) center no-repeat;
   background-size: cover;
   min-height: 340px;
 }
@@ -612,5 +613,11 @@ p {
     direction: ltr;
     max-block-size: var(--expanded-menu-height);
     overflow-y: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .header-wall {
+    background-image: url(../img/header-mobile.webp);
   }
 }

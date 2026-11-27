@@ -5,18 +5,13 @@
     <meta name="charset" content="utf-8">
 
     <title>Right to be Forgotten | rtbf.ir</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-   >
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-   >
+    <link rel="preload" as="image" href="assets/img/header-mobile.webp" media="(max-width: 575px)">
+    <link rel="preload" as="image" href="assets/img/header-optimized.webp" media="(width > 575px)">
+    <link rel="preload" as="font" href="assets/font/vazir.woff2" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/vendor/bootstrap-5.0.1/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome-6.7.2/css/all.min.css">
     <link rel="icon" href="assets/img/favicon.png" sizes="32x32">
-    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/layout.css?v=34837a652b1f">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <meta
@@ -288,11 +283,11 @@
                 class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 float-left"
               >
                 <img
-                  src="assets/img/avatar.png"
+                  src="assets/img/avatar-optimized.webp" width="720" height="720"
                   class="img-fluid"
                   alt="Right to be Forgotten Project"
                   title="Right to be Forgotten Project"
-                  loading="lazy"
+                  fetchpriority="high"
                >
               </div>
               <div
@@ -345,7 +340,7 @@
                 class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 float-left"
               >
                 <img
-                  src="assets/img/plugin.jpg"
+                  src="assets/img/plugin-optimized.webp" width="420" height="420"
                   class="img-fluid homepage-section-row-image"
                   title="Right to be Forgotten browser extension"
                   alt="Right to be Forgotten browser extension"
@@ -395,7 +390,7 @@
                 class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 float-left"
               >
                 <img
-                  src="assets/img/signature.png"
+                  src="assets/img/signature-optimized.webp" width="480" height="480"
                   class="img-fluid homepage-section-row-image"
                   title="Right to be Forgotten campaign in Iran"
                   alt="Right to be Forgotten campaign in Iran"
@@ -442,7 +437,7 @@
                 class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 float-left"
               >
                 <img
-                  src="assets/img/socialmedia.png"
+                  src="assets/img/socialmedia-optimized.webp" width="480" height="320"
                   class="img-fluid homepage-section-row-image"
                   title="Right to be Forgotten on social media"
                   alt="Right to be Forgotten on social media"
@@ -514,7 +509,7 @@
                 class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 float-left"
               >
                 <img
-                  src="assets/img/dontaion.png"
+                  src="assets/img/dontaion-optimized.webp" width="480" height="446"
                   class="img-fluid homepage-section-row-image"
                   title="Ways to support the Right to be Forgotten project"
                   alt="Ways to support the Right to be Forgotten project"
@@ -549,7 +544,7 @@
                 class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 float-left"
               >
                 <img
-                  src="assets/img/develope.png"
+                  src="assets/img/develope-optimized.webp" width="480" height="480"
                   class="img-fluid homepage-section-row-image"
                   title="Right to be Forgotten project development"
                   alt="Right to be Forgotten project development"
@@ -758,7 +753,7 @@
                 <a href="index-en" title="Right to be Forgotten"
                   ><img
                     class="img-fluid"
-                    src="assets/img/footer-logo.png"
+                    src="assets/img/footer-logo-optimized.webp" width="247" height="320"
                     title="Right to be Forgotten"
                     alt="Right to be Forgotten"
                     loading="lazy"
@@ -961,16 +956,7 @@
         </div>
       </div>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
+    <script src="assets/vendor/bootstrap-5.0.1/bootstrap.bundle.min.js" defer></script>
     <script src="assets/js/copyright.js"></script>
     <a
       href="https://rtbf.ir/directory"
